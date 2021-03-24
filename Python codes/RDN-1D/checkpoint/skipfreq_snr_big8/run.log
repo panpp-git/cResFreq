@@ -1,0 +1,1178 @@
+[03/16/2021 20:00:19] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 1000                          
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:00:29] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 0.859 M
+[03/16/2021 20:00:33] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 4.6, FR training L2 loss 58103.63, FR validation L2 loss 1869.20, FNR 94.40 %
+[03/16/2021 20:00:36] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 2.4, FR training L2 loss 3625.60, FR validation L2 loss 1946.61, FNR 94.63 %
+[03/16/2021 20:00:38] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 2.4, FR training L2 loss 3872.12, FR validation L2 loss 1373.24, FNR 94.83 %
+[03/16/2021 20:00:40] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 2.4, FR training L2 loss 1866.11, FR validation L2 loss 1363.58, FNR 94.72 %
+[03/16/2021 20:00:43] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 2.4, FR training L2 loss 3889.60, FR validation L2 loss 29048.09, FNR 97.00 %
+[03/16/2021 20:00:45] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 2.4, FR training L2 loss 841.65, FR validation L2 loss 376.54, FNR 95.02 %
+[03/16/2021 20:00:48] {complexTrain.py:233} INFO - Epochs: 7 / 410, Time: 2.4, FR training L2 loss 429.00, FR validation L2 loss 280.01, FNR 94.81 %
+[03/16/2021 20:00:50] {complexTrain.py:233} INFO - Epochs: 8 / 410, Time: 2.4, FR training L2 loss 232.20, FR validation L2 loss 133.14, FNR 95.20 %
+[03/16/2021 20:00:52] {complexTrain.py:233} INFO - Epochs: 9 / 410, Time: 2.4, FR training L2 loss 101.51, FR validation L2 loss 67.46, FNR 95.11 %
+[03/16/2021 20:00:55] {complexTrain.py:233} INFO - Epochs: 10 / 410, Time: 2.4, FR training L2 loss 461.02, FR validation L2 loss 322.52, FNR 95.78 %
+[03/16/2021 20:00:57] {complexTrain.py:233} INFO - Epochs: 11 / 410, Time: 2.4, FR training L2 loss 76.59, FR validation L2 loss 64.53, FNR 95.86 %
+[03/16/2021 20:01:00] {complexTrain.py:233} INFO - Epochs: 12 / 410, Time: 2.4, FR training L2 loss 57.72, FR validation L2 loss 56.63, FNR 96.15 %
+[03/16/2021 20:01:02] {complexTrain.py:233} INFO - Epochs: 13 / 410, Time: 2.4, FR training L2 loss 59.62, FR validation L2 loss 52.74, FNR 96.35 %
+[03/16/2021 20:01:04] {complexTrain.py:233} INFO - Epochs: 14 / 410, Time: 2.4, FR training L2 loss 430.64, FR validation L2 loss 255.71, FNR 95.75 %
+[03/16/2021 20:01:07] {complexTrain.py:233} INFO - Epochs: 15 / 410, Time: 2.4, FR training L2 loss 57.40, FR validation L2 loss 54.82, FNR 95.71 %
+[03/16/2021 20:01:09] {complexTrain.py:233} INFO - Epochs: 16 / 410, Time: 2.4, FR training L2 loss 65.44, FR validation L2 loss 65.20, FNR 96.20 %
+[03/16/2021 20:01:12] {complexTrain.py:233} INFO - Epochs: 17 / 410, Time: 2.4, FR training L2 loss 63.75, FR validation L2 loss 54.73, FNR 96.25 %
+[03/16/2021 20:01:14] {complexTrain.py:233} INFO - Epochs: 18 / 410, Time: 2.4, FR training L2 loss 79.15, FR validation L2 loss 185.04, FNR 96.16 %
+[03/16/2021 20:01:16] {complexTrain.py:233} INFO - Epochs: 19 / 410, Time: 2.4, FR training L2 loss 166.77, FR validation L2 loss 106.35, FNR 96.93 %
+[03/16/2021 20:01:19] {complexTrain.py:233} INFO - Epochs: 20 / 410, Time: 2.4, FR training L2 loss 64.42, FR validation L2 loss 410.07, FNR 97.69 %
+[03/16/2021 20:01:21] {complexTrain.py:233} INFO - Epochs: 21 / 410, Time: 2.4, FR training L2 loss 64.07, FR validation L2 loss 52.87, FNR 92.55 %
+[03/16/2021 20:01:24] {complexTrain.py:233} INFO - Epochs: 22 / 410, Time: 2.4, FR training L2 loss 52.16, FR validation L2 loss 50.81, FNR 87.38 %
+[03/16/2021 20:01:26] {complexTrain.py:233} INFO - Epochs: 23 / 410, Time: 2.4, FR training L2 loss 56.43, FR validation L2 loss 56.37, FNR 85.73 %
+[03/16/2021 20:01:28] {complexTrain.py:233} INFO - Epochs: 24 / 410, Time: 2.4, FR training L2 loss 52.14, FR validation L2 loss 50.56, FNR 79.47 %
+[03/16/2021 20:01:31] {complexTrain.py:233} INFO - Epochs: 25 / 410, Time: 2.4, FR training L2 loss 50.18, FR validation L2 loss 49.94, FNR 78.53 %
+[03/16/2021 20:01:33] {complexTrain.py:233} INFO - Epochs: 26 / 410, Time: 2.4, FR training L2 loss 48.83, FR validation L2 loss 87.01, FNR 76.07 %
+[03/16/2021 20:01:35] {complexTrain.py:233} INFO - Epochs: 27 / 410, Time: 2.4, FR training L2 loss 46.17, FR validation L2 loss 46.44, FNR 74.05 %
+[03/16/2021 20:01:38] {complexTrain.py:233} INFO - Epochs: 28 / 410, Time: 2.4, FR training L2 loss 44.99, FR validation L2 loss 48.78, FNR 73.31 %
+[03/16/2021 20:01:40] {complexTrain.py:233} INFO - Epochs: 29 / 410, Time: 2.4, FR training L2 loss 53.23, FR validation L2 loss 50.36, FNR 70.27 %
+[03/16/2021 20:01:43] {complexTrain.py:233} INFO - Epochs: 30 / 410, Time: 2.4, FR training L2 loss 39.10, FR validation L2 loss 46.60, FNR 68.07 %
+[03/16/2021 20:01:45] {complexTrain.py:233} INFO - Epochs: 31 / 410, Time: 2.4, FR training L2 loss 38.97, FR validation L2 loss 47.31, FNR 68.43 %
+[03/16/2021 20:01:47] {complexTrain.py:233} INFO - Epochs: 32 / 410, Time: 2.4, FR training L2 loss 38.22, FR validation L2 loss 52.30, FNR 68.32 %
+[03/16/2021 20:01:50] {complexTrain.py:233} INFO - Epochs: 33 / 410, Time: 2.4, FR training L2 loss 41.59, FR validation L2 loss 46.42, FNR 65.65 %
+[03/16/2021 20:01:52] {complexTrain.py:233} INFO - Epochs: 34 / 410, Time: 2.4, FR training L2 loss 34.35, FR validation L2 loss 46.78, FNR 65.04 %
+[03/16/2021 20:01:54] {complexTrain.py:233} INFO - Epochs: 35 / 410, Time: 2.4, FR training L2 loss 34.86, FR validation L2 loss 47.69, FNR 64.52 %
+[03/16/2021 20:01:57] {complexTrain.py:233} INFO - Epochs: 36 / 410, Time: 2.3, FR training L2 loss 32.67, FR validation L2 loss 46.15, FNR 62.80 %
+[03/16/2021 20:01:59] {complexTrain.py:233} INFO - Epochs: 37 / 410, Time: 2.4, FR training L2 loss 33.23, FR validation L2 loss 48.07, FNR 64.84 %
+[03/16/2021 20:02:02] {complexTrain.py:233} INFO - Epochs: 38 / 410, Time: 2.4, FR training L2 loss 30.76, FR validation L2 loss 47.05, FNR 62.95 %
+[03/16/2021 20:02:04] {complexTrain.py:233} INFO - Epochs: 39 / 410, Time: 2.4, FR training L2 loss 30.91, FR validation L2 loss 47.37, FNR 61.01 %
+[03/16/2021 20:02:06] {complexTrain.py:233} INFO - Epochs: 40 / 410, Time: 2.4, FR training L2 loss 28.73, FR validation L2 loss 47.80, FNR 61.63 %
+[03/16/2021 20:02:09] {complexTrain.py:233} INFO - Epochs: 41 / 410, Time: 2.4, FR training L2 loss 28.73, FR validation L2 loss 49.76, FNR 61.05 %
+[03/16/2021 20:02:11] {complexTrain.py:233} INFO - Epochs: 42 / 410, Time: 2.4, FR training L2 loss 27.69, FR validation L2 loss 48.51, FNR 60.49 %
+[03/16/2021 20:02:13] {complexTrain.py:233} INFO - Epochs: 43 / 410, Time: 2.4, FR training L2 loss 26.98, FR validation L2 loss 48.87, FNR 61.22 %
+[03/16/2021 20:02:16] {complexTrain.py:233} INFO - Epochs: 44 / 410, Time: 2.4, FR training L2 loss 27.26, FR validation L2 loss 49.10, FNR 60.18 %
+[03/16/2021 20:02:18] {complexTrain.py:233} INFO - Epochs: 45 / 410, Time: 2.4, FR training L2 loss 23.40, FR validation L2 loss 47.41, FNR 58.55 %
+[03/16/2021 20:02:21] {complexTrain.py:233} INFO - Epochs: 46 / 410, Time: 2.4, FR training L2 loss 23.11, FR validation L2 loss 47.46, FNR 56.73 %
+[03/16/2021 20:02:23] {complexTrain.py:233} INFO - Epochs: 47 / 410, Time: 2.4, FR training L2 loss 23.87, FR validation L2 loss 51.83, FNR 58.36 %
+[03/16/2021 20:02:25] {complexTrain.py:233} INFO - Epochs: 48 / 410, Time: 2.4, FR training L2 loss 24.48, FR validation L2 loss 48.63, FNR 57.11 %
+[03/16/2021 20:02:28] {complexTrain.py:233} INFO - Epochs: 49 / 410, Time: 2.4, FR training L2 loss 23.92, FR validation L2 loss 51.63, FNR 57.21 %
+[03/16/2021 20:02:30] {complexTrain.py:233} INFO - Epochs: 50 / 410, Time: 2.4, FR training L2 loss 22.86, FR validation L2 loss 48.16, FNR 57.28 %
+[03/16/2021 20:02:32] {complexTrain.py:233} INFO - Epochs: 51 / 410, Time: 2.4, FR training L2 loss 22.11, FR validation L2 loss 48.92, FNR 56.54 %
+[03/16/2021 20:02:35] {complexTrain.py:233} INFO - Epochs: 52 / 410, Time: 2.4, FR training L2 loss 22.32, FR validation L2 loss 49.37, FNR 56.22 %
+[03/16/2021 20:02:37] {complexTrain.py:233} INFO - Epochs: 53 / 410, Time: 2.4, FR training L2 loss 21.31, FR validation L2 loss 48.06, FNR 55.54 %
+[03/16/2021 20:02:40] {complexTrain.py:233} INFO - Epochs: 54 / 410, Time: 2.4, FR training L2 loss 21.57, FR validation L2 loss 47.31, FNR 55.65 %
+[03/16/2021 20:02:42] {complexTrain.py:233} INFO - Epochs: 55 / 410, Time: 2.4, FR training L2 loss 21.63, FR validation L2 loss 49.43, FNR 54.98 %
+[03/16/2021 20:02:44] {complexTrain.py:233} INFO - Epochs: 56 / 410, Time: 2.4, FR training L2 loss 21.73, FR validation L2 loss 49.14, FNR 54.82 %
+[03/16/2021 20:02:47] {complexTrain.py:233} INFO - Epochs: 57 / 410, Time: 2.4, FR training L2 loss 20.69, FR validation L2 loss 48.44, FNR 55.27 %
+[03/16/2021 20:02:49] {complexTrain.py:233} INFO - Epochs: 58 / 410, Time: 2.4, FR training L2 loss 19.96, FR validation L2 loss 48.86, FNR 54.79 %
+[03/16/2021 20:02:52] {complexTrain.py:233} INFO - Epochs: 59 / 410, Time: 2.4, FR training L2 loss 20.29, FR validation L2 loss 48.05, FNR 55.08 %
+[03/16/2021 20:02:54] {complexTrain.py:233} INFO - Epochs: 60 / 410, Time: 2.4, FR training L2 loss 20.64, FR validation L2 loss 48.02, FNR 55.10 %
+[03/16/2021 20:02:56] {complexTrain.py:233} INFO - Epochs: 61 / 410, Time: 2.4, FR training L2 loss 19.93, FR validation L2 loss 48.03, FNR 55.32 %
+[03/16/2021 20:02:59] {complexTrain.py:233} INFO - Epochs: 62 / 410, Time: 2.4, FR training L2 loss 19.87, FR validation L2 loss 48.07, FNR 55.10 %
+[03/16/2021 20:03:01] {complexTrain.py:233} INFO - Epochs: 63 / 410, Time: 2.4, FR training L2 loss 19.73, FR validation L2 loss 48.48, FNR 54.93 %
+[03/16/2021 20:03:03] {complexTrain.py:233} INFO - Epochs: 64 / 410, Time: 2.4, FR training L2 loss 20.38, FR validation L2 loss 48.42, FNR 54.92 %
+[03/16/2021 20:03:06] {complexTrain.py:233} INFO - Epochs: 65 / 410, Time: 2.4, FR training L2 loss 20.05, FR validation L2 loss 48.43, FNR 54.96 %
+[03/16/2021 20:03:08] {complexTrain.py:233} INFO - Epochs: 66 / 410, Time: 2.4, FR training L2 loss 20.12, FR validation L2 loss 48.97, FNR 55.02 %
+[03/16/2021 20:03:11] {complexTrain.py:233} INFO - Epochs: 67 / 410, Time: 2.4, FR training L2 loss 20.12, FR validation L2 loss 48.45, FNR 54.51 %
+[03/16/2021 20:03:13] {complexTrain.py:233} INFO - Epochs: 68 / 410, Time: 2.4, FR training L2 loss 19.27, FR validation L2 loss 48.77, FNR 54.64 %
+[03/16/2021 20:03:15] {complexTrain.py:233} INFO - Epochs: 69 / 410, Time: 2.4, FR training L2 loss 19.23, FR validation L2 loss 48.77, FNR 54.69 %
+[03/16/2021 20:03:18] {complexTrain.py:233} INFO - Epochs: 70 / 410, Time: 2.4, FR training L2 loss 19.29, FR validation L2 loss 48.44, FNR 54.85 %
+[03/16/2021 20:03:20] {complexTrain.py:233} INFO - Epochs: 71 / 410, Time: 2.4, FR training L2 loss 19.64, FR validation L2 loss 48.56, FNR 54.57 %
+[03/16/2021 20:03:22] {complexTrain.py:233} INFO - Epochs: 72 / 410, Time: 2.4, FR training L2 loss 20.00, FR validation L2 loss 48.52, FNR 55.13 %
+[03/16/2021 20:03:25] {complexTrain.py:233} INFO - Epochs: 73 / 410, Time: 2.4, FR training L2 loss 19.18, FR validation L2 loss 48.34, FNR 55.02 %
+[03/16/2021 20:03:27] {complexTrain.py:233} INFO - Epochs: 74 / 410, Time: 2.4, FR training L2 loss 19.70, FR validation L2 loss 48.65, FNR 54.71 %
+[03/16/2021 20:03:30] {complexTrain.py:233} INFO - Epochs: 75 / 410, Time: 2.4, FR training L2 loss 19.05, FR validation L2 loss 48.56, FNR 54.34 %
+[03/16/2021 20:03:32] {complexTrain.py:233} INFO - Epochs: 76 / 410, Time: 2.4, FR training L2 loss 19.50, FR validation L2 loss 48.21, FNR 54.50 %
+[03/16/2021 20:03:34] {complexTrain.py:233} INFO - Epochs: 77 / 410, Time: 2.4, FR training L2 loss 18.89, FR validation L2 loss 48.27, FNR 54.68 %
+[03/16/2021 20:03:37] {complexTrain.py:233} INFO - Epochs: 78 / 410, Time: 2.4, FR training L2 loss 20.63, FR validation L2 loss 48.38, FNR 54.69 %
+[03/16/2021 20:03:39] {complexTrain.py:233} INFO - Epochs: 79 / 410, Time: 2.4, FR training L2 loss 18.86, FR validation L2 loss 48.32, FNR 54.92 %
+[03/16/2021 20:03:41] {complexTrain.py:233} INFO - Epochs: 80 / 410, Time: 2.4, FR training L2 loss 20.03, FR validation L2 loss 48.08, FNR 54.66 %
+[03/16/2021 20:03:44] {complexTrain.py:233} INFO - Epochs: 81 / 410, Time: 2.4, FR training L2 loss 18.99, FR validation L2 loss 48.13, FNR 54.46 %
+[03/16/2021 20:03:46] {complexTrain.py:233} INFO - Epochs: 82 / 410, Time: 2.4, FR training L2 loss 19.34, FR validation L2 loss 48.28, FNR 54.54 %
+[03/16/2021 20:03:49] {complexTrain.py:233} INFO - Epochs: 83 / 410, Time: 2.4, FR training L2 loss 18.44, FR validation L2 loss 48.08, FNR 54.49 %
+[03/16/2021 20:03:51] {complexTrain.py:233} INFO - Epochs: 84 / 410, Time: 2.4, FR training L2 loss 18.79, FR validation L2 loss 48.34, FNR 54.53 %
+[03/16/2021 20:03:53] {complexTrain.py:233} INFO - Epochs: 85 / 410, Time: 2.4, FR training L2 loss 19.87, FR validation L2 loss 48.34, FNR 54.46 %
+[03/16/2021 20:03:56] {complexTrain.py:233} INFO - Epochs: 86 / 410, Time: 2.4, FR training L2 loss 19.02, FR validation L2 loss 48.37, FNR 54.49 %
+[03/16/2021 20:03:58] {complexTrain.py:233} INFO - Epochs: 87 / 410, Time: 2.4, FR training L2 loss 18.29, FR validation L2 loss 48.45, FNR 54.53 %
+[03/16/2021 20:04:01] {complexTrain.py:233} INFO - Epochs: 88 / 410, Time: 2.4, FR training L2 loss 18.60, FR validation L2 loss 48.51, FNR 54.48 %
+[03/16/2021 20:04:03] {complexTrain.py:233} INFO - Epochs: 89 / 410, Time: 2.4, FR training L2 loss 18.62, FR validation L2 loss 48.43, FNR 54.47 %
+[03/16/2021 20:04:05] {complexTrain.py:233} INFO - Epochs: 90 / 410, Time: 2.4, FR training L2 loss 19.10, FR validation L2 loss 48.30, FNR 54.49 %
+[03/16/2021 20:04:08] {complexTrain.py:233} INFO - Epochs: 91 / 410, Time: 2.4, FR training L2 loss 19.25, FR validation L2 loss 48.35, FNR 54.59 %
+[03/16/2021 20:04:10] {complexTrain.py:233} INFO - Epochs: 92 / 410, Time: 2.4, FR training L2 loss 18.20, FR validation L2 loss 48.36, FNR 54.57 %
+[03/16/2021 20:04:13] {complexTrain.py:233} INFO - Epochs: 93 / 410, Time: 2.4, FR training L2 loss 18.03, FR validation L2 loss 48.40, FNR 54.68 %
+[03/16/2021 20:04:15] {complexTrain.py:233} INFO - Epochs: 94 / 410, Time: 2.4, FR training L2 loss 18.75, FR validation L2 loss 48.46, FNR 54.46 %
+[03/16/2021 20:04:17] {complexTrain.py:233} INFO - Epochs: 95 / 410, Time: 2.4, FR training L2 loss 18.93, FR validation L2 loss 48.37, FNR 54.60 %
+[03/16/2021 20:04:20] {complexTrain.py:233} INFO - Epochs: 96 / 410, Time: 2.4, FR training L2 loss 18.66, FR validation L2 loss 48.36, FNR 54.60 %
+[03/16/2021 20:04:22] {complexTrain.py:233} INFO - Epochs: 97 / 410, Time: 2.4, FR training L2 loss 19.26, FR validation L2 loss 48.28, FNR 54.55 %
+[03/16/2021 20:04:25] {complexTrain.py:233} INFO - Epochs: 98 / 410, Time: 2.4, FR training L2 loss 18.80, FR validation L2 loss 48.47, FNR 54.47 %
+[03/16/2021 20:04:27] {complexTrain.py:233} INFO - Epochs: 99 / 410, Time: 2.4, FR training L2 loss 19.38, FR validation L2 loss 48.17, FNR 54.41 %
+[03/16/2021 20:04:29] {complexTrain.py:233} INFO - Epochs: 100 / 410, Time: 2.4, FR training L2 loss 18.95, FR validation L2 loss 48.16, FNR 54.58 %
+[03/16/2021 20:04:32] {complexTrain.py:233} INFO - Epochs: 101 / 410, Time: 2.4, FR training L2 loss 19.16, FR validation L2 loss 48.31, FNR 54.64 %
+[03/16/2021 20:04:34] {complexTrain.py:233} INFO - Epochs: 102 / 410, Time: 2.4, FR training L2 loss 18.48, FR validation L2 loss 48.30, FNR 54.48 %
+[03/16/2021 20:04:37] {complexTrain.py:233} INFO - Epochs: 103 / 410, Time: 2.4, FR training L2 loss 19.61, FR validation L2 loss 48.24, FNR 54.79 %
+[03/16/2021 20:04:39] {complexTrain.py:233} INFO - Epochs: 104 / 410, Time: 2.4, FR training L2 loss 18.65, FR validation L2 loss 48.39, FNR 54.50 %
+[03/16/2021 20:04:41] {complexTrain.py:233} INFO - Epochs: 105 / 410, Time: 2.4, FR training L2 loss 19.66, FR validation L2 loss 48.34, FNR 54.64 %
+[03/16/2021 20:04:44] {complexTrain.py:233} INFO - Epochs: 106 / 410, Time: 2.4, FR training L2 loss 19.86, FR validation L2 loss 48.26, FNR 54.73 %
+[03/16/2021 20:04:46] {complexTrain.py:233} INFO - Epochs: 107 / 410, Time: 2.4, FR training L2 loss 18.77, FR validation L2 loss 48.22, FNR 54.48 %
+[03/16/2021 20:04:49] {complexTrain.py:233} INFO - Epochs: 108 / 410, Time: 2.4, FR training L2 loss 19.65, FR validation L2 loss 48.23, FNR 54.48 %
+[03/16/2021 20:04:51] {complexTrain.py:233} INFO - Epochs: 109 / 410, Time: 2.4, FR training L2 loss 20.57, FR validation L2 loss 48.29, FNR 54.45 %
+[03/16/2021 20:04:53] {complexTrain.py:233} INFO - Epochs: 110 / 410, Time: 2.4, FR training L2 loss 19.96, FR validation L2 loss 48.43, FNR 54.62 %
+[03/16/2021 20:04:56] {complexTrain.py:233} INFO - Epochs: 111 / 410, Time: 2.4, FR training L2 loss 19.18, FR validation L2 loss 48.35, FNR 54.64 %
+[03/16/2021 20:04:58] {complexTrain.py:233} INFO - Epochs: 112 / 410, Time: 2.4, FR training L2 loss 19.52, FR validation L2 loss 48.38, FNR 54.66 %
+[03/16/2021 20:05:00] {complexTrain.py:233} INFO - Epochs: 113 / 410, Time: 2.4, FR training L2 loss 19.18, FR validation L2 loss 48.39, FNR 54.55 %
+[03/16/2021 20:05:03] {complexTrain.py:233} INFO - Epochs: 114 / 410, Time: 2.4, FR training L2 loss 19.24, FR validation L2 loss 48.25, FNR 54.61 %
+[03/16/2021 20:05:05] {complexTrain.py:233} INFO - Epochs: 115 / 410, Time: 2.4, FR training L2 loss 20.10, FR validation L2 loss 48.42, FNR 54.54 %
+[03/16/2021 20:05:08] {complexTrain.py:233} INFO - Epochs: 116 / 410, Time: 2.4, FR training L2 loss 19.24, FR validation L2 loss 48.39, FNR 54.56 %
+[03/16/2021 20:05:10] {complexTrain.py:233} INFO - Epochs: 117 / 410, Time: 2.4, FR training L2 loss 19.28, FR validation L2 loss 48.28, FNR 54.67 %
+[03/16/2021 20:05:12] {complexTrain.py:233} INFO - Epochs: 118 / 410, Time: 2.4, FR training L2 loss 19.43, FR validation L2 loss 48.36, FNR 54.62 %
+[03/16/2021 20:05:15] {complexTrain.py:233} INFO - Epochs: 119 / 410, Time: 2.4, FR training L2 loss 17.80, FR validation L2 loss 48.27, FNR 54.61 %
+[03/16/2021 20:05:17] {complexTrain.py:233} INFO - Epochs: 120 / 410, Time: 2.4, FR training L2 loss 18.87, FR validation L2 loss 48.21, FNR 54.49 %
+[03/16/2021 20:05:20] {complexTrain.py:233} INFO - Epochs: 121 / 410, Time: 2.4, FR training L2 loss 18.91, FR validation L2 loss 48.51, FNR 54.58 %
+[03/16/2021 20:05:22] {complexTrain.py:233} INFO - Epochs: 122 / 410, Time: 2.4, FR training L2 loss 18.26, FR validation L2 loss 48.36, FNR 54.68 %
+[03/16/2021 20:05:24] {complexTrain.py:233} INFO - Epochs: 123 / 410, Time: 2.4, FR training L2 loss 19.32, FR validation L2 loss 48.33, FNR 54.67 %
+[03/16/2021 20:05:27] {complexTrain.py:233} INFO - Epochs: 124 / 410, Time: 2.4, FR training L2 loss 19.57, FR validation L2 loss 48.21, FNR 54.69 %
+[03/16/2021 20:05:29] {complexTrain.py:233} INFO - Epochs: 125 / 410, Time: 2.4, FR training L2 loss 18.96, FR validation L2 loss 48.12, FNR 54.62 %
+[03/16/2021 20:05:32] {complexTrain.py:233} INFO - Epochs: 126 / 410, Time: 2.6, FR training L2 loss 19.40, FR validation L2 loss 48.56, FNR 54.59 %
+[03/16/2021 20:05:35] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 1000                          
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:05:45] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M
+[03/16/2021 20:05:49] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 4.7, FR training L2 loss 7894.82, FR validation L2 loss 420.97, FNR 94.81 %
+[03/16/2021 20:05:52] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 2.5, FR training L2 loss 1118.30, FR validation L2 loss 492.11, FNR 95.20 %
+[03/16/2021 20:05:54] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 2.5, FR training L2 loss 741.50, FR validation L2 loss 375.69, FNR 94.83 %
+[03/16/2021 20:05:57] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 2.5, FR training L2 loss 604.70, FR validation L2 loss 333.14, FNR 95.02 %
+[03/16/2021 20:05:59] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 2.5, FR training L2 loss 470.20, FR validation L2 loss 217.83, FNR 94.81 %
+[03/16/2021 20:06:02] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 2.4, FR training L2 loss 333.89, FR validation L2 loss 136.59, FNR 94.65 %
+[03/16/2021 20:06:04] {complexTrain.py:233} INFO - Epochs: 7 / 410, Time: 2.5, FR training L2 loss 270.26, FR validation L2 loss 174.92, FNR 94.22 %
+[03/16/2021 20:06:06] {complexTrain.py:233} INFO - Epochs: 8 / 410, Time: 2.5, FR training L2 loss 254.21, FR validation L2 loss 148.73, FNR 94.73 %
+[03/16/2021 20:06:09] {complexTrain.py:233} INFO - Epochs: 9 / 410, Time: 2.5, FR training L2 loss 196.94, FR validation L2 loss 127.12, FNR 95.03 %
+[03/16/2021 20:06:11] {complexTrain.py:233} INFO - Epochs: 10 / 410, Time: 2.5, FR training L2 loss 176.66, FR validation L2 loss 97.61, FNR 95.12 %
+[03/16/2021 20:06:14] {complexTrain.py:233} INFO - Epochs: 11 / 410, Time: 2.5, FR training L2 loss 146.15, FR validation L2 loss 121.50, FNR 94.77 %
+[03/16/2021 20:06:16] {complexTrain.py:233} INFO - Epochs: 12 / 410, Time: 2.4, FR training L2 loss 136.60, FR validation L2 loss 82.68, FNR 94.93 %
+[03/16/2021 20:06:19] {complexTrain.py:233} INFO - Epochs: 13 / 410, Time: 2.5, FR training L2 loss 112.67, FR validation L2 loss 65.61, FNR 94.42 %
+[03/16/2021 20:06:21] {complexTrain.py:233} INFO - Epochs: 14 / 410, Time: 2.4, FR training L2 loss 108.64, FR validation L2 loss 299.32, FNR 95.29 %
+[03/16/2021 20:06:24] {complexTrain.py:233} INFO - Epochs: 15 / 410, Time: 2.5, FR training L2 loss 82.42, FR validation L2 loss 65.42, FNR 94.75 %
+[03/16/2021 20:06:26] {complexTrain.py:233} INFO - Epochs: 16 / 410, Time: 2.4, FR training L2 loss 76.88, FR validation L2 loss 87.04, FNR 94.54 %
+[03/16/2021 20:06:29] {complexTrain.py:233} INFO - Epochs: 17 / 410, Time: 2.5, FR training L2 loss 70.88, FR validation L2 loss 57.45, FNR 94.37 %
+[03/16/2021 20:06:31] {complexTrain.py:233} INFO - Epochs: 18 / 410, Time: 2.4, FR training L2 loss 69.09, FR validation L2 loss 56.93, FNR 94.15 %
+[03/16/2021 20:06:34] {complexTrain.py:233} INFO - Epochs: 19 / 410, Time: 2.5, FR training L2 loss 57.66, FR validation L2 loss 58.82, FNR 92.80 %
+[03/16/2021 20:06:36] {complexTrain.py:233} INFO - Epochs: 20 / 410, Time: 2.5, FR training L2 loss 59.62, FR validation L2 loss 55.28, FNR 92.91 %
+[03/16/2021 20:06:39] {complexTrain.py:233} INFO - Epochs: 21 / 410, Time: 2.5, FR training L2 loss 56.49, FR validation L2 loss 105.95, FNR 95.23 %
+[03/16/2021 20:06:41] {complexTrain.py:233} INFO - Epochs: 22 / 410, Time: 2.5, FR training L2 loss 56.66, FR validation L2 loss 53.78, FNR 93.42 %
+[03/16/2021 20:06:43] {complexTrain.py:233} INFO - Epochs: 23 / 410, Time: 2.4, FR training L2 loss 54.80, FR validation L2 loss 53.02, FNR 91.22 %
+[03/16/2021 20:06:46] {complexTrain.py:233} INFO - Epochs: 24 / 410, Time: 2.4, FR training L2 loss 57.27, FR validation L2 loss 53.50, FNR 91.93 %
+[03/16/2021 20:06:48] {complexTrain.py:233} INFO - Epochs: 25 / 410, Time: 2.5, FR training L2 loss 54.23, FR validation L2 loss 53.01, FNR 93.26 %
+[03/16/2021 20:06:51] {complexTrain.py:233} INFO - Epochs: 26 / 410, Time: 2.4, FR training L2 loss 54.06, FR validation L2 loss 56.41, FNR 91.89 %
+[03/16/2021 20:06:53] {complexTrain.py:233} INFO - Epochs: 27 / 410, Time: 2.5, FR training L2 loss 58.60, FR validation L2 loss 52.12, FNR 90.57 %
+[03/16/2021 20:06:56] {complexTrain.py:233} INFO - Epochs: 28 / 410, Time: 2.4, FR training L2 loss 52.68, FR validation L2 loss 51.43, FNR 87.03 %
+[03/16/2021 20:06:58] {complexTrain.py:233} INFO - Epochs: 29 / 410, Time: 2.5, FR training L2 loss 52.47, FR validation L2 loss 50.88, FNR 85.98 %
+[03/16/2021 20:07:01] {complexTrain.py:233} INFO - Epochs: 30 / 410, Time: 2.4, FR training L2 loss 51.34, FR validation L2 loss 50.31, FNR 84.18 %
+[03/16/2021 20:07:03] {complexTrain.py:233} INFO - Epochs: 31 / 410, Time: 2.5, FR training L2 loss 50.88, FR validation L2 loss 50.30, FNR 84.57 %
+[03/16/2021 20:07:06] {complexTrain.py:233} INFO - Epochs: 32 / 410, Time: 2.4, FR training L2 loss 49.93, FR validation L2 loss 48.75, FNR 85.30 %
+[03/16/2021 20:07:08] {complexTrain.py:233} INFO - Epochs: 33 / 410, Time: 2.4, FR training L2 loss 48.85, FR validation L2 loss 49.22, FNR 78.74 %
+[03/16/2021 20:07:10] {complexTrain.py:233} INFO - Epochs: 34 / 410, Time: 2.5, FR training L2 loss 48.37, FR validation L2 loss 48.45, FNR 76.65 %
+[03/16/2021 20:07:13] {complexTrain.py:233} INFO - Epochs: 35 / 410, Time: 2.5, FR training L2 loss 47.32, FR validation L2 loss 47.32, FNR 73.95 %
+[03/16/2021 20:07:15] {complexTrain.py:233} INFO - Epochs: 36 / 410, Time: 2.4, FR training L2 loss 46.02, FR validation L2 loss 45.87, FNR 62.73 %
+[03/16/2021 20:07:18] {complexTrain.py:233} INFO - Epochs: 37 / 410, Time: 2.4, FR training L2 loss 45.10, FR validation L2 loss 44.43, FNR 66.52 %
+[03/16/2021 20:07:20] {complexTrain.py:233} INFO - Epochs: 38 / 410, Time: 2.4, FR training L2 loss 42.67, FR validation L2 loss 43.89, FNR 64.87 %
+[03/16/2021 20:07:23] {complexTrain.py:233} INFO - Epochs: 39 / 410, Time: 2.4, FR training L2 loss 40.65, FR validation L2 loss 43.03, FNR 64.36 %
+[03/16/2021 20:07:25] {complexTrain.py:233} INFO - Epochs: 40 / 410, Time: 2.4, FR training L2 loss 39.10, FR validation L2 loss 47.11, FNR 62.36 %
+[03/16/2021 20:07:28] {complexTrain.py:233} INFO - Epochs: 41 / 410, Time: 2.5, FR training L2 loss 37.34, FR validation L2 loss 43.03, FNR 63.92 %
+[03/16/2021 20:07:30] {complexTrain.py:233} INFO - Epochs: 42 / 410, Time: 2.4, FR training L2 loss 35.06, FR validation L2 loss 43.58, FNR 63.25 %
+[03/16/2021 20:07:32] {complexTrain.py:233} INFO - Epochs: 43 / 410, Time: 2.5, FR training L2 loss 34.62, FR validation L2 loss 43.49, FNR 61.89 %
+[03/16/2021 20:07:35] {complexTrain.py:233} INFO - Epochs: 44 / 410, Time: 2.4, FR training L2 loss 31.90, FR validation L2 loss 43.67, FNR 60.92 %
+[03/16/2021 20:07:37] {complexTrain.py:233} INFO - Epochs: 45 / 410, Time: 2.4, FR training L2 loss 30.36, FR validation L2 loss 45.47, FNR 59.97 %
+[03/16/2021 20:07:40] {complexTrain.py:233} INFO - Epochs: 46 / 410, Time: 2.5, FR training L2 loss 29.34, FR validation L2 loss 44.80, FNR 60.46 %
+[03/16/2021 20:07:42] {complexTrain.py:233} INFO - Epochs: 47 / 410, Time: 2.4, FR training L2 loss 28.22, FR validation L2 loss 45.40, FNR 62.01 %
+[03/16/2021 20:07:45] {complexTrain.py:233} INFO - Epochs: 48 / 410, Time: 2.4, FR training L2 loss 23.87, FR validation L2 loss 45.70, FNR 58.70 %
+[03/16/2021 20:07:47] {complexTrain.py:233} INFO - Epochs: 49 / 410, Time: 2.4, FR training L2 loss 22.66, FR validation L2 loss 46.43, FNR 57.63 %
+[03/16/2021 20:07:50] {complexTrain.py:233} INFO - Epochs: 50 / 410, Time: 2.4, FR training L2 loss 21.89, FR validation L2 loss 46.98, FNR 58.26 %
+[03/16/2021 20:07:52] {complexTrain.py:233} INFO - Epochs: 51 / 410, Time: 2.4, FR training L2 loss 21.06, FR validation L2 loss 47.68, FNR 56.69 %
+[03/16/2021 20:07:54] {complexTrain.py:233} INFO - Epochs: 52 / 410, Time: 2.4, FR training L2 loss 21.66, FR validation L2 loss 47.49, FNR 58.21 %
+[03/16/2021 20:07:57] {complexTrain.py:233} INFO - Epochs: 53 / 410, Time: 2.4, FR training L2 loss 20.88, FR validation L2 loss 47.80, FNR 56.80 %
+[03/16/2021 20:07:59] {complexTrain.py:233} INFO - Epochs: 54 / 410, Time: 2.4, FR training L2 loss 20.06, FR validation L2 loss 47.11, FNR 55.22 %
+[03/16/2021 20:08:02] {complexTrain.py:233} INFO - Epochs: 55 / 410, Time: 2.4, FR training L2 loss 19.73, FR validation L2 loss 47.54, FNR 55.91 %
+[03/16/2021 20:08:04] {complexTrain.py:233} INFO - Epochs: 56 / 410, Time: 2.4, FR training L2 loss 18.49, FR validation L2 loss 48.10, FNR 55.15 %
+[03/16/2021 20:08:07] {complexTrain.py:233} INFO - Epochs: 57 / 410, Time: 2.4, FR training L2 loss 18.51, FR validation L2 loss 47.42, FNR 54.96 %
+[03/16/2021 20:08:09] {complexTrain.py:233} INFO - Epochs: 58 / 410, Time: 2.4, FR training L2 loss 19.06, FR validation L2 loss 48.05, FNR 54.77 %
+[03/16/2021 20:08:11] {complexTrain.py:233} INFO - Epochs: 59 / 410, Time: 2.4, FR training L2 loss 17.36, FR validation L2 loss 47.95, FNR 54.79 %
+[03/16/2021 20:08:14] {complexTrain.py:233} INFO - Epochs: 60 / 410, Time: 2.4, FR training L2 loss 17.62, FR validation L2 loss 48.08, FNR 54.42 %
+[03/16/2021 20:08:16] {complexTrain.py:233} INFO - Epochs: 61 / 410, Time: 2.4, FR training L2 loss 18.26, FR validation L2 loss 48.12, FNR 54.52 %
+[03/16/2021 20:08:19] {complexTrain.py:233} INFO - Epochs: 62 / 410, Time: 2.5, FR training L2 loss 18.25, FR validation L2 loss 48.13, FNR 55.12 %
+[03/16/2021 20:08:21] {complexTrain.py:233} INFO - Epochs: 63 / 410, Time: 2.4, FR training L2 loss 18.03, FR validation L2 loss 47.98, FNR 54.66 %
+[03/16/2021 20:08:24] {complexTrain.py:233} INFO - Epochs: 64 / 410, Time: 2.5, FR training L2 loss 18.08, FR validation L2 loss 48.03, FNR 53.67 %
+[03/16/2021 20:08:26] {complexTrain.py:233} INFO - Epochs: 65 / 410, Time: 2.4, FR training L2 loss 17.95, FR validation L2 loss 48.22, FNR 53.70 %
+[03/16/2021 20:08:29] {complexTrain.py:233} INFO - Epochs: 66 / 410, Time: 2.5, FR training L2 loss 17.60, FR validation L2 loss 48.26, FNR 53.58 %
+[03/16/2021 20:08:31] {complexTrain.py:233} INFO - Epochs: 67 / 410, Time: 2.4, FR training L2 loss 16.53, FR validation L2 loss 48.01, FNR 53.80 %
+[03/16/2021 20:08:33] {complexTrain.py:233} INFO - Epochs: 68 / 410, Time: 2.5, FR training L2 loss 16.73, FR validation L2 loss 48.71, FNR 53.39 %
+[03/16/2021 20:08:36] {complexTrain.py:233} INFO - Epochs: 69 / 410, Time: 2.4, FR training L2 loss 16.17, FR validation L2 loss 48.27, FNR 53.42 %
+[03/16/2021 20:08:38] {complexTrain.py:233} INFO - Epochs: 70 / 410, Time: 2.5, FR training L2 loss 16.31, FR validation L2 loss 48.71, FNR 53.20 %
+[03/16/2021 20:08:41] {complexTrain.py:233} INFO - Epochs: 71 / 410, Time: 2.4, FR training L2 loss 17.52, FR validation L2 loss 48.59, FNR 53.28 %
+[03/16/2021 20:08:43] {complexTrain.py:233} INFO - Epochs: 72 / 410, Time: 2.4, FR training L2 loss 17.00, FR validation L2 loss 48.13, FNR 52.84 %
+[03/16/2021 20:08:46] {complexTrain.py:233} INFO - Epochs: 73 / 410, Time: 2.4, FR training L2 loss 16.96, FR validation L2 loss 48.22, FNR 53.27 %
+[03/16/2021 20:08:48] {complexTrain.py:233} INFO - Epochs: 74 / 410, Time: 2.4, FR training L2 loss 16.69, FR validation L2 loss 48.19, FNR 53.00 %
+[03/16/2021 20:08:51] {complexTrain.py:233} INFO - Epochs: 75 / 410, Time: 2.4, FR training L2 loss 16.78, FR validation L2 loss 48.64, FNR 53.20 %
+[03/16/2021 20:08:53] {complexTrain.py:233} INFO - Epochs: 76 / 410, Time: 2.4, FR training L2 loss 17.08, FR validation L2 loss 48.30, FNR 52.69 %
+[03/16/2021 20:08:55] {complexTrain.py:233} INFO - Epochs: 77 / 410, Time: 2.4, FR training L2 loss 16.16, FR validation L2 loss 48.53, FNR 52.35 %
+[03/16/2021 20:08:58] {complexTrain.py:233} INFO - Epochs: 78 / 410, Time: 2.4, FR training L2 loss 17.69, FR validation L2 loss 48.33, FNR 52.96 %
+[03/16/2021 20:09:00] {complexTrain.py:233} INFO - Epochs: 79 / 410, Time: 2.4, FR training L2 loss 17.08, FR validation L2 loss 48.25, FNR 52.42 %
+[03/16/2021 20:09:03] {complexTrain.py:233} INFO - Epochs: 80 / 410, Time: 2.5, FR training L2 loss 17.10, FR validation L2 loss 48.23, FNR 52.54 %
+[03/16/2021 20:09:05] {complexTrain.py:233} INFO - Epochs: 81 / 410, Time: 2.4, FR training L2 loss 16.68, FR validation L2 loss 48.35, FNR 52.56 %
+[03/16/2021 20:09:08] {complexTrain.py:233} INFO - Epochs: 82 / 410, Time: 2.4, FR training L2 loss 16.61, FR validation L2 loss 48.38, FNR 52.39 %
+[03/16/2021 20:09:10] {complexTrain.py:233} INFO - Epochs: 83 / 410, Time: 2.4, FR training L2 loss 17.53, FR validation L2 loss 48.20, FNR 52.39 %
+[03/16/2021 20:09:12] {complexTrain.py:233} INFO - Epochs: 84 / 410, Time: 2.4, FR training L2 loss 16.44, FR validation L2 loss 48.25, FNR 52.60 %
+[03/16/2021 20:09:15] {complexTrain.py:233} INFO - Epochs: 85 / 410, Time: 2.4, FR training L2 loss 17.90, FR validation L2 loss 48.30, FNR 52.39 %
+[03/16/2021 20:09:17] {complexTrain.py:233} INFO - Epochs: 86 / 410, Time: 2.4, FR training L2 loss 16.41, FR validation L2 loss 48.56, FNR 52.52 %
+[03/16/2021 20:09:20] {complexTrain.py:233} INFO - Epochs: 87 / 410, Time: 2.5, FR training L2 loss 17.22, FR validation L2 loss 48.45, FNR 52.60 %
+[03/16/2021 20:09:22] {complexTrain.py:233} INFO - Epochs: 88 / 410, Time: 2.5, FR training L2 loss 16.39, FR validation L2 loss 48.47, FNR 52.36 %
+[03/16/2021 20:09:25] {complexTrain.py:233} INFO - Epochs: 89 / 410, Time: 2.5, FR training L2 loss 16.16, FR validation L2 loss 48.14, FNR 52.42 %
+[03/16/2021 20:09:27] {complexTrain.py:233} INFO - Epochs: 90 / 410, Time: 2.4, FR training L2 loss 15.97, FR validation L2 loss 48.44, FNR 52.43 %
+[03/16/2021 20:09:30] {complexTrain.py:233} INFO - Epochs: 91 / 410, Time: 2.5, FR training L2 loss 16.35, FR validation L2 loss 48.58, FNR 52.46 %
+[03/16/2021 20:09:32] {complexTrain.py:233} INFO - Epochs: 92 / 410, Time: 2.5, FR training L2 loss 15.57, FR validation L2 loss 48.25, FNR 52.62 %
+[03/16/2021 20:09:35] {complexTrain.py:233} INFO - Epochs: 93 / 410, Time: 2.4, FR training L2 loss 15.86, FR validation L2 loss 48.40, FNR 52.56 %
+[03/16/2021 20:09:37] {complexTrain.py:233} INFO - Epochs: 94 / 410, Time: 2.5, FR training L2 loss 15.71, FR validation L2 loss 48.55, FNR 52.49 %
+[03/16/2021 20:09:40] {complexTrain.py:233} INFO - Epochs: 95 / 410, Time: 2.4, FR training L2 loss 16.70, FR validation L2 loss 48.58, FNR 52.33 %
+[03/16/2021 20:09:42] {complexTrain.py:233} INFO - Epochs: 96 / 410, Time: 2.5, FR training L2 loss 16.22, FR validation L2 loss 48.63, FNR 52.37 %
+[03/16/2021 20:09:44] {complexTrain.py:233} INFO - Epochs: 97 / 410, Time: 2.4, FR training L2 loss 16.28, FR validation L2 loss 48.35, FNR 52.33 %
+[03/16/2021 20:09:47] {complexTrain.py:233} INFO - Epochs: 98 / 410, Time: 2.4, FR training L2 loss 16.19, FR validation L2 loss 48.48, FNR 52.61 %
+[03/16/2021 20:09:49] {complexTrain.py:233} INFO - Epochs: 99 / 410, Time: 2.4, FR training L2 loss 16.69, FR validation L2 loss 48.68, FNR 52.31 %
+[03/16/2021 20:09:52] {complexTrain.py:233} INFO - Epochs: 100 / 410, Time: 2.5, FR training L2 loss 15.45, FR validation L2 loss 48.41, FNR 52.49 %
+[03/16/2021 20:09:54] {complexTrain.py:233} INFO - Epochs: 101 / 410, Time: 2.5, FR training L2 loss 16.79, FR validation L2 loss 48.57, FNR 52.36 %
+[03/16/2021 20:09:57] {complexTrain.py:233} INFO - Epochs: 102 / 410, Time: 2.4, FR training L2 loss 16.02, FR validation L2 loss 48.38, FNR 52.54 %
+[03/16/2021 20:09:59] {complexTrain.py:233} INFO - Epochs: 103 / 410, Time: 2.5, FR training L2 loss 16.50, FR validation L2 loss 48.65, FNR 52.22 %
+[03/16/2021 20:10:02] {complexTrain.py:233} INFO - Epochs: 104 / 410, Time: 2.4, FR training L2 loss 16.23, FR validation L2 loss 48.51, FNR 52.33 %
+[03/16/2021 20:10:04] {complexTrain.py:233} INFO - Epochs: 105 / 410, Time: 2.5, FR training L2 loss 16.99, FR validation L2 loss 48.39, FNR 52.35 %
+[03/16/2021 20:10:06] {complexTrain.py:233} INFO - Epochs: 106 / 410, Time: 2.4, FR training L2 loss 16.98, FR validation L2 loss 48.61, FNR 52.25 %
+[03/16/2021 20:10:09] {complexTrain.py:233} INFO - Epochs: 107 / 410, Time: 2.5, FR training L2 loss 17.89, FR validation L2 loss 48.70, FNR 52.22 %
+[03/16/2021 20:10:11] {complexTrain.py:233} INFO - Epochs: 108 / 410, Time: 2.4, FR training L2 loss 15.95, FR validation L2 loss 48.31, FNR 52.43 %
+[03/16/2021 20:10:14] {complexTrain.py:233} INFO - Epochs: 109 / 410, Time: 2.5, FR training L2 loss 15.02, FR validation L2 loss 47.94, FNR 52.45 %
+[03/16/2021 20:10:16] {complexTrain.py:233} INFO - Epochs: 110 / 410, Time: 2.4, FR training L2 loss 16.71, FR validation L2 loss 48.43, FNR 52.47 %
+[03/16/2021 20:10:19] {complexTrain.py:233} INFO - Epochs: 111 / 410, Time: 2.4, FR training L2 loss 16.08, FR validation L2 loss 48.35, FNR 52.38 %
+[03/16/2021 20:10:21] {complexTrain.py:233} INFO - Epochs: 112 / 410, Time: 2.4, FR training L2 loss 17.08, FR validation L2 loss 48.57, FNR 52.30 %
+[03/16/2021 20:10:24] {complexTrain.py:233} INFO - Epochs: 113 / 410, Time: 2.5, FR training L2 loss 16.66, FR validation L2 loss 48.43, FNR 52.40 %
+[03/16/2021 20:10:26] {complexTrain.py:233} INFO - Epochs: 114 / 410, Time: 2.4, FR training L2 loss 16.50, FR validation L2 loss 48.35, FNR 52.35 %
+[03/16/2021 20:10:29] {complexTrain.py:233} INFO - Epochs: 115 / 410, Time: 2.5, FR training L2 loss 16.81, FR validation L2 loss 48.53, FNR 52.30 %
+[03/16/2021 20:10:31] {complexTrain.py:233} INFO - Epochs: 116 / 410, Time: 2.4, FR training L2 loss 16.33, FR validation L2 loss 48.49, FNR 52.38 %
+[03/16/2021 20:10:33] {complexTrain.py:233} INFO - Epochs: 117 / 410, Time: 2.4, FR training L2 loss 15.49, FR validation L2 loss 48.08, FNR 52.37 %
+[03/16/2021 20:10:36] {complexTrain.py:233} INFO - Epochs: 118 / 410, Time: 2.4, FR training L2 loss 16.93, FR validation L2 loss 48.48, FNR 52.27 %
+[03/16/2021 20:10:38] {complexTrain.py:233} INFO - Epochs: 119 / 410, Time: 2.4, FR training L2 loss 16.59, FR validation L2 loss 48.42, FNR 52.38 %
+[03/16/2021 20:10:41] {complexTrain.py:233} INFO - Epochs: 120 / 410, Time: 2.4, FR training L2 loss 15.66, FR validation L2 loss 48.52, FNR 52.35 %
+[03/16/2021 20:10:43] {complexTrain.py:233} INFO - Epochs: 121 / 410, Time: 2.4, FR training L2 loss 16.60, FR validation L2 loss 48.52, FNR 52.31 %
+[03/16/2021 20:10:46] {complexTrain.py:233} INFO - Epochs: 122 / 410, Time: 2.5, FR training L2 loss 16.03, FR validation L2 loss 48.40, FNR 52.44 %
+[03/16/2021 20:10:48] {complexTrain.py:233} INFO - Epochs: 123 / 410, Time: 2.5, FR training L2 loss 15.70, FR validation L2 loss 48.29, FNR 52.39 %
+[03/16/2021 20:10:51] {complexTrain.py:233} INFO - Epochs: 124 / 410, Time: 2.4, FR training L2 loss 16.10, FR validation L2 loss 48.47, FNR 52.40 %
+[03/16/2021 20:10:53] {complexTrain.py:233} INFO - Epochs: 125 / 410, Time: 2.4, FR training L2 loss 16.27, FR validation L2 loss 48.50, FNR 52.48 %
+[03/16/2021 20:10:55] {complexTrain.py:233} INFO - Epochs: 126 / 410, Time: 2.4, FR training L2 loss 16.28, FR validation L2 loss 48.47, FNR 52.35 %
+[03/16/2021 20:10:58] {complexTrain.py:233} INFO - Epochs: 127 / 410, Time: 2.5, FR training L2 loss 16.27, FR validation L2 loss 48.32, FNR 52.39 %
+[03/16/2021 20:11:00] {complexTrain.py:233} INFO - Epochs: 128 / 410, Time: 2.5, FR training L2 loss 15.81, FR validation L2 loss 48.27, FNR 52.54 %
+[03/16/2021 20:11:03] {complexTrain.py:233} INFO - Epochs: 129 / 410, Time: 2.4, FR training L2 loss 16.38, FR validation L2 loss 48.41, FNR 52.33 %
+[03/16/2021 20:11:05] {complexTrain.py:233} INFO - Epochs: 130 / 410, Time: 2.5, FR training L2 loss 16.38, FR validation L2 loss 48.31, FNR 52.53 %
+[03/16/2021 20:11:08] {complexTrain.py:233} INFO - Epochs: 131 / 410, Time: 2.5, FR training L2 loss 16.99, FR validation L2 loss 48.89, FNR 52.19 %
+[03/16/2021 20:11:10] {complexTrain.py:233} INFO - Epochs: 132 / 410, Time: 2.5, FR training L2 loss 16.58, FR validation L2 loss 48.68, FNR 52.35 %
+[03/16/2021 20:11:13] {complexTrain.py:233} INFO - Epochs: 133 / 410, Time: 2.5, FR training L2 loss 16.93, FR validation L2 loss 48.61, FNR 52.22 %
+[03/16/2021 20:11:15] {complexTrain.py:233} INFO - Epochs: 134 / 410, Time: 2.5, FR training L2 loss 17.45, FR validation L2 loss 48.92, FNR 52.12 %
+[03/16/2021 20:11:18] {complexTrain.py:233} INFO - Epochs: 135 / 410, Time: 2.4, FR training L2 loss 17.17, FR validation L2 loss 48.66, FNR 52.20 %
+[03/16/2021 20:13:40] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 50000                         
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:17:01] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M
+[03/16/2021 20:18:26] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 84.9, FR training L2 loss 297.37, FR validation L2 loss 41.37, FNR 61.76 %
+[03/16/2021 20:19:49] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 82.5, FR training L2 loss 35.03, FR validation L2 loss 33.14, FNR 39.79 %
+[03/16/2021 20:21:11] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 82.3, FR training L2 loss 31.30, FR validation L2 loss 32.60, FNR 34.81 %
+[03/16/2021 20:22:33] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 82.2, FR training L2 loss 30.23, FR validation L2 loss 31.00, FNR 32.56 %
+[03/16/2021 20:23:55] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 82.3, FR training L2 loss 29.44, FR validation L2 loss 30.43, FNR 29.89 %
+[03/16/2021 20:25:18] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 82.3, FR training L2 loss 28.77, FR validation L2 loss 30.19, FNR 28.93 %
+[03/16/2021 20:25:28] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 1000                          
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:25:37] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M
+[03/16/2021 20:25:42] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 4.7, FR training L2 loss 14693.94, FR validation L2 loss 870.37, FNR 94.88 %
+[03/16/2021 20:25:44] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 2.5, FR training L2 loss 1483.45, FR validation L2 loss 681.33, FNR 94.85 %
+[03/16/2021 20:25:47] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 2.5, FR training L2 loss 1138.32, FR validation L2 loss 525.08, FNR 95.04 %
+[03/16/2021 20:25:49] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 2.5, FR training L2 loss 691.00, FR validation L2 loss 539.46, FNR 94.81 %
+[03/16/2021 20:25:52] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 2.5, FR training L2 loss 662.11, FR validation L2 loss 1200.36, FNR 96.51 %
+[03/16/2021 20:25:54] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 2.5, FR training L2 loss 268.96, FR validation L2 loss 12056.56, FNR 96.64 %
+[03/16/2021 20:25:57] {complexTrain.py:233} INFO - Epochs: 7 / 410, Time: 2.5, FR training L2 loss 170.95, FR validation L2 loss 94.73, FNR 94.81 %
+[03/16/2021 20:25:59] {complexTrain.py:233} INFO - Epochs: 8 / 410, Time: 2.5, FR training L2 loss 127.75, FR validation L2 loss 177.38, FNR 95.92 %
+[03/16/2021 20:26:02] {complexTrain.py:233} INFO - Epochs: 9 / 410, Time: 2.5, FR training L2 loss 85.65, FR validation L2 loss 58.64, FNR 95.39 %
+[03/16/2021 20:26:04] {complexTrain.py:233} INFO - Epochs: 10 / 410, Time: 2.5, FR training L2 loss 65.06, FR validation L2 loss 63.59, FNR 95.91 %
+[03/16/2021 20:26:07] {complexTrain.py:233} INFO - Epochs: 11 / 410, Time: 2.5, FR training L2 loss 89.77, FR validation L2 loss 150.85, FNR 95.14 %
+[03/16/2021 20:26:09] {complexTrain.py:233} INFO - Epochs: 12 / 410, Time: 2.5, FR training L2 loss 55.49, FR validation L2 loss 53.67, FNR 95.58 %
+[03/16/2021 20:26:12] {complexTrain.py:233} INFO - Epochs: 13 / 410, Time: 2.5, FR training L2 loss 59.48, FR validation L2 loss 53.05, FNR 95.30 %
+[03/16/2021 20:26:14] {complexTrain.py:233} INFO - Epochs: 14 / 410, Time: 2.5, FR training L2 loss 59.44, FR validation L2 loss 63.86, FNR 95.19 %
+[03/16/2021 20:26:17] {complexTrain.py:233} INFO - Epochs: 15 / 410, Time: 2.4, FR training L2 loss 56.42, FR validation L2 loss 57.60, FNR 92.41 %
+[03/16/2021 20:26:19] {complexTrain.py:233} INFO - Epochs: 16 / 410, Time: 2.5, FR training L2 loss 56.56, FR validation L2 loss 52.55, FNR 94.46 %
+[03/16/2021 20:26:22] {complexTrain.py:233} INFO - Epochs: 17 / 410, Time: 2.5, FR training L2 loss 89.46, FR validation L2 loss 53.45, FNR 94.69 %
+[03/16/2021 20:26:24] {complexTrain.py:233} INFO - Epochs: 18 / 410, Time: 2.5, FR training L2 loss 53.62, FR validation L2 loss 52.16, FNR 93.91 %
+[03/16/2021 20:26:27] {complexTrain.py:233} INFO - Epochs: 19 / 410, Time: 2.5, FR training L2 loss 66.94, FR validation L2 loss 81.65, FNR 93.69 %
+[03/16/2021 20:26:29] {complexTrain.py:233} INFO - Epochs: 20 / 410, Time: 2.5, FR training L2 loss 52.73, FR validation L2 loss 52.37, FNR 89.11 %
+[03/16/2021 20:26:32] {complexTrain.py:233} INFO - Epochs: 21 / 410, Time: 2.5, FR training L2 loss 54.60, FR validation L2 loss 53.13, FNR 80.58 %
+[03/16/2021 20:26:34] {complexTrain.py:233} INFO - Epochs: 22 / 410, Time: 2.5, FR training L2 loss 57.35, FR validation L2 loss 54.84, FNR 76.80 %
+[03/16/2021 20:26:37] {complexTrain.py:233} INFO - Epochs: 23 / 410, Time: 2.5, FR training L2 loss 48.48, FR validation L2 loss 47.48, FNR 73.26 %
+[03/16/2021 20:26:39] {complexTrain.py:233} INFO - Epochs: 24 / 410, Time: 2.5, FR training L2 loss 47.63, FR validation L2 loss 48.52, FNR 72.80 %
+[03/16/2021 20:26:42] {complexTrain.py:233} INFO - Epochs: 25 / 410, Time: 2.5, FR training L2 loss 44.42, FR validation L2 loss 46.81, FNR 72.37 %
+[03/16/2021 20:26:44] {complexTrain.py:233} INFO - Epochs: 26 / 410, Time: 2.5, FR training L2 loss 53.47, FR validation L2 loss 52.87, FNR 71.23 %
+[03/16/2021 20:26:47] {complexTrain.py:233} INFO - Epochs: 27 / 410, Time: 2.5, FR training L2 loss 38.77, FR validation L2 loss 45.60, FNR 68.44 %
+[03/16/2021 20:26:49] {complexTrain.py:233} INFO - Epochs: 28 / 410, Time: 2.5, FR training L2 loss 37.20, FR validation L2 loss 44.61, FNR 65.98 %
+[03/16/2021 20:26:52] {complexTrain.py:233} INFO - Epochs: 29 / 410, Time: 2.5, FR training L2 loss 35.85, FR validation L2 loss 53.67, FNR 66.98 %
+[03/16/2021 20:26:54] {complexTrain.py:233} INFO - Epochs: 30 / 410, Time: 2.5, FR training L2 loss 33.70, FR validation L2 loss 49.80, FNR 65.23 %
+[03/16/2021 20:26:57] {complexTrain.py:233} INFO - Epochs: 31 / 410, Time: 2.4, FR training L2 loss 31.73, FR validation L2 loss 50.38, FNR 62.74 %
+[03/16/2021 20:26:59] {complexTrain.py:233} INFO - Epochs: 32 / 410, Time: 2.5, FR training L2 loss 29.24, FR validation L2 loss 48.45, FNR 62.88 %
+[03/16/2021 20:27:02] {complexTrain.py:233} INFO - Epochs: 33 / 410, Time: 2.4, FR training L2 loss 27.72, FR validation L2 loss 50.79, FNR 61.20 %
+[03/16/2021 20:27:04] {complexTrain.py:233} INFO - Epochs: 34 / 410, Time: 2.5, FR training L2 loss 43.97, FR validation L2 loss 58.71, FNR 61.63 %
+[03/16/2021 20:27:07] {complexTrain.py:233} INFO - Epochs: 35 / 410, Time: 2.4, FR training L2 loss 23.91, FR validation L2 loss 50.36, FNR 59.82 %
+[03/16/2021 20:27:09] {complexTrain.py:233} INFO - Epochs: 36 / 410, Time: 2.5, FR training L2 loss 25.42, FR validation L2 loss 48.45, FNR 60.13 %
+[03/16/2021 20:27:11] {complexTrain.py:233} INFO - Epochs: 37 / 410, Time: 2.4, FR training L2 loss 20.52, FR validation L2 loss 48.84, FNR 57.11 %
+[03/16/2021 20:27:14] {complexTrain.py:233} INFO - Epochs: 38 / 410, Time: 2.5, FR training L2 loss 19.70, FR validation L2 loss 47.65, FNR 56.19 %
+[03/16/2021 20:27:16] {complexTrain.py:233} INFO - Epochs: 39 / 410, Time: 2.5, FR training L2 loss 18.43, FR validation L2 loss 48.77, FNR 55.52 %
+[03/16/2021 20:27:19] {complexTrain.py:233} INFO - Epochs: 40 / 410, Time: 2.5, FR training L2 loss 18.42, FR validation L2 loss 51.91, FNR 55.94 %
+[03/16/2021 20:27:21] {complexTrain.py:233} INFO - Epochs: 41 / 410, Time: 2.4, FR training L2 loss 17.56, FR validation L2 loss 49.54, FNR 54.92 %
+[03/16/2021 20:27:24] {complexTrain.py:233} INFO - Epochs: 42 / 410, Time: 2.5, FR training L2 loss 18.03, FR validation L2 loss 49.08, FNR 55.92 %
+[03/16/2021 20:27:26] {complexTrain.py:233} INFO - Epochs: 43 / 410, Time: 2.5, FR training L2 loss 18.22, FR validation L2 loss 46.99, FNR 55.58 %
+[03/16/2021 20:27:29] {complexTrain.py:233} INFO - Epochs: 44 / 410, Time: 2.5, FR training L2 loss 17.59, FR validation L2 loss 50.93, FNR 54.77 %
+[03/16/2021 20:27:31] {complexTrain.py:233} INFO - Epochs: 45 / 410, Time: 2.5, FR training L2 loss 16.74, FR validation L2 loss 46.89, FNR 54.90 %
+[03/16/2021 20:27:34] {complexTrain.py:233} INFO - Epochs: 46 / 410, Time: 2.5, FR training L2 loss 15.77, FR validation L2 loss 49.34, FNR 54.02 %
+[03/16/2021 20:27:36] {complexTrain.py:233} INFO - Epochs: 47 / 410, Time: 2.4, FR training L2 loss 16.06, FR validation L2 loss 48.80, FNR 54.06 %
+[03/16/2021 20:27:39] {complexTrain.py:233} INFO - Epochs: 48 / 410, Time: 2.5, FR training L2 loss 16.91, FR validation L2 loss 49.12, FNR 53.58 %
+[03/16/2021 20:27:41] {complexTrain.py:233} INFO - Epochs: 49 / 410, Time: 2.5, FR training L2 loss 16.48, FR validation L2 loss 48.36, FNR 54.44 %
+[03/16/2021 20:27:44] {complexTrain.py:233} INFO - Epochs: 50 / 410, Time: 2.5, FR training L2 loss 15.37, FR validation L2 loss 49.99, FNR 53.64 %
+[03/16/2021 20:27:46] {complexTrain.py:233} INFO - Epochs: 51 / 410, Time: 2.4, FR training L2 loss 16.22, FR validation L2 loss 48.85, FNR 54.41 %
+[03/16/2021 20:27:49] {complexTrain.py:233} INFO - Epochs: 52 / 410, Time: 2.5, FR training L2 loss 15.93, FR validation L2 loss 49.00, FNR 54.91 %
+[03/16/2021 20:27:51] {complexTrain.py:233} INFO - Epochs: 53 / 410, Time: 2.5, FR training L2 loss 15.82, FR validation L2 loss 49.65, FNR 53.68 %
+[03/16/2021 20:27:54] {complexTrain.py:233} INFO - Epochs: 54 / 410, Time: 2.5, FR training L2 loss 15.60, FR validation L2 loss 49.36, FNR 54.06 %
+[03/16/2021 20:27:56] {complexTrain.py:233} INFO - Epochs: 55 / 410, Time: 2.4, FR training L2 loss 14.35, FR validation L2 loss 50.07, FNR 53.35 %
+[03/16/2021 20:27:59] {complexTrain.py:233} INFO - Epochs: 56 / 410, Time: 2.5, FR training L2 loss 14.59, FR validation L2 loss 49.18, FNR 53.57 %
+[03/16/2021 20:28:01] {complexTrain.py:233} INFO - Epochs: 57 / 410, Time: 2.5, FR training L2 loss 15.15, FR validation L2 loss 48.53, FNR 53.53 %
+[03/16/2021 20:28:03] {complexTrain.py:233} INFO - Epochs: 58 / 410, Time: 2.5, FR training L2 loss 14.99, FR validation L2 loss 48.76, FNR 53.80 %
+[03/16/2021 20:28:06] {complexTrain.py:233} INFO - Epochs: 59 / 410, Time: 2.5, FR training L2 loss 14.05, FR validation L2 loss 49.40, FNR 53.68 %
+[03/16/2021 20:28:08] {complexTrain.py:233} INFO - Epochs: 60 / 410, Time: 2.5, FR training L2 loss 14.30, FR validation L2 loss 48.40, FNR 53.53 %
+[03/16/2021 20:28:11] {complexTrain.py:233} INFO - Epochs: 61 / 410, Time: 2.5, FR training L2 loss 15.16, FR validation L2 loss 49.11, FNR 53.06 %
+[03/16/2021 20:28:14] {complexTrain.py:233} INFO - Epochs: 62 / 410, Time: 2.5, FR training L2 loss 14.48, FR validation L2 loss 49.31, FNR 53.32 %
+[03/16/2021 20:28:16] {complexTrain.py:233} INFO - Epochs: 63 / 410, Time: 2.5, FR training L2 loss 15.63, FR validation L2 loss 48.68, FNR 53.45 %
+[03/16/2021 20:28:18] {complexTrain.py:233} INFO - Epochs: 64 / 410, Time: 2.5, FR training L2 loss 14.99, FR validation L2 loss 49.49, FNR 53.45 %
+[03/16/2021 20:28:21] {complexTrain.py:233} INFO - Epochs: 65 / 410, Time: 2.5, FR training L2 loss 15.36, FR validation L2 loss 49.54, FNR 53.00 %
+[03/16/2021 20:28:23] {complexTrain.py:233} INFO - Epochs: 66 / 410, Time: 2.5, FR training L2 loss 14.53, FR validation L2 loss 49.76, FNR 53.09 %
+[03/16/2021 20:28:26] {complexTrain.py:233} INFO - Epochs: 67 / 410, Time: 2.5, FR training L2 loss 13.62, FR validation L2 loss 48.39, FNR 53.19 %
+[03/16/2021 20:28:28] {complexTrain.py:233} INFO - Epochs: 68 / 410, Time: 2.5, FR training L2 loss 13.85, FR validation L2 loss 48.39, FNR 53.40 %
+[03/16/2021 20:28:31] {complexTrain.py:233} INFO - Epochs: 69 / 410, Time: 2.5, FR training L2 loss 13.94, FR validation L2 loss 49.14, FNR 53.43 %
+[03/16/2021 20:28:33] {complexTrain.py:233} INFO - Epochs: 70 / 410, Time: 2.5, FR training L2 loss 13.90, FR validation L2 loss 48.57, FNR 53.44 %
+[03/16/2021 20:28:36] {complexTrain.py:233} INFO - Epochs: 71 / 410, Time: 2.5, FR training L2 loss 14.08, FR validation L2 loss 48.57, FNR 53.24 %
+[03/16/2021 20:28:38] {complexTrain.py:233} INFO - Epochs: 72 / 410, Time: 2.5, FR training L2 loss 14.81, FR validation L2 loss 48.90, FNR 53.37 %
+[03/16/2021 20:28:41] {complexTrain.py:233} INFO - Epochs: 73 / 410, Time: 2.5, FR training L2 loss 14.88, FR validation L2 loss 48.64, FNR 53.19 %
+[03/16/2021 20:28:43] {complexTrain.py:233} INFO - Epochs: 74 / 410, Time: 2.5, FR training L2 loss 14.09, FR validation L2 loss 49.21, FNR 53.34 %
+[03/16/2021 20:28:46] {complexTrain.py:233} INFO - Epochs: 75 / 410, Time: 2.5, FR training L2 loss 14.29, FR validation L2 loss 49.31, FNR 53.36 %
+[03/16/2021 20:28:48] {complexTrain.py:233} INFO - Epochs: 76 / 410, Time: 2.5, FR training L2 loss 14.92, FR validation L2 loss 49.40, FNR 53.17 %
+[03/16/2021 20:28:51] {complexTrain.py:233} INFO - Epochs: 77 / 410, Time: 2.5, FR training L2 loss 13.42, FR validation L2 loss 49.30, FNR 53.07 %
+[03/16/2021 20:28:53] {complexTrain.py:233} INFO - Epochs: 78 / 410, Time: 2.5, FR training L2 loss 14.99, FR validation L2 loss 49.46, FNR 52.88 %
+[03/16/2021 20:28:56] {complexTrain.py:233} INFO - Epochs: 79 / 410, Time: 2.5, FR training L2 loss 14.59, FR validation L2 loss 49.00, FNR 53.08 %
+[03/16/2021 20:28:58] {complexTrain.py:233} INFO - Epochs: 80 / 410, Time: 2.5, FR training L2 loss 14.63, FR validation L2 loss 48.98, FNR 52.95 %
+[03/16/2021 20:29:01] {complexTrain.py:233} INFO - Epochs: 81 / 410, Time: 2.5, FR training L2 loss 14.18, FR validation L2 loss 49.05, FNR 53.04 %
+[03/16/2021 20:29:03] {complexTrain.py:233} INFO - Epochs: 82 / 410, Time: 2.5, FR training L2 loss 14.04, FR validation L2 loss 48.90, FNR 53.23 %
+[03/16/2021 20:29:06] {complexTrain.py:233} INFO - Epochs: 83 / 410, Time: 2.5, FR training L2 loss 15.20, FR validation L2 loss 48.79, FNR 53.29 %
+[03/16/2021 20:29:08] {complexTrain.py:233} INFO - Epochs: 84 / 410, Time: 2.5, FR training L2 loss 14.42, FR validation L2 loss 49.13, FNR 53.18 %
+[03/16/2021 20:29:11] {complexTrain.py:233} INFO - Epochs: 85 / 410, Time: 2.5, FR training L2 loss 15.12, FR validation L2 loss 49.13, FNR 53.03 %
+[03/16/2021 20:29:13] {complexTrain.py:233} INFO - Epochs: 86 / 410, Time: 2.5, FR training L2 loss 13.64, FR validation L2 loss 49.05, FNR 53.12 %
+[03/16/2021 20:29:16] {complexTrain.py:233} INFO - Epochs: 87 / 410, Time: 2.5, FR training L2 loss 14.39, FR validation L2 loss 49.19, FNR 53.04 %
+[03/16/2021 20:29:18] {complexTrain.py:233} INFO - Epochs: 88 / 410, Time: 2.5, FR training L2 loss 13.76, FR validation L2 loss 49.26, FNR 53.01 %
+[03/16/2021 20:29:21] {complexTrain.py:233} INFO - Epochs: 89 / 410, Time: 2.5, FR training L2 loss 14.13, FR validation L2 loss 49.38, FNR 52.98 %
+[03/16/2021 20:29:23] {complexTrain.py:233} INFO - Epochs: 90 / 410, Time: 2.5, FR training L2 loss 13.43, FR validation L2 loss 49.00, FNR 52.99 %
+[03/16/2021 20:29:26] {complexTrain.py:233} INFO - Epochs: 91 / 410, Time: 2.5, FR training L2 loss 14.07, FR validation L2 loss 49.28, FNR 52.97 %
+[03/16/2021 20:29:28] {complexTrain.py:233} INFO - Epochs: 92 / 410, Time: 2.5, FR training L2 loss 13.75, FR validation L2 loss 48.91, FNR 53.09 %
+[03/16/2021 20:29:31] {complexTrain.py:233} INFO - Epochs: 93 / 410, Time: 2.5, FR training L2 loss 14.57, FR validation L2 loss 49.41, FNR 53.13 %
+[03/16/2021 20:29:33] {complexTrain.py:233} INFO - Epochs: 94 / 410, Time: 2.5, FR training L2 loss 14.48, FR validation L2 loss 49.38, FNR 53.05 %
+[03/16/2021 20:29:36] {complexTrain.py:233} INFO - Epochs: 95 / 410, Time: 2.5, FR training L2 loss 14.55, FR validation L2 loss 49.28, FNR 52.98 %
+[03/16/2021 20:29:38] {complexTrain.py:233} INFO - Epochs: 96 / 410, Time: 2.5, FR training L2 loss 14.16, FR validation L2 loss 49.38, FNR 53.17 %
+[03/16/2021 20:29:41] {complexTrain.py:233} INFO - Epochs: 97 / 410, Time: 2.5, FR training L2 loss 13.58, FR validation L2 loss 49.36, FNR 53.19 %
+[03/16/2021 20:29:43] {complexTrain.py:233} INFO - Epochs: 98 / 410, Time: 2.5, FR training L2 loss 14.29, FR validation L2 loss 49.36, FNR 53.15 %
+[03/16/2021 20:29:46] {complexTrain.py:233} INFO - Epochs: 99 / 410, Time: 2.5, FR training L2 loss 14.59, FR validation L2 loss 49.39, FNR 53.16 %
+[03/16/2021 20:29:48] {complexTrain.py:233} INFO - Epochs: 100 / 410, Time: 2.5, FR training L2 loss 13.30, FR validation L2 loss 49.19, FNR 53.34 %
+[03/16/2021 20:29:51] {complexTrain.py:233} INFO - Epochs: 101 / 410, Time: 2.5, FR training L2 loss 14.24, FR validation L2 loss 49.23, FNR 52.93 %
+[03/16/2021 20:29:53] {complexTrain.py:233} INFO - Epochs: 102 / 410, Time: 2.5, FR training L2 loss 14.08, FR validation L2 loss 49.43, FNR 53.14 %
+[03/16/2021 20:29:56] {complexTrain.py:233} INFO - Epochs: 103 / 410, Time: 2.5, FR training L2 loss 14.20, FR validation L2 loss 49.38, FNR 52.97 %
+[03/16/2021 20:29:58] {complexTrain.py:233} INFO - Epochs: 104 / 410, Time: 2.5, FR training L2 loss 14.26, FR validation L2 loss 49.33, FNR 53.12 %
+[03/16/2021 20:30:01] {complexTrain.py:233} INFO - Epochs: 105 / 410, Time: 2.4, FR training L2 loss 14.41, FR validation L2 loss 49.20, FNR 53.19 %
+[03/16/2021 20:30:03] {complexTrain.py:233} INFO - Epochs: 106 / 410, Time: 2.5, FR training L2 loss 14.68, FR validation L2 loss 49.31, FNR 52.92 %
+[03/16/2021 20:30:06] {complexTrain.py:233} INFO - Epochs: 107 / 410, Time: 2.5, FR training L2 loss 14.93, FR validation L2 loss 49.19, FNR 52.95 %
+[03/16/2021 20:30:08] {complexTrain.py:233} INFO - Epochs: 108 / 410, Time: 2.5, FR training L2 loss 13.19, FR validation L2 loss 49.07, FNR 53.16 %
+[03/16/2021 20:30:11] {complexTrain.py:233} INFO - Epochs: 109 / 410, Time: 2.5, FR training L2 loss 13.12, FR validation L2 loss 48.98, FNR 53.20 %
+[03/16/2021 20:30:13] {complexTrain.py:233} INFO - Epochs: 110 / 410, Time: 2.5, FR training L2 loss 14.77, FR validation L2 loss 49.14, FNR 53.05 %
+[03/16/2021 20:30:16] {complexTrain.py:233} INFO - Epochs: 111 / 410, Time: 2.5, FR training L2 loss 14.56, FR validation L2 loss 49.28, FNR 53.10 %
+[03/16/2021 20:30:18] {complexTrain.py:233} INFO - Epochs: 112 / 410, Time: 2.5, FR training L2 loss 14.18, FR validation L2 loss 49.17, FNR 53.04 %
+[03/16/2021 20:30:21] {complexTrain.py:233} INFO - Epochs: 113 / 410, Time: 2.5, FR training L2 loss 14.85, FR validation L2 loss 49.35, FNR 53.09 %
+[03/16/2021 20:30:23] {complexTrain.py:233} INFO - Epochs: 114 / 410, Time: 2.5, FR training L2 loss 14.77, FR validation L2 loss 49.27, FNR 53.03 %
+[03/16/2021 20:30:26] {complexTrain.py:233} INFO - Epochs: 115 / 410, Time: 2.5, FR training L2 loss 14.21, FR validation L2 loss 49.25, FNR 53.01 %
+[03/16/2021 20:30:28] {complexTrain.py:233} INFO - Epochs: 116 / 410, Time: 2.5, FR training L2 loss 14.31, FR validation L2 loss 49.26, FNR 53.10 %
+[03/16/2021 20:30:31] {complexTrain.py:233} INFO - Epochs: 117 / 410, Time: 2.5, FR training L2 loss 12.79, FR validation L2 loss 48.90, FNR 53.02 %
+[03/16/2021 20:30:33] {complexTrain.py:233} INFO - Epochs: 118 / 410, Time: 2.5, FR training L2 loss 14.71, FR validation L2 loss 49.21, FNR 52.97 %
+[03/16/2021 20:30:35] {complexTrain.py:233} INFO - Epochs: 119 / 410, Time: 2.5, FR training L2 loss 15.02, FR validation L2 loss 49.13, FNR 53.09 %
+[03/16/2021 20:30:38] {complexTrain.py:233} INFO - Epochs: 120 / 410, Time: 2.5, FR training L2 loss 14.50, FR validation L2 loss 49.34, FNR 53.07 %
+[03/16/2021 20:30:40] {complexTrain.py:233} INFO - Epochs: 121 / 410, Time: 2.5, FR training L2 loss 14.09, FR validation L2 loss 49.14, FNR 52.99 %
+[03/16/2021 20:30:43] {complexTrain.py:233} INFO - Epochs: 122 / 410, Time: 2.5, FR training L2 loss 14.04, FR validation L2 loss 49.24, FNR 53.10 %
+[03/16/2021 20:30:45] {complexTrain.py:233} INFO - Epochs: 123 / 410, Time: 2.5, FR training L2 loss 14.30, FR validation L2 loss 49.48, FNR 53.17 %
+[03/16/2021 20:30:48] {complexTrain.py:233} INFO - Epochs: 124 / 410, Time: 2.5, FR training L2 loss 13.85, FR validation L2 loss 49.26, FNR 53.09 %
+[03/16/2021 20:30:50] {complexTrain.py:233} INFO - Epochs: 125 / 410, Time: 2.5, FR training L2 loss 13.78, FR validation L2 loss 49.15, FNR 53.12 %
+[03/16/2021 20:30:53] {complexTrain.py:233} INFO - Epochs: 126 / 410, Time: 2.5, FR training L2 loss 14.29, FR validation L2 loss 49.14, FNR 52.92 %
+[03/16/2021 20:30:55] {complexTrain.py:233} INFO - Epochs: 127 / 410, Time: 2.4, FR training L2 loss 13.78, FR validation L2 loss 49.14, FNR 53.13 %
+[03/16/2021 20:30:58] {complexTrain.py:233} INFO - Epochs: 128 / 410, Time: 2.5, FR training L2 loss 13.70, FR validation L2 loss 49.02, FNR 53.08 %
+[03/16/2021 20:31:00] {complexTrain.py:233} INFO - Epochs: 129 / 410, Time: 2.4, FR training L2 loss 14.47, FR validation L2 loss 49.23, FNR 53.08 %
+[03/16/2021 20:31:03] {complexTrain.py:233} INFO - Epochs: 130 / 410, Time: 2.5, FR training L2 loss 13.98, FR validation L2 loss 49.27, FNR 53.13 %
+[03/16/2021 20:31:05] {complexTrain.py:233} INFO - Epochs: 131 / 410, Time: 2.5, FR training L2 loss 14.98, FR validation L2 loss 49.50, FNR 53.06 %
+[03/16/2021 20:31:08] {complexTrain.py:233} INFO - Epochs: 132 / 410, Time: 2.5, FR training L2 loss 14.49, FR validation L2 loss 49.63, FNR 53.06 %
+[03/16/2021 20:31:10] {complexTrain.py:233} INFO - Epochs: 133 / 410, Time: 2.5, FR training L2 loss 15.09, FR validation L2 loss 49.33, FNR 53.07 %
+[03/16/2021 20:31:13] {complexTrain.py:233} INFO - Epochs: 134 / 410, Time: 2.6, FR training L2 loss 15.23, FR validation L2 loss 49.34, FNR 53.01 %
+[03/16/2021 20:31:15] {complexTrain.py:233} INFO - Epochs: 135 / 410, Time: 2.5, FR training L2 loss 14.58, FR validation L2 loss 49.42, FNR 52.98 %
+[03/16/2021 20:31:18] {complexTrain.py:233} INFO - Epochs: 136 / 410, Time: 2.5, FR training L2 loss 13.91, FR validation L2 loss 49.08, FNR 52.99 %
+[03/16/2021 20:31:20] {complexTrain.py:233} INFO - Epochs: 137 / 410, Time: 2.5, FR training L2 loss 13.92, FR validation L2 loss 49.19, FNR 53.06 %
+[03/16/2021 20:31:23] {complexTrain.py:233} INFO - Epochs: 138 / 410, Time: 2.5, FR training L2 loss 13.83, FR validation L2 loss 49.15, FNR 53.10 %
+[03/16/2021 20:31:25] {complexTrain.py:233} INFO - Epochs: 139 / 410, Time: 2.5, FR training L2 loss 13.62, FR validation L2 loss 49.13, FNR 52.98 %
+[03/16/2021 20:31:28] {complexTrain.py:233} INFO - Epochs: 140 / 410, Time: 2.4, FR training L2 loss 14.18, FR validation L2 loss 49.13, FNR 52.96 %
+[03/16/2021 20:31:30] {complexTrain.py:233} INFO - Epochs: 141 / 410, Time: 2.5, FR training L2 loss 14.21, FR validation L2 loss 49.09, FNR 52.92 %
+[03/16/2021 20:31:33] {complexTrain.py:233} INFO - Epochs: 142 / 410, Time: 2.5, FR training L2 loss 14.45, FR validation L2 loss 49.22, FNR 52.98 %
+[03/16/2021 20:31:35] {complexTrain.py:233} INFO - Epochs: 143 / 410, Time: 2.5, FR training L2 loss 15.73, FR validation L2 loss 49.30, FNR 52.93 %
+[03/16/2021 20:31:38] {complexTrain.py:233} INFO - Epochs: 144 / 410, Time: 2.5, FR training L2 loss 13.66, FR validation L2 loss 49.24, FNR 53.09 %
+[03/16/2021 20:31:40] {complexTrain.py:233} INFO - Epochs: 145 / 410, Time: 2.5, FR training L2 loss 13.60, FR validation L2 loss 49.30, FNR 53.02 %
+[03/16/2021 20:31:43] {complexTrain.py:233} INFO - Epochs: 146 / 410, Time: 2.5, FR training L2 loss 14.29, FR validation L2 loss 49.36, FNR 53.29 %
+[03/16/2021 20:31:45] {complexTrain.py:233} INFO - Epochs: 147 / 410, Time: 2.5, FR training L2 loss 13.59, FR validation L2 loss 49.20, FNR 53.03 %
+[03/16/2021 20:31:48] {complexTrain.py:233} INFO - Epochs: 148 / 410, Time: 2.5, FR training L2 loss 14.41, FR validation L2 loss 49.20, FNR 53.08 %
+[03/16/2021 20:31:50] {complexTrain.py:233} INFO - Epochs: 149 / 410, Time: 2.5, FR training L2 loss 15.08, FR validation L2 loss 49.63, FNR 52.93 %
+[03/16/2021 20:31:53] {complexTrain.py:233} INFO - Epochs: 150 / 410, Time: 2.6, FR training L2 loss 14.08, FR validation L2 loss 49.29, FNR 53.02 %
+[03/16/2021 20:31:55] {complexTrain.py:233} INFO - Epochs: 151 / 410, Time: 2.5, FR training L2 loss 14.82, FR validation L2 loss 49.43, FNR 53.18 %
+[03/16/2021 20:31:58] {complexTrain.py:233} INFO - Epochs: 152 / 410, Time: 2.5, FR training L2 loss 14.04, FR validation L2 loss 49.17, FNR 53.20 %
+[03/16/2021 20:32:00] {complexTrain.py:233} INFO - Epochs: 153 / 410, Time: 2.5, FR training L2 loss 14.76, FR validation L2 loss 49.51, FNR 53.10 %
+[03/16/2021 20:32:03] {complexTrain.py:233} INFO - Epochs: 154 / 410, Time: 2.5, FR training L2 loss 14.00, FR validation L2 loss 49.43, FNR 53.30 %
+[03/16/2021 20:32:05] {complexTrain.py:233} INFO - Epochs: 155 / 410, Time: 2.5, FR training L2 loss 14.64, FR validation L2 loss 49.26, FNR 53.10 %
+[03/16/2021 20:32:08] {complexTrain.py:233} INFO - Epochs: 156 / 410, Time: 2.6, FR training L2 loss 14.74, FR validation L2 loss 49.25, FNR 53.00 %
+[03/16/2021 20:32:12] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 50000                         
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:35:52] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M
+[03/16/2021 20:37:22] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 89.8, FR training L2 loss 297.56, FR validation L2 loss 37.06, FNR 51.27 %
+[03/16/2021 20:38:57] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 95.2, FR training L2 loss 33.62, FR validation L2 loss 32.44, FNR 37.07 %
+[03/16/2021 20:40:33] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 95.7, FR training L2 loss 30.92, FR validation L2 loss 31.50, FNR 33.19 %
+[03/16/2021 20:42:08] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 95.7, FR training L2 loss 29.95, FR validation L2 loss 30.73, FNR 31.00 %
+[03/16/2021 20:43:44] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 95.7, FR training L2 loss 29.19, FR validation L2 loss 30.47, FNR 29.39 %
+[03/16/2021 20:45:21] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 96.4, FR training L2 loss 28.61, FR validation L2 loss 30.46, FNR 29.71 %
+[03/16/2021 20:46:58] {complexTrain.py:233} INFO - Epochs: 7 / 410, Time: 97.0, FR training L2 loss 28.02, FR validation L2 loss 29.97, FNR 27.65 %
+[03/16/2021 20:48:37] {complexTrain.py:233} INFO - Epochs: 8 / 410, Time: 99.6, FR training L2 loss 27.57, FR validation L2 loss 29.77, FNR 26.56 %
+[03/16/2021 20:50:13] {complexTrain.py:233} INFO - Epochs: 9 / 410, Time: 96.4, FR training L2 loss 27.21, FR validation L2 loss 29.84, FNR 27.16 %
+[03/16/2021 20:51:49] {complexTrain.py:233} INFO - Epochs: 10 / 410, Time: 96.0, FR training L2 loss 26.85, FR validation L2 loss 29.78, FNR 27.17 %
+[03/16/2021 20:53:26] {complexTrain.py:233} INFO - Epochs: 11 / 410, Time: 96.8, FR training L2 loss 26.49, FR validation L2 loss 29.57, FNR 26.17 %
+[03/16/2021 20:55:02] {complexTrain.py:233} INFO - Epochs: 12 / 410, Time: 95.9, FR training L2 loss 26.16, FR validation L2 loss 29.92, FNR 25.88 %
+[03/16/2021 20:56:38] {complexTrain.py:233} INFO - Epochs: 13 / 410, Time: 96.0, FR training L2 loss 25.76, FR validation L2 loss 29.70, FNR 25.47 %
+[03/16/2021 20:58:15] {complexTrain.py:233} INFO - Epochs: 14 / 410, Time: 96.2, FR training L2 loss 25.48, FR validation L2 loss 29.83, FNR 26.13 %
+[03/16/2021 20:59:51] {complexTrain.py:233} INFO - Epochs: 15 / 410, Time: 96.5, FR training L2 loss 25.22, FR validation L2 loss 29.99, FNR 25.96 %
+[03/16/2021 21:01:27] {complexTrain.py:233} INFO - Epochs: 16 / 410, Time: 96.0, FR training L2 loss 25.10, FR validation L2 loss 30.29, FNR 26.38 %
+[03/16/2021 21:03:03] {complexTrain.py:233} INFO - Epochs: 17 / 410, Time: 96.5, FR training L2 loss 24.81, FR validation L2 loss 30.24, FNR 26.29 %
+[03/16/2021 21:04:41] {complexTrain.py:233} INFO - Epochs: 18 / 410, Time: 97.1, FR training L2 loss 24.61, FR validation L2 loss 29.92, FNR 26.19 %
+[03/16/2021 21:06:17] {complexTrain.py:233} INFO - Epochs: 19 / 410, Time: 96.9, FR training L2 loss 24.45, FR validation L2 loss 30.20, FNR 25.96 %
+[03/16/2021 21:07:55] {complexTrain.py:233} INFO - Epochs: 20 / 410, Time: 97.3, FR training L2 loss 23.27, FR validation L2 loss 30.24, FNR 25.60 %
+[03/16/2021 21:09:32] {complexTrain.py:233} INFO - Epochs: 21 / 410, Time: 97.7, FR training L2 loss 22.81, FR validation L2 loss 30.32, FNR 25.16 %
+[03/16/2021 21:11:10] {complexTrain.py:233} INFO - Epochs: 22 / 410, Time: 97.4, FR training L2 loss 22.61, FR validation L2 loss 30.71, FNR 25.72 %
+[03/16/2021 21:12:47] {complexTrain.py:233} INFO - Epochs: 23 / 410, Time: 97.3, FR training L2 loss 22.45, FR validation L2 loss 30.85, FNR 25.44 %
+[03/16/2021 21:14:24] {complexTrain.py:233} INFO - Epochs: 24 / 410, Time: 96.8, FR training L2 loss 22.25, FR validation L2 loss 30.65, FNR 25.01 %
+[03/16/2021 21:16:01] {complexTrain.py:233} INFO - Epochs: 25 / 410, Time: 96.8, FR training L2 loss 22.02, FR validation L2 loss 30.95, FNR 25.02 %
+[03/16/2021 21:17:38] {complexTrain.py:233} INFO - Epochs: 26 / 410, Time: 97.7, FR training L2 loss 21.95, FR validation L2 loss 30.96, FNR 25.77 %
+[03/16/2021 21:19:16] {complexTrain.py:233} INFO - Epochs: 27 / 410, Time: 97.3, FR training L2 loss 21.99, FR validation L2 loss 30.91, FNR 25.60 %
+[03/16/2021 21:20:53] {complexTrain.py:233} INFO - Epochs: 28 / 410, Time: 97.2, FR training L2 loss 21.23, FR validation L2 loss 31.08, FNR 25.24 %
+[03/16/2021 21:22:30] {complexTrain.py:233} INFO - Epochs: 29 / 410, Time: 97.1, FR training L2 loss 21.14, FR validation L2 loss 31.32, FNR 25.68 %
+[03/16/2021 21:24:07] {complexTrain.py:233} INFO - Epochs: 30 / 410, Time: 97.2, FR training L2 loss 20.94, FR validation L2 loss 31.55, FNR 25.45 %
+[03/16/2021 21:25:44] {complexTrain.py:233} INFO - Epochs: 31 / 410, Time: 97.1, FR training L2 loss 20.91, FR validation L2 loss 31.55, FNR 25.59 %
+[03/16/2021 21:27:22] {complexTrain.py:233} INFO - Epochs: 32 / 410, Time: 97.4, FR training L2 loss 20.94, FR validation L2 loss 31.87, FNR 25.40 %
+[03/16/2021 21:28:59] {complexTrain.py:233} INFO - Epochs: 33 / 410, Time: 97.0, FR training L2 loss 20.71, FR validation L2 loss 31.55, FNR 25.99 %
+[03/16/2021 21:30:36] {complexTrain.py:233} INFO - Epochs: 34 / 410, Time: 96.8, FR training L2 loss 20.54, FR validation L2 loss 31.86, FNR 25.70 %
+[03/16/2021 21:32:14] {complexTrain.py:233} INFO - Epochs: 35 / 410, Time: 97.9, FR training L2 loss 20.54, FR validation L2 loss 31.68, FNR 25.73 %
+[03/16/2021 21:33:50] {complexTrain.py:233} INFO - Epochs: 36 / 410, Time: 96.5, FR training L2 loss 20.43, FR validation L2 loss 31.72, FNR 25.81 %
+[03/16/2021 21:35:27] {complexTrain.py:233} INFO - Epochs: 37 / 410, Time: 96.5, FR training L2 loss 20.07, FR validation L2 loss 32.02, FNR 25.72 %
+[03/16/2021 21:37:03] {complexTrain.py:233} INFO - Epochs: 38 / 410, Time: 96.5, FR training L2 loss 20.17, FR validation L2 loss 31.86, FNR 25.68 %
+[03/16/2021 21:38:39] {complexTrain.py:233} INFO - Epochs: 39 / 410, Time: 96.3, FR training L2 loss 20.23, FR validation L2 loss 32.20, FNR 25.85 %
+[03/16/2021 21:40:16] {complexTrain.py:233} INFO - Epochs: 40 / 410, Time: 96.3, FR training L2 loss 20.08, FR validation L2 loss 32.33, FNR 26.00 %
+[03/16/2021 21:41:52] {complexTrain.py:233} INFO - Epochs: 41 / 410, Time: 96.3, FR training L2 loss 20.00, FR validation L2 loss 32.38, FNR 25.64 %
+[03/16/2021 21:43:28] {complexTrain.py:233} INFO - Epochs: 42 / 410, Time: 95.8, FR training L2 loss 19.96, FR validation L2 loss 32.24, FNR 25.67 %
+[03/16/2021 21:45:04] {complexTrain.py:233} INFO - Epochs: 43 / 410, Time: 95.9, FR training L2 loss 20.06, FR validation L2 loss 32.50, FNR 25.94 %
+[03/16/2021 21:46:41] {complexTrain.py:233} INFO - Epochs: 44 / 410, Time: 97.6, FR training L2 loss 19.89, FR validation L2 loss 32.20, FNR 26.01 %
+[03/16/2021 21:48:21] {complexTrain.py:233} INFO - Epochs: 45 / 410, Time: 99.3, FR training L2 loss 19.70, FR validation L2 loss 32.48, FNR 25.73 %
+[03/16/2021 21:50:00] {complexTrain.py:233} INFO - Epochs: 46 / 410, Time: 99.7, FR training L2 loss 19.74, FR validation L2 loss 32.39, FNR 25.86 %
+[03/16/2021 21:51:39] {complexTrain.py:233} INFO - Epochs: 47 / 410, Time: 98.4, FR training L2 loss 19.75, FR validation L2 loss 32.44, FNR 25.77 %
+[03/16/2021 21:52:17] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 1000                          
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 21:52:28] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 0.282 M
+[03/16/2021 21:52:33] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 5.4, FR training L2 loss 12385.22, FR validation L2 loss 822.90, FNR 95.14 %
+[03/16/2021 21:52:36] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 2.6, FR training L2 loss 1423.27, FR validation L2 loss 508.42, FNR 95.09 %
+[03/16/2021 21:52:38] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 2.7, FR training L2 loss 942.32, FR validation L2 loss 425.85, FNR 94.75 %
+[03/16/2021 21:52:41] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 2.6, FR training L2 loss 760.35, FR validation L2 loss 281.51, FNR 94.99 %
+[03/16/2021 21:52:44] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 2.7, FR training L2 loss 423.05, FR validation L2 loss 265.28, FNR 94.67 %
+[03/16/2021 21:52:47] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 50000                         
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 21:53:20] {complexTrain.py:233} INFO - Epochs: 48 / 410, Time: 101.4, FR training L2 loss 19.71, FR validation L2 loss 32.36, FNR 25.88 %
+[03/16/2021 21:56:22] {complexTrain.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 0.282 M
+[03/16/2021 21:57:42] {complexTrain.py:233} INFO - Epochs: 1 / 410, Time: 80.3, FR training L2 loss 403.29, FR validation L2 loss 39.50, FNR 59.71 %
+[03/16/2021 21:59:00] {complexTrain.py:233} INFO - Epochs: 2 / 410, Time: 77.9, FR training L2 loss 34.15, FR validation L2 loss 32.54, FNR 35.73 %
+[03/16/2021 22:00:18] {complexTrain.py:233} INFO - Epochs: 3 / 410, Time: 78.1, FR training L2 loss 31.18, FR validation L2 loss 31.29, FNR 32.15 %
+[03/16/2021 22:01:36] {complexTrain.py:233} INFO - Epochs: 4 / 410, Time: 78.1, FR training L2 loss 30.14, FR validation L2 loss 30.65, FNR 30.14 %
+[03/16/2021 22:02:54] {complexTrain.py:233} INFO - Epochs: 5 / 410, Time: 77.6, FR training L2 loss 29.44, FR validation L2 loss 30.19, FNR 28.56 %
+[03/16/2021 22:04:12] {complexTrain.py:233} INFO - Epochs: 6 / 410, Time: 78.1, FR training L2 loss 28.87, FR validation L2 loss 29.64, FNR 27.31 %
+[03/16/2021 22:05:30] {complexTrain.py:233} INFO - Epochs: 7 / 410, Time: 78.1, FR training L2 loss 28.45, FR validation L2 loss 29.69, FNR 28.15 %
+[03/16/2021 22:06:48] {complexTrain.py:233} INFO - Epochs: 8 / 410, Time: 78.0, FR training L2 loss 28.11, FR validation L2 loss 29.65, FNR 27.05 %
+[03/16/2021 22:08:06] {complexTrain.py:233} INFO - Epochs: 9 / 410, Time: 78.2, FR training L2 loss 27.82, FR validation L2 loss 28.73, FNR 26.33 %
+[03/16/2021 22:09:24] {complexTrain.py:233} INFO - Epochs: 10 / 410, Time: 78.3, FR training L2 loss 27.53, FR validation L2 loss 28.83, FNR 26.27 %
+[03/16/2021 22:10:42] {complexTrain.py:233} INFO - Epochs: 11 / 410, Time: 77.9, FR training L2 loss 27.22, FR validation L2 loss 28.52, FNR 25.99 %
+[03/16/2021 22:12:00] {complexTrain.py:233} INFO - Epochs: 12 / 410, Time: 78.2, FR training L2 loss 27.08, FR validation L2 loss 28.43, FNR 26.70 %
+[03/16/2021 22:13:19] {complexTrain.py:233} INFO - Epochs: 13 / 410, Time: 78.2, FR training L2 loss 26.99, FR validation L2 loss 28.27, FNR 26.14 %
+[03/16/2021 22:14:36] {complexTrain.py:233} INFO - Epochs: 14 / 410, Time: 77.9, FR training L2 loss 26.74, FR validation L2 loss 28.49, FNR 25.67 %
+[03/16/2021 22:15:55] {complexTrain.py:233} INFO - Epochs: 15 / 410, Time: 78.1, FR training L2 loss 26.71, FR validation L2 loss 28.29, FNR 25.10 %
+[03/16/2021 22:17:13] {complexTrain.py:233} INFO - Epochs: 16 / 410, Time: 78.1, FR training L2 loss 26.50, FR validation L2 loss 28.09, FNR 25.09 %
+[03/16/2021 22:18:31] {complexTrain.py:233} INFO - Epochs: 17 / 410, Time: 78.0, FR training L2 loss 26.37, FR validation L2 loss 27.76, FNR 24.83 %
+[03/16/2021 22:19:49] {complexTrain.py:233} INFO - Epochs: 18 / 410, Time: 78.4, FR training L2 loss 26.32, FR validation L2 loss 28.18, FNR 25.68 %
+[03/16/2021 22:21:07] {complexTrain.py:233} INFO - Epochs: 19 / 410, Time: 78.2, FR training L2 loss 26.18, FR validation L2 loss 28.08, FNR 25.50 %
+[03/16/2021 22:22:25] {complexTrain.py:233} INFO - Epochs: 20 / 410, Time: 77.8, FR training L2 loss 26.03, FR validation L2 loss 27.62, FNR 25.06 %
+[03/16/2021 22:23:43] {complexTrain.py:233} INFO - Epochs: 21 / 410, Time: 78.3, FR training L2 loss 25.94, FR validation L2 loss 27.96, FNR 24.70 %
+[03/16/2021 22:25:01] {complexTrain.py:233} INFO - Epochs: 22 / 410, Time: 77.9, FR training L2 loss 25.84, FR validation L2 loss 27.89, FNR 25.54 %
+[03/16/2021 22:26:19] {complexTrain.py:233} INFO - Epochs: 23 / 410, Time: 78.1, FR training L2 loss 25.76, FR validation L2 loss 27.64, FNR 24.84 %
+[03/16/2021 22:27:37] {complexTrain.py:233} INFO - Epochs: 24 / 410, Time: 78.0, FR training L2 loss 25.67, FR validation L2 loss 27.53, FNR 24.50 %
+[03/16/2021 22:28:55] {complexTrain.py:233} INFO - Epochs: 25 / 410, Time: 77.8, FR training L2 loss 25.70, FR validation L2 loss 27.58, FNR 24.66 %
+[03/16/2021 22:30:13] {complexTrain.py:233} INFO - Epochs: 26 / 410, Time: 77.9, FR training L2 loss 25.60, FR validation L2 loss 27.64, FNR 24.26 %
+[03/16/2021 22:31:31] {complexTrain.py:233} INFO - Epochs: 27 / 410, Time: 78.2, FR training L2 loss 25.50, FR validation L2 loss 27.55, FNR 24.80 %
+[03/16/2021 22:32:49] {complexTrain.py:233} INFO - Epochs: 28 / 410, Time: 77.8, FR training L2 loss 25.50, FR validation L2 loss 27.58, FNR 24.45 %
+[03/16/2021 22:34:07] {complexTrain.py:233} INFO - Epochs: 29 / 410, Time: 77.5, FR training L2 loss 25.26, FR validation L2 loss 27.65, FNR 24.80 %
+[03/16/2021 22:35:24] {complexTrain.py:233} INFO - Epochs: 30 / 410, Time: 77.6, FR training L2 loss 25.25, FR validation L2 loss 27.55, FNR 24.92 %
+[03/16/2021 22:36:42] {complexTrain.py:233} INFO - Epochs: 31 / 410, Time: 77.9, FR training L2 loss 25.19, FR validation L2 loss 27.72, FNR 24.67 %
+[03/16/2021 22:38:00] {complexTrain.py:233} INFO - Epochs: 32 / 410, Time: 77.7, FR training L2 loss 25.19, FR validation L2 loss 27.86, FNR 24.96 %
+[03/16/2021 22:39:17] {complexTrain.py:233} INFO - Epochs: 33 / 410, Time: 77.6, FR training L2 loss 24.44, FR validation L2 loss 26.92, FNR 23.81 %
+[03/16/2021 22:40:35] {complexTrain.py:233} INFO - Epochs: 34 / 410, Time: 77.7, FR training L2 loss 24.28, FR validation L2 loss 26.92, FNR 23.64 %
+[03/16/2021 22:41:53] {complexTrain.py:233} INFO - Epochs: 35 / 410, Time: 77.5, FR training L2 loss 24.06, FR validation L2 loss 26.89, FNR 23.29 %
+[03/16/2021 22:43:10] {complexTrain.py:233} INFO - Epochs: 36 / 410, Time: 77.3, FR training L2 loss 24.11, FR validation L2 loss 26.80, FNR 23.39 %
+[03/16/2021 22:44:27] {complexTrain.py:233} INFO - Epochs: 37 / 410, Time: 77.5, FR training L2 loss 24.07, FR validation L2 loss 26.85, FNR 22.81 %
+[03/16/2021 22:45:45] {complexTrain.py:233} INFO - Epochs: 38 / 410, Time: 77.8, FR training L2 loss 24.02, FR validation L2 loss 27.16, FNR 23.51 %
+[03/16/2021 22:47:03] {complexTrain.py:233} INFO - Epochs: 39 / 410, Time: 77.5, FR training L2 loss 23.90, FR validation L2 loss 26.86, FNR 23.72 %
+[03/16/2021 22:48:20] {complexTrain.py:233} INFO - Epochs: 40 / 410, Time: 77.4, FR training L2 loss 23.91, FR validation L2 loss 27.11, FNR 23.61 %
+[03/16/2021 22:49:38] {complexTrain.py:233} INFO - Epochs: 41 / 410, Time: 77.5, FR training L2 loss 23.96, FR validation L2 loss 27.06, FNR 23.42 %
+[03/16/2021 22:50:55] {complexTrain.py:233} INFO - Epochs: 42 / 410, Time: 77.7, FR training L2 loss 23.88, FR validation L2 loss 26.79, FNR 23.50 %
+[03/16/2021 22:52:13] {complexTrain.py:233} INFO - Epochs: 43 / 410, Time: 77.7, FR training L2 loss 23.92, FR validation L2 loss 26.81, FNR 23.34 %
+[03/16/2021 22:53:31] {complexTrain.py:233} INFO - Epochs: 44 / 410, Time: 77.7, FR training L2 loss 23.76, FR validation L2 loss 26.79, FNR 23.11 %
+[03/16/2021 22:54:48] {complexTrain.py:233} INFO - Epochs: 45 / 410, Time: 77.7, FR training L2 loss 23.84, FR validation L2 loss 26.78, FNR 22.83 %
+[03/16/2021 22:56:06] {complexTrain.py:233} INFO - Epochs: 46 / 410, Time: 77.7, FR training L2 loss 23.67, FR validation L2 loss 27.42, FNR 23.98 %
+[03/16/2021 22:57:24] {complexTrain.py:233} INFO - Epochs: 47 / 410, Time: 77.5, FR training L2 loss 23.67, FR validation L2 loss 26.75, FNR 23.19 %
+[03/16/2021 22:58:41] {complexTrain.py:233} INFO - Epochs: 48 / 410, Time: 77.7, FR training L2 loss 23.74, FR validation L2 loss 26.87, FNR 23.23 %
+[03/16/2021 22:59:59] {complexTrain.py:233} INFO - Epochs: 49 / 410, Time: 78.0, FR training L2 loss 23.69, FR validation L2 loss 26.69, FNR 22.66 %
+[03/16/2021 23:01:18] {complexTrain.py:233} INFO - Epochs: 50 / 410, Time: 78.3, FR training L2 loss 23.63, FR validation L2 loss 26.82, FNR 22.91 %
+[03/16/2021 23:02:36] {complexTrain.py:233} INFO - Epochs: 51 / 410, Time: 78.4, FR training L2 loss 23.59, FR validation L2 loss 26.97, FNR 22.90 %
+[03/16/2021 23:03:55] {complexTrain.py:233} INFO - Epochs: 52 / 410, Time: 78.3, FR training L2 loss 23.67, FR validation L2 loss 26.90, FNR 23.61 %
+[03/16/2021 23:05:13] {complexTrain.py:233} INFO - Epochs: 53 / 410, Time: 78.1, FR training L2 loss 23.60, FR validation L2 loss 26.92, FNR 22.97 %
+[03/16/2021 23:06:31] {complexTrain.py:233} INFO - Epochs: 54 / 410, Time: 78.4, FR training L2 loss 23.57, FR validation L2 loss 26.92, FNR 22.79 %
+[03/16/2021 23:07:50] {complexTrain.py:233} INFO - Epochs: 55 / 410, Time: 78.6, FR training L2 loss 23.57, FR validation L2 loss 26.76, FNR 23.51 %
+[03/16/2021 23:09:08] {complexTrain.py:233} INFO - Epochs: 56 / 410, Time: 78.7, FR training L2 loss 23.56, FR validation L2 loss 26.86, FNR 23.58 %
+[03/16/2021 23:10:26] {complexTrain.py:233} INFO - Epochs: 57 / 410, Time: 77.9, FR training L2 loss 23.59, FR validation L2 loss 26.81, FNR 23.03 %
+[03/16/2021 23:11:44] {complexTrain.py:233} INFO - Epochs: 58 / 410, Time: 77.5, FR training L2 loss 23.22, FR validation L2 loss 26.72, FNR 22.82 %
+[03/16/2021 23:13:02] {complexTrain.py:233} INFO - Epochs: 59 / 410, Time: 77.9, FR training L2 loss 22.99, FR validation L2 loss 26.72, FNR 22.57 %
+[03/16/2021 23:14:19] {complexTrain.py:233} INFO - Epochs: 60 / 410, Time: 77.6, FR training L2 loss 22.99, FR validation L2 loss 26.71, FNR 22.39 %
+[03/16/2021 23:15:37] {complexTrain.py:233} INFO - Epochs: 61 / 410, Time: 77.6, FR training L2 loss 22.88, FR validation L2 loss 26.84, FNR 22.64 %
+[03/16/2021 23:16:55] {complexTrain.py:233} INFO - Epochs: 62 / 410, Time: 77.8, FR training L2 loss 23.02, FR validation L2 loss 26.92, FNR 22.47 %
+[03/16/2021 23:18:13] {complexTrain.py:233} INFO - Epochs: 63 / 410, Time: 77.9, FR training L2 loss 22.95, FR validation L2 loss 26.80, FNR 22.79 %
+[03/16/2021 23:19:30] {complexTrain.py:233} INFO - Epochs: 64 / 410, Time: 77.7, FR training L2 loss 22.83, FR validation L2 loss 26.73, FNR 22.31 %
+[03/16/2021 23:20:48] {complexTrain.py:233} INFO - Epochs: 65 / 410, Time: 77.6, FR training L2 loss 22.91, FR validation L2 loss 26.85, FNR 22.65 %
+[03/16/2021 23:22:06] {complexTrain.py:233} INFO - Epochs: 66 / 410, Time: 77.7, FR training L2 loss 22.60, FR validation L2 loss 26.86, FNR 22.45 %
+[03/16/2021 23:23:23] {complexTrain.py:233} INFO - Epochs: 67 / 410, Time: 77.7, FR training L2 loss 22.58, FR validation L2 loss 26.90, FNR 22.61 %
+[03/16/2021 23:24:41] {complexTrain.py:233} INFO - Epochs: 68 / 410, Time: 77.8, FR training L2 loss 22.56, FR validation L2 loss 26.87, FNR 22.77 %
+[03/16/2021 23:25:59] {complexTrain.py:233} INFO - Epochs: 69 / 410, Time: 77.8, FR training L2 loss 22.50, FR validation L2 loss 26.78, FNR 22.99 %
+[03/16/2021 23:27:17] {complexTrain.py:233} INFO - Epochs: 70 / 410, Time: 77.6, FR training L2 loss 22.59, FR validation L2 loss 26.82, FNR 22.93 %
+[03/16/2021 23:28:35] {complexTrain.py:233} INFO - Epochs: 71 / 410, Time: 77.9, FR training L2 loss 22.54, FR validation L2 loss 26.93, FNR 22.71 %
+[03/16/2021 23:29:52] {complexTrain.py:233} INFO - Epochs: 72 / 410, Time: 77.8, FR training L2 loss 22.59, FR validation L2 loss 26.83, FNR 23.21 %
+[03/16/2021 23:31:10] {complexTrain.py:233} INFO - Epochs: 73 / 410, Time: 78.1, FR training L2 loss 22.52, FR validation L2 loss 26.92, FNR 22.98 %
+[03/16/2021 23:32:30] {complexTrain.py:233} INFO - Epochs: 74 / 410, Time: 79.5, FR training L2 loss 22.36, FR validation L2 loss 26.86, FNR 22.73 %
+[03/16/2021 23:33:52] {complexTrain.py:233} INFO - Epochs: 75 / 410, Time: 82.3, FR training L2 loss 22.29, FR validation L2 loss 26.86, FNR 22.80 %
+[03/16/2021 23:35:14] {complexTrain.py:233} INFO - Epochs: 76 / 410, Time: 82.1, FR training L2 loss 22.21, FR validation L2 loss 26.84, FNR 22.88 %
+[03/16/2021 23:36:36] {complexTrain.py:233} INFO - Epochs: 77 / 410, Time: 81.9, FR training L2 loss 22.33, FR validation L2 loss 26.93, FNR 22.81 %
+[03/16/2021 23:38:01] {complexTrain.py:233} INFO - Epochs: 78 / 410, Time: 85.0, FR training L2 loss 22.19, FR validation L2 loss 26.93, FNR 22.69 %
+[03/16/2021 23:39:24] {complexTrain.py:233} INFO - Epochs: 79 / 410, Time: 83.1, FR training L2 loss 22.35, FR validation L2 loss 26.88, FNR 22.72 %
+[03/16/2021 23:40:48] {complexTrain.py:233} INFO - Epochs: 80 / 410, Time: 84.0, FR training L2 loss 22.31, FR validation L2 loss 27.01, FNR 22.76 %
+[03/16/2021 23:42:15] {complexTrain.py:233} INFO - Epochs: 81 / 410, Time: 86.4, FR training L2 loss 22.31, FR validation L2 loss 26.95, FNR 22.86 %
+[03/16/2021 23:43:38] {complexTrain.py:233} INFO - Epochs: 82 / 410, Time: 83.4, FR training L2 loss 22.30, FR validation L2 loss 26.97, FNR 22.87 %
+[03/16/2021 23:45:03] {complexTrain.py:233} INFO - Epochs: 83 / 410, Time: 84.7, FR training L2 loss 22.15, FR validation L2 loss 27.01, FNR 22.55 %
+[03/16/2021 23:46:24] {complexTrain.py:233} INFO - Epochs: 84 / 410, Time: 81.7, FR training L2 loss 22.27, FR validation L2 loss 26.98, FNR 22.62 %
+[03/16/2021 23:47:47] {complexTrain.py:233} INFO - Epochs: 85 / 410, Time: 82.5, FR training L2 loss 22.16, FR validation L2 loss 26.94, FNR 22.69 %
+[03/16/2021 23:49:09] {complexTrain.py:233} INFO - Epochs: 86 / 410, Time: 81.8, FR training L2 loss 22.19, FR validation L2 loss 26.96, FNR 22.81 %
+[03/16/2021 23:50:31] {complexTrain.py:233} INFO - Epochs: 87 / 410, Time: 82.5, FR training L2 loss 22.36, FR validation L2 loss 26.95, FNR 22.83 %
+[03/16/2021 23:51:53] {complexTrain.py:233} INFO - Epochs: 88 / 410, Time: 82.1, FR training L2 loss 22.15, FR validation L2 loss 26.96, FNR 22.80 %
+[03/16/2021 23:53:15] {complexTrain.py:233} INFO - Epochs: 89 / 410, Time: 81.8, FR training L2 loss 22.14, FR validation L2 loss 26.96, FNR 22.87 %
+[03/16/2021 23:54:37] {complexTrain.py:233} INFO - Epochs: 90 / 410, Time: 81.8, FR training L2 loss 22.15, FR validation L2 loss 26.96, FNR 22.91 %
+[03/16/2021 23:55:59] {complexTrain.py:233} INFO - Epochs: 91 / 410, Time: 82.5, FR training L2 loss 22.22, FR validation L2 loss 26.97, FNR 22.87 %
+[03/16/2021 23:57:21] {complexTrain.py:233} INFO - Epochs: 92 / 410, Time: 81.9, FR training L2 loss 22.13, FR validation L2 loss 27.02, FNR 22.89 %
+[03/16/2021 23:58:43] {complexTrain.py:233} INFO - Epochs: 93 / 410, Time: 81.5, FR training L2 loss 22.09, FR validation L2 loss 26.97, FNR 22.95 %
+[03/16/2021 23:59:59] {complexTrain.py:233} INFO - Epochs: 94 / 410, Time: 76.2, FR training L2 loss 22.10, FR validation L2 loss 26.97, FNR 22.81 %
+[03/17/2021 00:01:15] {complexTrain.py:233} INFO - Epochs: 95 / 410, Time: 76.1, FR training L2 loss 22.20, FR validation L2 loss 26.98, FNR 22.86 %
+[03/17/2021 00:02:31] {complexTrain.py:233} INFO - Epochs: 96 / 410, Time: 76.0, FR training L2 loss 21.97, FR validation L2 loss 26.98, FNR 22.60 %
+[03/17/2021 00:03:46] {complexTrain.py:233} INFO - Epochs: 97 / 410, Time: 74.8, FR training L2 loss 22.05, FR validation L2 loss 26.92, FNR 22.79 %
+[03/17/2021 00:05:01] {complexTrain.py:233} INFO - Epochs: 98 / 410, Time: 75.0, FR training L2 loss 22.09, FR validation L2 loss 26.96, FNR 22.59 %
+[03/17/2021 00:06:16] {complexTrain.py:233} INFO - Epochs: 99 / 410, Time: 74.8, FR training L2 loss 22.05, FR validation L2 loss 26.96, FNR 22.62 %
+[03/17/2021 00:07:31] {complexTrain.py:233} INFO - Epochs: 100 / 410, Time: 75.9, FR training L2 loss 22.18, FR validation L2 loss 27.05, FNR 22.84 %
+[03/17/2021 00:08:48] {complexTrain.py:233} INFO - Epochs: 101 / 410, Time: 76.3, FR training L2 loss 22.15, FR validation L2 loss 26.98, FNR 22.87 %
+[03/17/2021 00:10:04] {complexTrain.py:233} INFO - Epochs: 102 / 410, Time: 76.2, FR training L2 loss 22.15, FR validation L2 loss 27.04, FNR 22.76 %
+[03/17/2021 00:11:20] {complexTrain.py:233} INFO - Epochs: 103 / 410, Time: 76.1, FR training L2 loss 22.18, FR validation L2 loss 26.99, FNR 22.61 %
+[03/17/2021 00:12:36] {complexTrain.py:233} INFO - Epochs: 104 / 410, Time: 76.1, FR training L2 loss 22.09, FR validation L2 loss 26.97, FNR 22.77 %
+[03/17/2021 00:13:52] {complexTrain.py:233} INFO - Epochs: 105 / 410, Time: 76.3, FR training L2 loss 22.13, FR validation L2 loss 26.97, FNR 22.71 %
+[03/17/2021 00:15:09] {complexTrain.py:233} INFO - Epochs: 106 / 410, Time: 76.1, FR training L2 loss 22.09, FR validation L2 loss 26.99, FNR 22.71 %
+[03/17/2021 00:16:25] {complexTrain.py:233} INFO - Epochs: 107 / 410, Time: 76.1, FR training L2 loss 22.20, FR validation L2 loss 26.93, FNR 22.83 %
+[03/17/2021 00:17:41] {complexTrain.py:233} INFO - Epochs: 108 / 410, Time: 76.2, FR training L2 loss 22.14, FR validation L2 loss 26.92, FNR 22.63 %
+[03/17/2021 00:18:57] {complexTrain.py:233} INFO - Epochs: 109 / 410, Time: 76.2, FR training L2 loss 22.07, FR validation L2 loss 26.98, FNR 22.63 %
+[03/17/2021 00:20:13] {complexTrain.py:233} INFO - Epochs: 110 / 410, Time: 76.1, FR training L2 loss 22.20, FR validation L2 loss 26.98, FNR 22.74 %
+[03/17/2021 00:21:29] {complexTrain.py:233} INFO - Epochs: 111 / 410, Time: 76.1, FR training L2 loss 22.06, FR validation L2 loss 26.96, FNR 22.60 %
+[03/17/2021 00:22:45] {complexTrain.py:233} INFO - Epochs: 112 / 410, Time: 76.2, FR training L2 loss 21.97, FR validation L2 loss 27.02, FNR 22.77 %
+[03/17/2021 00:24:02] {complexTrain.py:233} INFO - Epochs: 113 / 410, Time: 76.2, FR training L2 loss 22.02, FR validation L2 loss 27.01, FNR 22.77 %
+[03/17/2021 00:25:18] {complexTrain.py:233} INFO - Epochs: 114 / 410, Time: 76.1, FR training L2 loss 22.03, FR validation L2 loss 26.99, FNR 22.61 %
+[03/17/2021 00:26:34] {complexTrain.py:233} INFO - Epochs: 115 / 410, Time: 76.2, FR training L2 loss 22.05, FR validation L2 loss 27.01, FNR 22.62 %
+[03/17/2021 00:27:50] {complexTrain.py:233} INFO - Epochs: 116 / 410, Time: 76.1, FR training L2 loss 22.06, FR validation L2 loss 26.97, FNR 22.65 %
+[03/17/2021 00:29:06] {complexTrain.py:233} INFO - Epochs: 117 / 410, Time: 76.1, FR training L2 loss 22.16, FR validation L2 loss 26.96, FNR 22.73 %
+[03/17/2021 00:30:22] {complexTrain.py:233} INFO - Epochs: 118 / 410, Time: 76.2, FR training L2 loss 22.23, FR validation L2 loss 26.97, FNR 22.77 %
+[03/17/2021 00:31:39] {complexTrain.py:233} INFO - Epochs: 119 / 410, Time: 76.2, FR training L2 loss 22.08, FR validation L2 loss 26.99, FNR 22.65 %
+[03/17/2021 00:32:55] {complexTrain.py:233} INFO - Epochs: 120 / 410, Time: 76.2, FR training L2 loss 21.97, FR validation L2 loss 26.98, FNR 22.69 %
+[03/17/2021 00:34:11] {complexTrain.py:233} INFO - Epochs: 121 / 410, Time: 76.1, FR training L2 loss 22.07, FR validation L2 loss 27.01, FNR 22.70 %
+[03/17/2021 00:35:27] {complexTrain.py:233} INFO - Epochs: 122 / 410, Time: 76.2, FR training L2 loss 22.03, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 00:36:43] {complexTrain.py:233} INFO - Epochs: 123 / 410, Time: 76.2, FR training L2 loss 22.17, FR validation L2 loss 27.02, FNR 22.81 %
+[03/17/2021 00:37:59] {complexTrain.py:233} INFO - Epochs: 124 / 410, Time: 76.2, FR training L2 loss 22.06, FR validation L2 loss 26.98, FNR 22.66 %
+[03/17/2021 00:39:15] {complexTrain.py:233} INFO - Epochs: 125 / 410, Time: 76.1, FR training L2 loss 22.20, FR validation L2 loss 26.99, FNR 22.85 %
+[03/17/2021 00:40:32] {complexTrain.py:233} INFO - Epochs: 126 / 410, Time: 76.2, FR training L2 loss 22.03, FR validation L2 loss 26.96, FNR 22.75 %
+[03/17/2021 00:41:48] {complexTrain.py:233} INFO - Epochs: 127 / 410, Time: 76.2, FR training L2 loss 22.03, FR validation L2 loss 26.98, FNR 22.73 %
+[03/17/2021 00:43:04] {complexTrain.py:233} INFO - Epochs: 128 / 410, Time: 76.1, FR training L2 loss 22.09, FR validation L2 loss 26.98, FNR 22.69 %
+[03/17/2021 00:44:20] {complexTrain.py:233} INFO - Epochs: 129 / 410, Time: 76.1, FR training L2 loss 22.10, FR validation L2 loss 26.99, FNR 22.83 %
+[03/17/2021 00:45:36] {complexTrain.py:233} INFO - Epochs: 130 / 410, Time: 76.2, FR training L2 loss 22.06, FR validation L2 loss 26.97, FNR 22.63 %
+[03/17/2021 00:46:53] {complexTrain.py:233} INFO - Epochs: 131 / 410, Time: 76.3, FR training L2 loss 22.17, FR validation L2 loss 26.98, FNR 22.76 %
+[03/17/2021 00:48:09] {complexTrain.py:233} INFO - Epochs: 132 / 410, Time: 76.2, FR training L2 loss 22.04, FR validation L2 loss 26.99, FNR 22.83 %
+[03/17/2021 00:49:25] {complexTrain.py:233} INFO - Epochs: 133 / 410, Time: 76.1, FR training L2 loss 22.11, FR validation L2 loss 26.96, FNR 22.76 %
+[03/17/2021 00:50:41] {complexTrain.py:233} INFO - Epochs: 134 / 410, Time: 76.2, FR training L2 loss 22.03, FR validation L2 loss 26.96, FNR 22.90 %
+[03/17/2021 00:51:57] {complexTrain.py:233} INFO - Epochs: 135 / 410, Time: 76.1, FR training L2 loss 22.03, FR validation L2 loss 26.98, FNR 22.72 %
+[03/17/2021 00:53:14] {complexTrain.py:233} INFO - Epochs: 136 / 410, Time: 76.3, FR training L2 loss 22.16, FR validation L2 loss 26.98, FNR 22.78 %
+[03/17/2021 00:54:30] {complexTrain.py:233} INFO - Epochs: 137 / 410, Time: 76.3, FR training L2 loss 22.09, FR validation L2 loss 26.96, FNR 22.80 %
+[03/17/2021 00:55:46] {complexTrain.py:233} INFO - Epochs: 138 / 410, Time: 76.3, FR training L2 loss 22.15, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 00:57:02] {complexTrain.py:233} INFO - Epochs: 139 / 410, Time: 76.2, FR training L2 loss 22.09, FR validation L2 loss 26.96, FNR 22.73 %
+[03/17/2021 00:58:19] {complexTrain.py:233} INFO - Epochs: 140 / 410, Time: 76.2, FR training L2 loss 22.11, FR validation L2 loss 26.98, FNR 22.72 %
+[03/17/2021 00:59:35] {complexTrain.py:233} INFO - Epochs: 141 / 410, Time: 76.2, FR training L2 loss 22.07, FR validation L2 loss 26.98, FNR 22.70 %
+[03/17/2021 01:00:51] {complexTrain.py:233} INFO - Epochs: 142 / 410, Time: 76.2, FR training L2 loss 22.08, FR validation L2 loss 27.02, FNR 22.71 %
+[03/17/2021 01:02:07] {complexTrain.py:233} INFO - Epochs: 143 / 410, Time: 76.1, FR training L2 loss 22.04, FR validation L2 loss 27.01, FNR 22.75 %
+[03/17/2021 01:03:23] {complexTrain.py:233} INFO - Epochs: 144 / 410, Time: 76.2, FR training L2 loss 22.10, FR validation L2 loss 27.01, FNR 22.93 %
+[03/17/2021 01:04:40] {complexTrain.py:233} INFO - Epochs: 145 / 410, Time: 76.3, FR training L2 loss 22.07, FR validation L2 loss 26.98, FNR 22.82 %
+[03/17/2021 01:05:56] {complexTrain.py:233} INFO - Epochs: 146 / 410, Time: 76.2, FR training L2 loss 22.05, FR validation L2 loss 26.99, FNR 22.82 %
+[03/17/2021 01:07:12] {complexTrain.py:233} INFO - Epochs: 147 / 410, Time: 75.8, FR training L2 loss 22.07, FR validation L2 loss 27.02, FNR 22.75 %
+[03/17/2021 01:08:26] {complexTrain.py:233} INFO - Epochs: 148 / 410, Time: 74.0, FR training L2 loss 22.06, FR validation L2 loss 26.98, FNR 22.65 %
+[03/17/2021 01:09:40] {complexTrain.py:233} INFO - Epochs: 149 / 410, Time: 74.1, FR training L2 loss 21.96, FR validation L2 loss 26.98, FNR 22.86 %
+[03/17/2021 01:10:54] {complexTrain.py:233} INFO - Epochs: 150 / 410, Time: 74.1, FR training L2 loss 22.14, FR validation L2 loss 27.01, FNR 22.77 %
+[03/17/2021 01:12:08] {complexTrain.py:233} INFO - Epochs: 151 / 410, Time: 74.0, FR training L2 loss 22.12, FR validation L2 loss 26.98, FNR 22.74 %
+[03/17/2021 01:13:22] {complexTrain.py:233} INFO - Epochs: 152 / 410, Time: 74.1, FR training L2 loss 22.08, FR validation L2 loss 26.99, FNR 22.59 %
+[03/17/2021 01:14:36] {complexTrain.py:233} INFO - Epochs: 153 / 410, Time: 74.2, FR training L2 loss 22.02, FR validation L2 loss 27.01, FNR 22.83 %
+[03/17/2021 01:15:50] {complexTrain.py:233} INFO - Epochs: 154 / 410, Time: 74.0, FR training L2 loss 22.03, FR validation L2 loss 26.98, FNR 22.86 %
+[03/17/2021 01:17:04] {complexTrain.py:233} INFO - Epochs: 155 / 410, Time: 74.1, FR training L2 loss 22.12, FR validation L2 loss 26.98, FNR 22.74 %
+[03/17/2021 01:18:18] {complexTrain.py:233} INFO - Epochs: 156 / 410, Time: 74.1, FR training L2 loss 22.01, FR validation L2 loss 26.98, FNR 22.80 %
+[03/17/2021 01:19:33] {complexTrain.py:233} INFO - Epochs: 157 / 410, Time: 74.1, FR training L2 loss 22.12, FR validation L2 loss 27.00, FNR 22.58 %
+[03/17/2021 01:20:47] {complexTrain.py:233} INFO - Epochs: 158 / 410, Time: 74.1, FR training L2 loss 21.92, FR validation L2 loss 27.00, FNR 22.68 %
+[03/17/2021 01:22:01] {complexTrain.py:233} INFO - Epochs: 159 / 410, Time: 74.0, FR training L2 loss 22.03, FR validation L2 loss 27.01, FNR 22.80 %
+[03/17/2021 01:23:15] {complexTrain.py:233} INFO - Epochs: 160 / 410, Time: 74.1, FR training L2 loss 22.10, FR validation L2 loss 27.02, FNR 22.69 %
+[03/17/2021 01:24:29] {complexTrain.py:233} INFO - Epochs: 161 / 410, Time: 74.2, FR training L2 loss 22.12, FR validation L2 loss 26.97, FNR 22.71 %
+[03/17/2021 01:25:43] {complexTrain.py:233} INFO - Epochs: 162 / 410, Time: 74.1, FR training L2 loss 22.10, FR validation L2 loss 26.95, FNR 22.72 %
+[03/17/2021 01:26:57] {complexTrain.py:233} INFO - Epochs: 163 / 410, Time: 74.2, FR training L2 loss 21.99, FR validation L2 loss 27.01, FNR 22.91 %
+[03/17/2021 01:28:11] {complexTrain.py:233} INFO - Epochs: 164 / 410, Time: 74.2, FR training L2 loss 22.03, FR validation L2 loss 26.93, FNR 22.88 %
+[03/17/2021 01:29:26] {complexTrain.py:233} INFO - Epochs: 165 / 410, Time: 74.1, FR training L2 loss 22.03, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 01:30:40] {complexTrain.py:233} INFO - Epochs: 166 / 410, Time: 74.1, FR training L2 loss 22.22, FR validation L2 loss 27.02, FNR 22.77 %
+[03/17/2021 01:31:54] {complexTrain.py:233} INFO - Epochs: 167 / 410, Time: 74.0, FR training L2 loss 22.13, FR validation L2 loss 26.98, FNR 22.83 %
+[03/17/2021 01:33:08] {complexTrain.py:233} INFO - Epochs: 168 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 27.02, FNR 22.74 %
+[03/17/2021 01:34:22] {complexTrain.py:233} INFO - Epochs: 169 / 410, Time: 74.0, FR training L2 loss 22.07, FR validation L2 loss 26.95, FNR 22.84 %
+[03/17/2021 01:35:36] {complexTrain.py:233} INFO - Epochs: 170 / 410, Time: 74.0, FR training L2 loss 22.01, FR validation L2 loss 26.97, FNR 22.81 %
+[03/17/2021 01:36:50] {complexTrain.py:233} INFO - Epochs: 171 / 410, Time: 74.0, FR training L2 loss 21.99, FR validation L2 loss 26.97, FNR 22.80 %
+[03/17/2021 01:38:04] {complexTrain.py:233} INFO - Epochs: 172 / 410, Time: 74.0, FR training L2 loss 22.09, FR validation L2 loss 26.98, FNR 22.78 %
+[03/17/2021 01:39:18] {complexTrain.py:233} INFO - Epochs: 173 / 410, Time: 74.0, FR training L2 loss 22.17, FR validation L2 loss 27.03, FNR 22.70 %
+[03/17/2021 01:40:32] {complexTrain.py:233} INFO - Epochs: 174 / 410, Time: 74.1, FR training L2 loss 22.02, FR validation L2 loss 26.99, FNR 22.75 %
+[03/17/2021 01:41:46] {complexTrain.py:233} INFO - Epochs: 175 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 27.00, FNR 22.81 %
+[03/17/2021 01:43:00] {complexTrain.py:233} INFO - Epochs: 176 / 410, Time: 74.0, FR training L2 loss 21.99, FR validation L2 loss 27.01, FNR 22.71 %
+[03/17/2021 01:44:14] {complexTrain.py:233} INFO - Epochs: 177 / 410, Time: 74.0, FR training L2 loss 22.04, FR validation L2 loss 26.98, FNR 22.61 %
+[03/17/2021 01:45:28] {complexTrain.py:233} INFO - Epochs: 178 / 410, Time: 74.0, FR training L2 loss 22.06, FR validation L2 loss 27.00, FNR 22.87 %
+[03/17/2021 01:46:42] {complexTrain.py:233} INFO - Epochs: 179 / 410, Time: 74.0, FR training L2 loss 21.97, FR validation L2 loss 27.02, FNR 22.88 %
+[03/17/2021 01:47:56] {complexTrain.py:233} INFO - Epochs: 180 / 410, Time: 74.0, FR training L2 loss 22.12, FR validation L2 loss 27.01, FNR 22.79 %
+[03/17/2021 01:49:10] {complexTrain.py:233} INFO - Epochs: 181 / 410, Time: 73.9, FR training L2 loss 22.07, FR validation L2 loss 26.99, FNR 22.86 %
+[03/17/2021 01:50:24] {complexTrain.py:233} INFO - Epochs: 182 / 410, Time: 74.1, FR training L2 loss 21.97, FR validation L2 loss 26.98, FNR 22.76 %
+[03/17/2021 01:51:38] {complexTrain.py:233} INFO - Epochs: 183 / 410, Time: 74.0, FR training L2 loss 22.11, FR validation L2 loss 26.94, FNR 22.68 %
+[03/17/2021 01:52:52] {complexTrain.py:233} INFO - Epochs: 184 / 410, Time: 74.1, FR training L2 loss 22.18, FR validation L2 loss 27.00, FNR 22.77 %
+[03/17/2021 01:54:06] {complexTrain.py:233} INFO - Epochs: 185 / 410, Time: 74.1, FR training L2 loss 22.07, FR validation L2 loss 27.02, FNR 22.79 %
+[03/17/2021 01:55:20] {complexTrain.py:233} INFO - Epochs: 186 / 410, Time: 74.0, FR training L2 loss 22.09, FR validation L2 loss 26.98, FNR 22.77 %
+[03/17/2021 01:56:34] {complexTrain.py:233} INFO - Epochs: 187 / 410, Time: 74.0, FR training L2 loss 22.12, FR validation L2 loss 26.96, FNR 22.69 %
+[03/17/2021 01:57:48] {complexTrain.py:233} INFO - Epochs: 188 / 410, Time: 73.9, FR training L2 loss 22.06, FR validation L2 loss 26.97, FNR 22.87 %
+[03/17/2021 01:59:02] {complexTrain.py:233} INFO - Epochs: 189 / 410, Time: 74.0, FR training L2 loss 22.08, FR validation L2 loss 26.96, FNR 22.68 %
+[03/17/2021 02:00:16] {complexTrain.py:233} INFO - Epochs: 190 / 410, Time: 74.0, FR training L2 loss 22.16, FR validation L2 loss 26.97, FNR 22.84 %
+[03/17/2021 02:01:30] {complexTrain.py:233} INFO - Epochs: 191 / 410, Time: 74.1, FR training L2 loss 22.07, FR validation L2 loss 27.01, FNR 22.70 %
+[03/17/2021 02:02:45] {complexTrain.py:233} INFO - Epochs: 192 / 410, Time: 74.2, FR training L2 loss 22.05, FR validation L2 loss 27.02, FNR 22.75 %
+[03/17/2021 02:03:59] {complexTrain.py:233} INFO - Epochs: 193 / 410, Time: 74.0, FR training L2 loss 22.09, FR validation L2 loss 26.98, FNR 22.67 %
+[03/17/2021 02:05:12] {complexTrain.py:233} INFO - Epochs: 194 / 410, Time: 73.9, FR training L2 loss 21.89, FR validation L2 loss 26.98, FNR 22.77 %
+[03/17/2021 02:06:26] {complexTrain.py:233} INFO - Epochs: 195 / 410, Time: 74.0, FR training L2 loss 22.07, FR validation L2 loss 27.00, FNR 22.81 %
+[03/17/2021 02:07:40] {complexTrain.py:233} INFO - Epochs: 196 / 410, Time: 74.0, FR training L2 loss 21.97, FR validation L2 loss 26.95, FNR 22.61 %
+[03/17/2021 02:08:54] {complexTrain.py:233} INFO - Epochs: 197 / 410, Time: 74.1, FR training L2 loss 22.02, FR validation L2 loss 26.97, FNR 22.81 %
+[03/17/2021 02:10:09] {complexTrain.py:233} INFO - Epochs: 198 / 410, Time: 74.1, FR training L2 loss 22.02, FR validation L2 loss 26.98, FNR 22.80 %
+[03/17/2021 02:11:23] {complexTrain.py:233} INFO - Epochs: 199 / 410, Time: 74.0, FR training L2 loss 22.14, FR validation L2 loss 27.01, FNR 22.71 %
+[03/17/2021 02:12:37] {complexTrain.py:233} INFO - Epochs: 200 / 410, Time: 74.0, FR training L2 loss 22.12, FR validation L2 loss 26.96, FNR 22.69 %
+[03/17/2021 02:13:51] {complexTrain.py:233} INFO - Epochs: 201 / 410, Time: 74.1, FR training L2 loss 22.12, FR validation L2 loss 26.98, FNR 22.83 %
+[03/17/2021 02:15:05] {complexTrain.py:233} INFO - Epochs: 202 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 26.96, FNR 22.75 %
+[03/17/2021 02:16:19] {complexTrain.py:233} INFO - Epochs: 203 / 410, Time: 74.1, FR training L2 loss 21.99, FR validation L2 loss 26.97, FNR 22.85 %
+[03/17/2021 02:17:33] {complexTrain.py:233} INFO - Epochs: 204 / 410, Time: 74.1, FR training L2 loss 22.07, FR validation L2 loss 26.99, FNR 22.77 %
+[03/17/2021 02:18:47] {complexTrain.py:233} INFO - Epochs: 205 / 410, Time: 74.1, FR training L2 loss 21.97, FR validation L2 loss 27.01, FNR 22.49 %
+[03/17/2021 02:20:01] {complexTrain.py:233} INFO - Epochs: 206 / 410, Time: 74.1, FR training L2 loss 21.95, FR validation L2 loss 27.01, FNR 22.89 %
+[03/17/2021 02:21:15] {complexTrain.py:233} INFO - Epochs: 207 / 410, Time: 74.1, FR training L2 loss 21.95, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 02:22:29] {complexTrain.py:233} INFO - Epochs: 208 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 26.95, FNR 22.69 %
+[03/17/2021 02:23:43] {complexTrain.py:233} INFO - Epochs: 209 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 26.99, FNR 22.92 %
+[03/17/2021 02:24:58] {complexTrain.py:233} INFO - Epochs: 210 / 410, Time: 74.1, FR training L2 loss 21.99, FR validation L2 loss 26.96, FNR 22.84 %
+[03/17/2021 02:26:12] {complexTrain.py:233} INFO - Epochs: 211 / 410, Time: 74.0, FR training L2 loss 22.25, FR validation L2 loss 26.95, FNR 22.73 %
+[03/17/2021 02:27:26] {complexTrain.py:233} INFO - Epochs: 212 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 26.98, FNR 22.71 %
+[03/17/2021 02:28:40] {complexTrain.py:233} INFO - Epochs: 213 / 410, Time: 74.1, FR training L2 loss 22.08, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 02:29:54] {complexTrain.py:233} INFO - Epochs: 214 / 410, Time: 74.0, FR training L2 loss 22.07, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 02:31:08] {complexTrain.py:233} INFO - Epochs: 215 / 410, Time: 74.0, FR training L2 loss 22.08, FR validation L2 loss 27.00, FNR 22.76 %
+[03/17/2021 02:32:22] {complexTrain.py:233} INFO - Epochs: 216 / 410, Time: 74.1, FR training L2 loss 21.96, FR validation L2 loss 27.00, FNR 22.83 %
+[03/17/2021 02:33:36] {complexTrain.py:233} INFO - Epochs: 217 / 410, Time: 74.1, FR training L2 loss 22.09, FR validation L2 loss 27.00, FNR 22.73 %
+[03/17/2021 02:34:50] {complexTrain.py:233} INFO - Epochs: 218 / 410, Time: 74.0, FR training L2 loss 22.08, FR validation L2 loss 26.97, FNR 22.79 %
+[03/17/2021 02:36:04] {complexTrain.py:233} INFO - Epochs: 219 / 410, Time: 74.0, FR training L2 loss 22.10, FR validation L2 loss 27.00, FNR 22.68 %
+[03/17/2021 02:37:18] {complexTrain.py:233} INFO - Epochs: 220 / 410, Time: 74.1, FR training L2 loss 22.00, FR validation L2 loss 26.97, FNR 22.74 %
+[03/17/2021 02:38:32] {complexTrain.py:233} INFO - Epochs: 221 / 410, Time: 74.0, FR training L2 loss 22.05, FR validation L2 loss 27.00, FNR 22.71 %
+[03/17/2021 02:39:46] {complexTrain.py:233} INFO - Epochs: 222 / 410, Time: 74.1, FR training L2 loss 22.16, FR validation L2 loss 27.00, FNR 22.60 %
+[03/17/2021 02:41:00] {complexTrain.py:233} INFO - Epochs: 223 / 410, Time: 74.1, FR training L2 loss 21.98, FR validation L2 loss 26.96, FNR 22.83 %
+[03/17/2021 02:42:14] {complexTrain.py:233} INFO - Epochs: 224 / 410, Time: 74.1, FR training L2 loss 22.11, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 02:43:28] {complexTrain.py:233} INFO - Epochs: 225 / 410, Time: 74.0, FR training L2 loss 21.97, FR validation L2 loss 27.01, FNR 22.82 %
+[03/17/2021 02:44:42] {complexTrain.py:233} INFO - Epochs: 226 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 26.99, FNR 22.78 %
+[03/17/2021 02:45:57] {complexTrain.py:233} INFO - Epochs: 227 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 26.98, FNR 22.73 %
+[03/17/2021 02:47:11] {complexTrain.py:233} INFO - Epochs: 228 / 410, Time: 74.1, FR training L2 loss 22.05, FR validation L2 loss 26.98, FNR 22.71 %
+[03/17/2021 02:48:25] {complexTrain.py:233} INFO - Epochs: 229 / 410, Time: 74.1, FR training L2 loss 21.97, FR validation L2 loss 26.99, FNR 22.85 %
+[03/17/2021 02:49:39] {complexTrain.py:233} INFO - Epochs: 230 / 410, Time: 74.2, FR training L2 loss 22.07, FR validation L2 loss 26.95, FNR 22.83 %
+[03/17/2021 02:50:53] {complexTrain.py:233} INFO - Epochs: 231 / 410, Time: 74.1, FR training L2 loss 22.08, FR validation L2 loss 26.99, FNR 22.74 %
+[03/17/2021 02:52:07] {complexTrain.py:233} INFO - Epochs: 232 / 410, Time: 74.0, FR training L2 loss 22.19, FR validation L2 loss 26.98, FNR 22.61 %
+[03/17/2021 02:53:21] {complexTrain.py:233} INFO - Epochs: 233 / 410, Time: 74.0, FR training L2 loss 21.98, FR validation L2 loss 26.99, FNR 22.72 %
+[03/17/2021 02:54:35] {complexTrain.py:233} INFO - Epochs: 234 / 410, Time: 74.0, FR training L2 loss 22.01, FR validation L2 loss 27.00, FNR 22.78 %
+[03/17/2021 02:55:49] {complexTrain.py:233} INFO - Epochs: 235 / 410, Time: 74.0, FR training L2 loss 22.06, FR validation L2 loss 26.96, FNR 22.76 %
+[03/17/2021 02:57:03] {complexTrain.py:233} INFO - Epochs: 236 / 410, Time: 74.1, FR training L2 loss 22.02, FR validation L2 loss 26.96, FNR 22.59 %
+[03/17/2021 02:58:17] {complexTrain.py:233} INFO - Epochs: 237 / 410, Time: 74.0, FR training L2 loss 21.99, FR validation L2 loss 27.04, FNR 22.74 %
+[03/17/2021 02:59:31] {complexTrain.py:233} INFO - Epochs: 238 / 410, Time: 74.1, FR training L2 loss 22.10, FR validation L2 loss 27.02, FNR 22.78 %
+[03/17/2021 03:00:45] {complexTrain.py:233} INFO - Epochs: 239 / 410, Time: 74.0, FR training L2 loss 22.20, FR validation L2 loss 26.97, FNR 22.78 %
+[03/17/2021 03:01:59] {complexTrain.py:233} INFO - Epochs: 240 / 410, Time: 74.0, FR training L2 loss 22.14, FR validation L2 loss 26.99, FNR 22.88 %
+[03/17/2021 03:03:13] {complexTrain.py:233} INFO - Epochs: 241 / 410, Time: 74.1, FR training L2 loss 22.18, FR validation L2 loss 26.98, FNR 22.83 %
+[03/17/2021 03:04:27] {complexTrain.py:233} INFO - Epochs: 242 / 410, Time: 74.1, FR training L2 loss 22.09, FR validation L2 loss 26.96, FNR 22.76 %
+[03/17/2021 03:05:42] {complexTrain.py:233} INFO - Epochs: 243 / 410, Time: 74.1, FR training L2 loss 21.97, FR validation L2 loss 27.00, FNR 22.76 %
+[03/17/2021 03:06:56] {complexTrain.py:233} INFO - Epochs: 244 / 410, Time: 74.1, FR training L2 loss 22.18, FR validation L2 loss 27.01, FNR 22.82 %
+[03/17/2021 03:08:10] {complexTrain.py:233} INFO - Epochs: 245 / 410, Time: 74.1, FR training L2 loss 22.16, FR validation L2 loss 27.03, FNR 22.80 %
+[03/17/2021 03:09:24] {complexTrain.py:233} INFO - Epochs: 246 / 410, Time: 74.0, FR training L2 loss 22.17, FR validation L2 loss 26.97, FNR 22.93 %
+[03/17/2021 03:10:38] {complexTrain.py:233} INFO - Epochs: 247 / 410, Time: 74.1, FR training L2 loss 21.97, FR validation L2 loss 26.96, FNR 22.86 %
+[03/17/2021 03:11:52] {complexTrain.py:233} INFO - Epochs: 248 / 410, Time: 74.1, FR training L2 loss 21.95, FR validation L2 loss 26.97, FNR 22.77 %
+[03/17/2021 03:13:06] {complexTrain.py:233} INFO - Epochs: 249 / 410, Time: 74.1, FR training L2 loss 22.16, FR validation L2 loss 27.00, FNR 22.84 %
+[03/17/2021 03:14:20] {complexTrain.py:233} INFO - Epochs: 250 / 410, Time: 74.0, FR training L2 loss 22.00, FR validation L2 loss 26.97, FNR 22.87 %
+[03/17/2021 03:15:34] {complexTrain.py:233} INFO - Epochs: 251 / 410, Time: 74.1, FR training L2 loss 22.16, FR validation L2 loss 27.00, FNR 22.86 %
+[03/17/2021 03:16:48] {complexTrain.py:233} INFO - Epochs: 252 / 410, Time: 74.2, FR training L2 loss 21.95, FR validation L2 loss 27.02, FNR 22.94 %
+[03/17/2021 03:18:02] {complexTrain.py:233} INFO - Epochs: 253 / 410, Time: 74.1, FR training L2 loss 22.08, FR validation L2 loss 27.02, FNR 22.76 %
+[03/17/2021 03:19:16] {complexTrain.py:233} INFO - Epochs: 254 / 410, Time: 74.1, FR training L2 loss 22.18, FR validation L2 loss 26.97, FNR 22.82 %
+[03/17/2021 03:20:30] {complexTrain.py:233} INFO - Epochs: 255 / 410, Time: 74.0, FR training L2 loss 22.01, FR validation L2 loss 27.03, FNR 22.79 %
+[03/17/2021 03:21:45] {complexTrain.py:233} INFO - Epochs: 256 / 410, Time: 74.1, FR training L2 loss 22.11, FR validation L2 loss 26.95, FNR 22.77 %
+[03/17/2021 03:22:59] {complexTrain.py:233} INFO - Epochs: 257 / 410, Time: 74.1, FR training L2 loss 22.04, FR validation L2 loss 27.01, FNR 22.88 %
+[03/17/2021 03:24:13] {complexTrain.py:233} INFO - Epochs: 258 / 410, Time: 74.0, FR training L2 loss 21.98, FR validation L2 loss 26.97, FNR 22.76 %
+[03/17/2021 03:25:27] {complexTrain.py:233} INFO - Epochs: 259 / 410, Time: 74.1, FR training L2 loss 22.01, FR validation L2 loss 26.99, FNR 22.56 %
+[03/17/2021 03:26:41] {complexTrain.py:233} INFO - Epochs: 260 / 410, Time: 74.0, FR training L2 loss 22.03, FR validation L2 loss 27.00, FNR 22.71 %
+[03/17/2021 03:27:55] {complexTrain.py:233} INFO - Epochs: 261 / 410, Time: 74.1, FR training L2 loss 22.07, FR validation L2 loss 26.95, FNR 22.77 %
+[03/17/2021 03:29:09] {complexTrain.py:233} INFO - Epochs: 262 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 26.99, FNR 22.57 %
+[03/17/2021 03:30:23] {complexTrain.py:233} INFO - Epochs: 263 / 410, Time: 74.0, FR training L2 loss 22.17, FR validation L2 loss 27.01, FNR 22.80 %
+[03/17/2021 03:31:37] {complexTrain.py:233} INFO - Epochs: 264 / 410, Time: 74.1, FR training L2 loss 22.05, FR validation L2 loss 26.98, FNR 22.74 %
+[03/17/2021 03:32:51] {complexTrain.py:233} INFO - Epochs: 265 / 410, Time: 74.0, FR training L2 loss 21.93, FR validation L2 loss 27.00, FNR 22.75 %
+[03/17/2021 03:34:05] {complexTrain.py:233} INFO - Epochs: 266 / 410, Time: 74.1, FR training L2 loss 22.11, FR validation L2 loss 27.00, FNR 22.75 %
+[03/17/2021 03:35:19] {complexTrain.py:233} INFO - Epochs: 267 / 410, Time: 74.1, FR training L2 loss 22.06, FR validation L2 loss 27.00, FNR 22.73 %
+[03/17/2021 03:36:33] {complexTrain.py:233} INFO - Epochs: 268 / 410, Time: 74.2, FR training L2 loss 22.06, FR validation L2 loss 26.98, FNR 22.85 %
+[03/17/2021 03:37:48] {complexTrain.py:233} INFO - Epochs: 269 / 410, Time: 74.1, FR training L2 loss 22.12, FR validation L2 loss 26.97, FNR 22.65 %
+[03/17/2021 03:39:02] {complexTrain.py:233} INFO - Epochs: 270 / 410, Time: 74.2, FR training L2 loss 22.11, FR validation L2 loss 27.00, FNR 22.80 %
+[03/17/2021 03:40:16] {complexTrain.py:233} INFO - Epochs: 271 / 410, Time: 74.0, FR training L2 loss 21.97, FR validation L2 loss 26.98, FNR 22.81 %
+[03/17/2021 03:41:30] {complexTrain.py:233} INFO - Epochs: 272 / 410, Time: 74.1, FR training L2 loss 22.17, FR validation L2 loss 27.00, FNR 22.81 %
+[03/17/2021 03:42:44] {complexTrain.py:233} INFO - Epochs: 273 / 410, Time: 73.9, FR training L2 loss 22.09, FR validation L2 loss 26.97, FNR 22.77 %
+[03/17/2021 03:43:58] {complexTrain.py:233} INFO - Epochs: 274 / 410, Time: 74.0, FR training L2 loss 22.04, FR validation L2 loss 27.02, FNR 22.80 %
+[03/17/2021 03:45:12] {complexTrain.py:233} INFO - Epochs: 275 / 410, Time: 73.9, FR training L2 loss 22.07, FR validation L2 loss 26.97, FNR 22.88 %
+[03/17/2021 03:46:26] {complexTrain.py:233} INFO - Epochs: 276 / 410, Time: 73.9, FR training L2 loss 22.08, FR validation L2 loss 27.01, FNR 22.90 %
+[03/17/2021 03:47:40] {complexTrain.py:233} INFO - Epochs: 277 / 410, Time: 74.1, FR training L2 loss 22.18, FR validation L2 loss 26.99, FNR 22.85 %
+[03/17/2021 03:48:54] {complexTrain.py:233} INFO - Epochs: 278 / 410, Time: 74.0, FR training L2 loss 21.96, FR validation L2 loss 26.93, FNR 22.76 %
+[03/17/2021 03:50:08] {complexTrain.py:233} INFO - Epochs: 279 / 410, Time: 74.0, FR training L2 loss 22.03, FR validation L2 loss 26.96, FNR 22.76 %
+[03/17/2021 03:51:22] {complexTrain.py:233} INFO - Epochs: 280 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 27.00, FNR 22.80 %
+[03/17/2021 03:52:36] {complexTrain.py:233} INFO - Epochs: 281 / 410, Time: 74.1, FR training L2 loss 22.11, FR validation L2 loss 26.99, FNR 22.78 %
+[03/17/2021 03:53:50] {complexTrain.py:233} INFO - Epochs: 282 / 410, Time: 74.1, FR training L2 loss 22.16, FR validation L2 loss 27.03, FNR 22.72 %
+[03/17/2021 03:55:04] {complexTrain.py:233} INFO - Epochs: 283 / 410, Time: 74.0, FR training L2 loss 22.00, FR validation L2 loss 27.00, FNR 22.83 %
+[03/17/2021 03:56:18] {complexTrain.py:233} INFO - Epochs: 284 / 410, Time: 74.1, FR training L2 loss 22.14, FR validation L2 loss 26.98, FNR 22.71 %
+[03/17/2021 03:57:32] {complexTrain.py:233} INFO - Epochs: 285 / 410, Time: 74.0, FR training L2 loss 21.98, FR validation L2 loss 26.97, FNR 22.85 %
+[03/17/2021 03:58:46] {complexTrain.py:233} INFO - Epochs: 286 / 410, Time: 73.9, FR training L2 loss 22.14, FR validation L2 loss 26.98, FNR 22.76 %
+[03/17/2021 04:00:00] {complexTrain.py:233} INFO - Epochs: 287 / 410, Time: 74.2, FR training L2 loss 22.13, FR validation L2 loss 27.01, FNR 22.58 %
+[03/17/2021 04:01:15] {complexTrain.py:233} INFO - Epochs: 288 / 410, Time: 74.2, FR training L2 loss 22.14, FR validation L2 loss 26.99, FNR 22.77 %
+[03/17/2021 04:02:29] {complexTrain.py:233} INFO - Epochs: 289 / 410, Time: 74.0, FR training L2 loss 22.01, FR validation L2 loss 27.00, FNR 22.76 %
+[03/17/2021 04:03:43] {complexTrain.py:233} INFO - Epochs: 290 / 410, Time: 74.2, FR training L2 loss 22.12, FR validation L2 loss 26.98, FNR 22.70 %
+[03/17/2021 04:04:57] {complexTrain.py:233} INFO - Epochs: 291 / 410, Time: 74.2, FR training L2 loss 22.13, FR validation L2 loss 27.02, FNR 22.78 %
+[03/17/2021 04:06:11] {complexTrain.py:233} INFO - Epochs: 292 / 410, Time: 74.2, FR training L2 loss 22.05, FR validation L2 loss 26.97, FNR 22.78 %
+[03/17/2021 04:07:25] {complexTrain.py:233} INFO - Epochs: 293 / 410, Time: 74.1, FR training L2 loss 22.12, FR validation L2 loss 27.00, FNR 22.84 %
+[03/17/2021 04:08:40] {complexTrain.py:233} INFO - Epochs: 294 / 410, Time: 74.2, FR training L2 loss 21.94, FR validation L2 loss 26.97, FNR 22.74 %
+[03/17/2021 04:09:54] {complexTrain.py:233} INFO - Epochs: 295 / 410, Time: 74.1, FR training L2 loss 22.03, FR validation L2 loss 26.96, FNR 22.84 %
+[03/17/2021 04:11:08] {complexTrain.py:233} INFO - Epochs: 296 / 410, Time: 74.0, FR training L2 loss 22.10, FR validation L2 loss 26.98, FNR 22.84 %
+[03/17/2021 04:12:22] {complexTrain.py:233} INFO - Epochs: 297 / 410, Time: 73.9, FR training L2 loss 22.17, FR validation L2 loss 27.01, FNR 22.62 %
+[03/17/2021 04:13:36] {complexTrain.py:233} INFO - Epochs: 298 / 410, Time: 74.1, FR training L2 loss 22.09, FR validation L2 loss 26.95, FNR 22.79 %
+[03/17/2021 04:14:50] {complexTrain.py:233} INFO - Epochs: 299 / 410, Time: 74.0, FR training L2 loss 22.08, FR validation L2 loss 26.97, FNR 22.75 %
+[03/17/2021 04:16:04] {complexTrain.py:233} INFO - Epochs: 300 / 410, Time: 74.0, FR training L2 loss 22.13, FR validation L2 loss 26.97, FNR 22.83 %
+[03/17/2021 04:17:18] {complexTrain.py:233} INFO - Epochs: 301 / 410, Time: 74.1, FR training L2 loss 22.10, FR validation L2 loss 27.03, FNR 22.73 %
+[03/17/2021 04:18:32] {complexTrain.py:233} INFO - Epochs: 302 / 410, Time: 74.1, FR training L2 loss 22.05, FR validation L2 loss 26.99, FNR 22.77 %
+[03/17/2021 04:19:46] {complexTrain.py:233} INFO - Epochs: 303 / 410, Time: 74.1, FR training L2 loss 22.09, FR validation L2 loss 26.97, FNR 22.87 %
+[03/17/2021 04:21:00] {complexTrain.py:233} INFO - Epochs: 304 / 410, Time: 74.1, FR training L2 loss 21.99, FR validation L2 loss 27.01, FNR 22.71 %
+[03/17/2021 04:22:14] {complexTrain.py:233} INFO - Epochs: 305 / 410, Time: 74.1, FR training L2 loss 22.10, FR validation L2 loss 27.00, FNR 22.65 %
+[03/17/2021 04:23:28] {complexTrain.py:233} INFO - Epochs: 306 / 410, Time: 74.1, FR training L2 loss 22.07, FR validation L2 loss 26.99, FNR 22.60 %
+[03/17/2021 04:24:42] {complexTrain.py:233} INFO - Epochs: 307 / 410, Time: 74.1, FR training L2 loss 22.13, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 04:25:57] {complexTrain.py:233} INFO - Epochs: 308 / 410, Time: 74.2, FR training L2 loss 22.15, FR validation L2 loss 27.00, FNR 22.55 %
+[03/17/2021 04:27:22] {complexTrain.py:233} INFO - Epochs: 309 / 410, Time: 85.4, FR training L2 loss 22.15, FR validation L2 loss 26.95, FNR 22.69 %
+[03/17/2021 04:29:19] {complexTrain.py:233} INFO - Epochs: 310 / 410, Time: 117.0, FR training L2 loss 22.08, FR validation L2 loss 27.02, FNR 22.87 %
+[03/17/2021 04:31:16] {complexTrain.py:233} INFO - Epochs: 311 / 410, Time: 117.0, FR training L2 loss 22.06, FR validation L2 loss 26.97, FNR 22.80 %
+[03/17/2021 04:33:10] {complexTrain.py:233} INFO - Epochs: 312 / 410, Time: 114.2, FR training L2 loss 22.04, FR validation L2 loss 26.97, FNR 22.85 %
+[03/17/2021 04:35:08] {complexTrain.py:233} INFO - Epochs: 313 / 410, Time: 118.0, FR training L2 loss 22.03, FR validation L2 loss 26.99, FNR 22.54 %
+[03/17/2021 04:37:08] {complexTrain.py:233} INFO - Epochs: 314 / 410, Time: 119.4, FR training L2 loss 22.04, FR validation L2 loss 26.97, FNR 22.76 %
+[03/17/2021 04:39:07] {complexTrain.py:233} INFO - Epochs: 315 / 410, Time: 119.3, FR training L2 loss 22.06, FR validation L2 loss 27.00, FNR 22.92 %
+[03/17/2021 04:41:07] {complexTrain.py:233} INFO - Epochs: 316 / 410, Time: 119.6, FR training L2 loss 22.05, FR validation L2 loss 26.99, FNR 22.77 %
+[03/17/2021 04:43:05] {complexTrain.py:233} INFO - Epochs: 317 / 410, Time: 118.1, FR training L2 loss 21.94, FR validation L2 loss 26.98, FNR 22.75 %
+[03/17/2021 04:45:03] {complexTrain.py:233} INFO - Epochs: 318 / 410, Time: 118.3, FR training L2 loss 22.07, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 04:46:59] {complexTrain.py:233} INFO - Epochs: 319 / 410, Time: 116.4, FR training L2 loss 22.25, FR validation L2 loss 27.00, FNR 22.76 %
+[03/17/2021 04:48:59] {complexTrain.py:233} INFO - Epochs: 320 / 410, Time: 119.3, FR training L2 loss 22.14, FR validation L2 loss 26.99, FNR 22.78 %
+[03/17/2021 04:50:57] {complexTrain.py:233} INFO - Epochs: 321 / 410, Time: 117.9, FR training L2 loss 22.08, FR validation L2 loss 26.98, FNR 22.73 %
+[03/17/2021 04:53:00] {complexTrain.py:233} INFO - Epochs: 322 / 410, Time: 123.7, FR training L2 loss 22.10, FR validation L2 loss 26.97, FNR 22.74 %
+[03/17/2021 04:55:06] {complexTrain.py:233} INFO - Epochs: 323 / 410, Time: 125.7, FR training L2 loss 22.10, FR validation L2 loss 26.98, FNR 22.87 %
+[03/17/2021 04:57:10] {complexTrain.py:233} INFO - Epochs: 324 / 410, Time: 124.3, FR training L2 loss 22.08, FR validation L2 loss 27.03, FNR 22.69 %
+[03/17/2021 04:59:11] {complexTrain.py:233} INFO - Epochs: 325 / 410, Time: 120.9, FR training L2 loss 21.91, FR validation L2 loss 27.02, FNR 22.80 %
+[03/17/2021 05:01:15] {complexTrain.py:233} INFO - Epochs: 326 / 410, Time: 124.3, FR training L2 loss 22.10, FR validation L2 loss 26.99, FNR 22.75 %
+[03/17/2021 05:03:20] {complexTrain.py:233} INFO - Epochs: 327 / 410, Time: 124.3, FR training L2 loss 22.03, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 05:05:21] {complexTrain.py:233} INFO - Epochs: 328 / 410, Time: 121.5, FR training L2 loss 22.00, FR validation L2 loss 26.95, FNR 22.60 %
+[03/17/2021 05:07:25] {complexTrain.py:233} INFO - Epochs: 329 / 410, Time: 123.5, FR training L2 loss 21.99, FR validation L2 loss 26.97, FNR 22.74 %
+[03/17/2021 05:09:29] {complexTrain.py:233} INFO - Epochs: 330 / 410, Time: 124.0, FR training L2 loss 22.17, FR validation L2 loss 26.96, FNR 22.71 %
+[03/17/2021 05:11:34] {complexTrain.py:233} INFO - Epochs: 331 / 410, Time: 124.8, FR training L2 loss 22.24, FR validation L2 loss 27.01, FNR 22.81 %
+[03/17/2021 05:13:41] {complexTrain.py:233} INFO - Epochs: 332 / 410, Time: 127.1, FR training L2 loss 22.08, FR validation L2 loss 27.00, FNR 22.87 %
+[03/17/2021 05:15:42] {complexTrain.py:233} INFO - Epochs: 333 / 410, Time: 121.6, FR training L2 loss 22.05, FR validation L2 loss 27.00, FNR 22.77 %
+[03/17/2021 05:17:44] {complexTrain.py:233} INFO - Epochs: 334 / 410, Time: 122.1, FR training L2 loss 22.02, FR validation L2 loss 27.02, FNR 22.72 %
+[03/17/2021 05:19:49] {complexTrain.py:233} INFO - Epochs: 335 / 410, Time: 124.7, FR training L2 loss 21.95, FR validation L2 loss 26.99, FNR 22.70 %
+[03/17/2021 05:21:54] {complexTrain.py:233} INFO - Epochs: 336 / 410, Time: 125.1, FR training L2 loss 22.09, FR validation L2 loss 26.99, FNR 22.87 %
+[03/17/2021 05:23:58] {complexTrain.py:233} INFO - Epochs: 337 / 410, Time: 123.9, FR training L2 loss 22.13, FR validation L2 loss 27.01, FNR 22.66 %
+[03/17/2021 05:26:06] {complexTrain.py:233} INFO - Epochs: 338 / 410, Time: 127.7, FR training L2 loss 22.00, FR validation L2 loss 27.01, FNR 22.70 %
+[03/17/2021 05:28:12] {complexTrain.py:233} INFO - Epochs: 339 / 410, Time: 126.4, FR training L2 loss 22.06, FR validation L2 loss 26.98, FNR 22.73 %
+[03/17/2021 05:30:14] {complexTrain.py:233} INFO - Epochs: 340 / 410, Time: 122.2, FR training L2 loss 22.16, FR validation L2 loss 27.01, FNR 22.72 %
+[03/17/2021 05:32:17] {complexTrain.py:233} INFO - Epochs: 341 / 410, Time: 122.3, FR training L2 loss 22.04, FR validation L2 loss 26.94, FNR 22.73 %
+[03/17/2021 05:34:21] {complexTrain.py:233} INFO - Epochs: 342 / 410, Time: 123.8, FR training L2 loss 22.02, FR validation L2 loss 27.00, FNR 22.77 %
+[03/17/2021 05:36:24] {complexTrain.py:233} INFO - Epochs: 343 / 410, Time: 123.2, FR training L2 loss 22.16, FR validation L2 loss 27.01, FNR 22.85 %
+[03/17/2021 05:38:27] {complexTrain.py:233} INFO - Epochs: 344 / 410, Time: 123.4, FR training L2 loss 22.20, FR validation L2 loss 27.03, FNR 22.79 %
+[03/17/2021 05:40:29] {complexTrain.py:233} INFO - Epochs: 345 / 410, Time: 122.1, FR training L2 loss 22.25, FR validation L2 loss 26.99, FNR 22.69 %
+[03/17/2021 05:42:33] {complexTrain.py:233} INFO - Epochs: 346 / 410, Time: 123.3, FR training L2 loss 22.07, FR validation L2 loss 26.95, FNR 22.73 %
+[03/17/2021 05:44:36] {complexTrain.py:233} INFO - Epochs: 347 / 410, Time: 123.4, FR training L2 loss 22.01, FR validation L2 loss 26.98, FNR 22.63 %
+[03/17/2021 05:46:38] {complexTrain.py:233} INFO - Epochs: 348 / 410, Time: 121.7, FR training L2 loss 21.96, FR validation L2 loss 26.99, FNR 22.74 %
+[03/17/2021 05:48:42] {complexTrain.py:233} INFO - Epochs: 349 / 410, Time: 124.7, FR training L2 loss 22.06, FR validation L2 loss 27.05, FNR 22.69 %
+[03/17/2021 05:50:47] {complexTrain.py:233} INFO - Epochs: 350 / 410, Time: 124.7, FR training L2 loss 22.17, FR validation L2 loss 26.98, FNR 22.85 %
+[03/17/2021 05:52:50] {complexTrain.py:233} INFO - Epochs: 351 / 410, Time: 122.9, FR training L2 loss 22.04, FR validation L2 loss 26.97, FNR 22.69 %
+[03/17/2021 05:54:51] {complexTrain.py:233} INFO - Epochs: 352 / 410, Time: 121.3, FR training L2 loss 22.10, FR validation L2 loss 26.99, FNR 22.86 %
+[03/17/2021 05:56:56] {complexTrain.py:233} INFO - Epochs: 353 / 410, Time: 124.8, FR training L2 loss 22.02, FR validation L2 loss 27.03, FNR 22.76 %
+[03/17/2021 05:59:01] {complexTrain.py:233} INFO - Epochs: 354 / 410, Time: 124.4, FR training L2 loss 22.21, FR validation L2 loss 26.99, FNR 22.60 %
+[03/17/2021 06:01:06] {complexTrain.py:233} INFO - Epochs: 355 / 410, Time: 125.4, FR training L2 loss 22.14, FR validation L2 loss 27.00, FNR 22.83 %
+[03/17/2021 06:03:11] {complexTrain.py:233} INFO - Epochs: 356 / 410, Time: 125.2, FR training L2 loss 22.02, FR validation L2 loss 26.99, FNR 22.87 %
+[03/17/2021 06:05:15] {complexTrain.py:233} INFO - Epochs: 357 / 410, Time: 123.8, FR training L2 loss 22.13, FR validation L2 loss 26.99, FNR 22.70 %
+[03/17/2021 06:07:21] {complexTrain.py:233} INFO - Epochs: 358 / 410, Time: 125.9, FR training L2 loss 22.00, FR validation L2 loss 26.95, FNR 22.76 %
+[03/17/2021 06:09:28] {complexTrain.py:233} INFO - Epochs: 359 / 410, Time: 127.1, FR training L2 loss 22.08, FR validation L2 loss 26.97, FNR 22.75 %
+[03/17/2021 06:11:31] {complexTrain.py:233} INFO - Epochs: 360 / 410, Time: 122.7, FR training L2 loss 22.05, FR validation L2 loss 26.98, FNR 22.93 %
+[03/17/2021 06:13:35] {complexTrain.py:233} INFO - Epochs: 361 / 410, Time: 124.7, FR training L2 loss 22.11, FR validation L2 loss 26.99, FNR 22.79 %
+[03/17/2021 06:15:39] {complexTrain.py:233} INFO - Epochs: 362 / 410, Time: 123.4, FR training L2 loss 21.96, FR validation L2 loss 26.98, FNR 22.82 %
+[03/17/2021 06:17:44] {complexTrain.py:233} INFO - Epochs: 363 / 410, Time: 124.8, FR training L2 loss 22.01, FR validation L2 loss 26.97, FNR 22.67 %
+[03/17/2021 06:19:47] {complexTrain.py:233} INFO - Epochs: 364 / 410, Time: 123.1, FR training L2 loss 22.07, FR validation L2 loss 27.01, FNR 22.75 %
+[03/17/2021 06:21:50] {complexTrain.py:233} INFO - Epochs: 365 / 410, Time: 123.1, FR training L2 loss 22.11, FR validation L2 loss 26.98, FNR 22.82 %
+[03/17/2021 06:23:54] {complexTrain.py:233} INFO - Epochs: 366 / 410, Time: 123.8, FR training L2 loss 22.06, FR validation L2 loss 27.00, FNR 22.90 %
+[03/17/2021 06:26:00] {complexTrain.py:233} INFO - Epochs: 367 / 410, Time: 125.8, FR training L2 loss 22.00, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 06:28:04] {complexTrain.py:233} INFO - Epochs: 368 / 410, Time: 124.3, FR training L2 loss 21.99, FR validation L2 loss 26.99, FNR 22.79 %
+[03/17/2021 06:30:09] {complexTrain.py:233} INFO - Epochs: 369 / 410, Time: 125.4, FR training L2 loss 22.13, FR validation L2 loss 26.96, FNR 22.87 %
+[03/17/2021 06:32:13] {complexTrain.py:233} INFO - Epochs: 370 / 410, Time: 124.1, FR training L2 loss 22.02, FR validation L2 loss 27.02, FNR 22.81 %
+[03/17/2021 06:34:16] {complexTrain.py:233} INFO - Epochs: 371 / 410, Time: 122.5, FR training L2 loss 22.06, FR validation L2 loss 26.97, FNR 22.64 %
+[03/17/2021 06:36:20] {complexTrain.py:233} INFO - Epochs: 372 / 410, Time: 124.5, FR training L2 loss 22.03, FR validation L2 loss 26.97, FNR 22.77 %
+[03/17/2021 06:38:22] {complexTrain.py:233} INFO - Epochs: 373 / 410, Time: 121.9, FR training L2 loss 22.10, FR validation L2 loss 26.96, FNR 22.86 %
+[03/17/2021 06:40:26] {complexTrain.py:233} INFO - Epochs: 374 / 410, Time: 123.7, FR training L2 loss 22.02, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 06:42:27] {complexTrain.py:233} INFO - Epochs: 375 / 410, Time: 121.2, FR training L2 loss 22.08, FR validation L2 loss 27.01, FNR 22.71 %
+[03/17/2021 06:44:33] {complexTrain.py:233} INFO - Epochs: 376 / 410, Time: 126.0, FR training L2 loss 22.10, FR validation L2 loss 26.99, FNR 22.80 %
+[03/17/2021 06:46:36] {complexTrain.py:233} INFO - Epochs: 377 / 410, Time: 123.3, FR training L2 loss 22.00, FR validation L2 loss 26.99, FNR 22.70 %
+[03/17/2021 06:48:38] {complexTrain.py:233} INFO - Epochs: 378 / 410, Time: 121.9, FR training L2 loss 22.03, FR validation L2 loss 27.01, FNR 22.73 %
+[03/17/2021 06:50:43] {complexTrain.py:233} INFO - Epochs: 379 / 410, Time: 125.1, FR training L2 loss 21.96, FR validation L2 loss 27.04, FNR 22.78 %
+[03/17/2021 06:52:48] {complexTrain.py:233} INFO - Epochs: 380 / 410, Time: 124.7, FR training L2 loss 22.08, FR validation L2 loss 27.02, FNR 22.61 %
+[03/17/2021 06:54:53] {complexTrain.py:233} INFO - Epochs: 381 / 410, Time: 125.0, FR training L2 loss 22.15, FR validation L2 loss 26.99, FNR 22.80 %
+[03/17/2021 06:56:59] {complexTrain.py:233} INFO - Epochs: 382 / 410, Time: 126.4, FR training L2 loss 22.02, FR validation L2 loss 26.99, FNR 22.84 %
+[03/17/2021 06:59:08] {complexTrain.py:233} INFO - Epochs: 383 / 410, Time: 128.7, FR training L2 loss 21.99, FR validation L2 loss 26.95, FNR 22.76 %
+[03/17/2021 07:01:12] {complexTrain.py:233} INFO - Epochs: 384 / 410, Time: 123.7, FR training L2 loss 22.05, FR validation L2 loss 26.98, FNR 22.89 %
+[03/17/2021 07:03:17] {complexTrain.py:233} INFO - Epochs: 385 / 410, Time: 124.8, FR training L2 loss 22.15, FR validation L2 loss 26.97, FNR 22.74 %
+[03/17/2021 07:05:20] {complexTrain.py:233} INFO - Epochs: 386 / 410, Time: 123.4, FR training L2 loss 22.04, FR validation L2 loss 26.99, FNR 22.86 %
+[03/17/2021 07:07:26] {complexTrain.py:233} INFO - Epochs: 387 / 410, Time: 125.7, FR training L2 loss 22.12, FR validation L2 loss 26.98, FNR 22.75 %
+[03/17/2021 07:09:34] {complexTrain.py:233} INFO - Epochs: 388 / 410, Time: 128.3, FR training L2 loss 21.90, FR validation L2 loss 26.99, FNR 22.78 %
+[03/17/2021 07:11:40] {complexTrain.py:233} INFO - Epochs: 389 / 410, Time: 125.6, FR training L2 loss 21.99, FR validation L2 loss 26.99, FNR 22.77 %
+[03/17/2021 07:13:44] {complexTrain.py:233} INFO - Epochs: 390 / 410, Time: 124.2, FR training L2 loss 22.16, FR validation L2 loss 27.00, FNR 22.75 %
+[03/17/2021 07:15:47] {complexTrain.py:233} INFO - Epochs: 391 / 410, Time: 123.4, FR training L2 loss 22.11, FR validation L2 loss 26.94, FNR 22.76 %
+[03/17/2021 07:17:54] {complexTrain.py:233} INFO - Epochs: 392 / 410, Time: 126.7, FR training L2 loss 22.04, FR validation L2 loss 27.00, FNR 22.90 %
+[03/17/2021 07:20:00] {complexTrain.py:233} INFO - Epochs: 393 / 410, Time: 125.8, FR training L2 loss 22.10, FR validation L2 loss 27.02, FNR 22.81 %
+[03/17/2021 07:22:05] {complexTrain.py:233} INFO - Epochs: 394 / 410, Time: 125.1, FR training L2 loss 22.00, FR validation L2 loss 27.00, FNR 22.81 %
+[03/17/2021 07:24:13] {complexTrain.py:233} INFO - Epochs: 395 / 410, Time: 128.1, FR training L2 loss 22.11, FR validation L2 loss 26.94, FNR 22.81 %
+[03/17/2021 07:26:20] {complexTrain.py:233} INFO - Epochs: 396 / 410, Time: 126.7, FR training L2 loss 22.09, FR validation L2 loss 27.00, FNR 22.82 %
+[03/17/2021 07:28:26] {complexTrain.py:233} INFO - Epochs: 397 / 410, Time: 126.8, FR training L2 loss 22.10, FR validation L2 loss 26.95, FNR 22.72 %
+[03/17/2021 07:30:29] {complexTrain.py:233} INFO - Epochs: 398 / 410, Time: 122.9, FR training L2 loss 22.10, FR validation L2 loss 27.02, FNR 22.82 %
+[03/17/2021 07:32:32] {complexTrain.py:233} INFO - Epochs: 399 / 410, Time: 122.3, FR training L2 loss 22.04, FR validation L2 loss 26.95, FNR 22.78 %
+[03/17/2021 07:34:35] {complexTrain.py:233} INFO - Epochs: 400 / 410, Time: 123.9, FR training L2 loss 22.07, FR validation L2 loss 26.96, FNR 22.63 %
+[03/17/2021 07:36:38] {complexTrain.py:233} INFO - Epochs: 401 / 410, Time: 122.5, FR training L2 loss 22.04, FR validation L2 loss 26.98, FNR 22.84 %
+[03/17/2021 07:38:41] {complexTrain.py:233} INFO - Epochs: 402 / 410, Time: 123.0, FR training L2 loss 22.05, FR validation L2 loss 26.93, FNR 22.91 %
+[03/17/2021 07:40:44] {complexTrain.py:233} INFO - Epochs: 403 / 410, Time: 123.4, FR training L2 loss 21.97, FR validation L2 loss 26.99, FNR 22.71 %
+[03/17/2021 07:42:50] {complexTrain.py:233} INFO - Epochs: 404 / 410, Time: 125.2, FR training L2 loss 22.05, FR validation L2 loss 27.00, FNR 22.76 %
+[03/17/2021 07:44:55] {complexTrain.py:233} INFO - Epochs: 405 / 410, Time: 125.5, FR training L2 loss 21.90, FR validation L2 loss 26.98, FNR 22.79 %
+[03/17/2021 07:46:59] {complexTrain.py:233} INFO - Epochs: 406 / 410, Time: 124.2, FR training L2 loss 22.03, FR validation L2 loss 26.96, FNR 22.65 %
+[03/17/2021 07:49:04] {complexTrain.py:233} INFO - Epochs: 407 / 410, Time: 124.4, FR training L2 loss 22.02, FR validation L2 loss 27.03, FNR 22.84 %
+[03/17/2021 07:51:08] {complexTrain.py:233} INFO - Epochs: 408 / 410, Time: 124.7, FR training L2 loss 22.06, FR validation L2 loss 26.95, FNR 22.76 %
+[03/17/2021 07:53:15] {complexTrain.py:233} INFO - Epochs: 409 / 410, Time: 126.5, FR training L2 loss 22.10, FR validation L2 loss 26.98, FNR 22.69 %
+[03/17/2021 09:02:33] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 1                             
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/17/2021 09:02:40] {complexLayer1Train.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M
+[03/17/2021 09:02:42] {complexLayer1Train.py:233} INFO - Epochs: 1 / 410, Time: 2.9, FR training L2 loss 49367.95, FR validation L2 loss 665.18, FNR 95.55 %
+[03/17/2021 09:02:43] {complexLayer1Train.py:233} INFO - Epochs: 2 / 410, Time: 0.9, FR training L2 loss 21055.15, FR validation L2 loss 286.94, FNR 95.43 %
+[03/17/2021 09:02:44] {complexLayer1Train.py:233} INFO - Epochs: 3 / 410, Time: 0.9, FR training L2 loss 11875.17, FR validation L2 loss 183.40, FNR 95.22 %
+[03/17/2021 09:02:45] {complexLayer1Train.py:233} INFO - Epochs: 4 / 410, Time: 0.9, FR training L2 loss 8163.67, FR validation L2 loss 230.64, FNR 95.05 %
+[03/17/2021 09:02:46] {complexLayer1Train.py:233} INFO - Epochs: 5 / 410, Time: 0.9, FR training L2 loss 5939.39, FR validation L2 loss 224.56, FNR 95.22 %
+[03/17/2021 09:02:49] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 25                            
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 24                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fr: 0.003                         
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fr: 410                           
+                    n_training: 50000                         
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/skipfreq_snr_big8
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/17/2021 09:06:38] {complexLayer1Train.py:324} INFO - [Network] Number of parameters in the frequency-representation module : 1.200 M

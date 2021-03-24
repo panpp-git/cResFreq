@@ -1,0 +1,213 @@
+[03/16/2021 20:33:41] {util.py:101} INFO - 
+                     amplitude: uniform                       
+                    batch_size: 64                            
+                      distance: normal                        
+               fc_downsampling: 4                             
+                  fc_kernel_in: 25                            
+                fc_kernel_size: 3                             
+                fc_module_type: regression                    
+                  fc_n_filters: 32                            
+                   fc_n_layers: 48                            
+               floor_amplitude: 0.1                           
+                  fr_inner_dim: 256                           
+                 fr_kernel_out: 9                             
+                fr_kernel_size: 3                             
+                fr_module_type: fr                            
+                  fr_n_filters: 32                            
+                   fr_n_layers: 48                            
+                       fr_size: 4096                          
+                 fr_upsampling: 16                            
+                  gaussian_std: 0.12                          
+                   kernel_type: gaussian                      
+                         lr_fc: 0.0003                        
+                         lr_fr: 0.0003                        
+                    max_n_freq: 10                            
+                       min_sep: 0.5                           
+                   n_epochs_fc: 100                           
+                   n_epochs_fr: 410                           
+                    n_training: 50000                         
+                  n_validation: 1000                          
+                       no_cuda: False                         
+                         noise: gaussian_blind                
+                    numpy_seed: 100                           
+                    output_dir: ./checkpoint/freq_train_big8  
+               save_epoch_freq: 10                            
+                    signal_dim: 64                            
+                           snr: -10                           
+                    torch_seed: 76                            
+                triangle_slope: 4000                          
+                      use_cuda: True                          
+[03/16/2021 20:37:27] {freqDomainTrain.py:456} INFO - [Network] Number of parameters in the frequency-representation module : 2.248 M
+[03/16/2021 20:37:27] {freqDomainTrain.py:458} INFO - [Network] Number of parameters in the frequency-counting module : 0.152 M
+[03/16/2021 20:38:40] {freqDomainTrain.py:258} INFO - Epochs: 1 / 510, Time: 73.1, FR training L2 loss 665.66, FR validation L2 loss 61.00, FNR 75.42 %
+[03/16/2021 20:39:49] {freqDomainTrain.py:258} INFO - Epochs: 2 / 510, Time: 69.2, FR training L2 loss 71.75, FR validation L2 loss 41.72, FNR 61.04 %
+[03/16/2021 20:40:58] {freqDomainTrain.py:258} INFO - Epochs: 3 / 510, Time: 69.0, FR training L2 loss 51.85, FR validation L2 loss 41.74, FNR 57.99 %
+[03/16/2021 20:42:07] {freqDomainTrain.py:258} INFO - Epochs: 4 / 510, Time: 68.8, FR training L2 loss 44.50, FR validation L2 loss 37.14, FNR 54.98 %
+[03/16/2021 20:43:16] {freqDomainTrain.py:258} INFO - Epochs: 5 / 510, Time: 68.8, FR training L2 loss 40.62, FR validation L2 loss 36.84, FNR 52.12 %
+[03/16/2021 20:44:27] {freqDomainTrain.py:258} INFO - Epochs: 6 / 510, Time: 71.1, FR training L2 loss 38.35, FR validation L2 loss 35.03, FNR 50.49 %
+[03/16/2021 20:45:39] {freqDomainTrain.py:258} INFO - Epochs: 7 / 510, Time: 72.4, FR training L2 loss 36.87, FR validation L2 loss 35.96, FNR 51.10 %
+[03/16/2021 20:46:50] {freqDomainTrain.py:258} INFO - Epochs: 8 / 510, Time: 71.4, FR training L2 loss 35.77, FR validation L2 loss 34.64, FNR 47.36 %
+[03/16/2021 20:48:01] {freqDomainTrain.py:258} INFO - Epochs: 9 / 510, Time: 71.0, FR training L2 loss 34.95, FR validation L2 loss 34.23, FNR 47.12 %
+[03/16/2021 20:49:14] {freqDomainTrain.py:258} INFO - Epochs: 10 / 510, Time: 72.3, FR training L2 loss 34.34, FR validation L2 loss 34.06, FNR 46.26 %
+[03/16/2021 20:50:26] {freqDomainTrain.py:258} INFO - Epochs: 11 / 510, Time: 72.0, FR training L2 loss 33.84, FR validation L2 loss 33.23, FNR 44.62 %
+[03/16/2021 20:51:39] {freqDomainTrain.py:258} INFO - Epochs: 12 / 510, Time: 72.8, FR training L2 loss 33.32, FR validation L2 loss 33.30, FNR 46.32 %
+[03/16/2021 20:52:51] {freqDomainTrain.py:258} INFO - Epochs: 13 / 510, Time: 72.1, FR training L2 loss 32.91, FR validation L2 loss 32.58, FNR 43.12 %
+[03/16/2021 20:54:04] {freqDomainTrain.py:258} INFO - Epochs: 14 / 510, Time: 73.3, FR training L2 loss 32.49, FR validation L2 loss 32.74, FNR 41.89 %
+[03/16/2021 20:55:18] {freqDomainTrain.py:258} INFO - Epochs: 15 / 510, Time: 73.3, FR training L2 loss 32.19, FR validation L2 loss 33.13, FNR 44.03 %
+[03/16/2021 20:56:30] {freqDomainTrain.py:258} INFO - Epochs: 16 / 510, Time: 72.9, FR training L2 loss 31.85, FR validation L2 loss 32.06, FNR 42.29 %
+[03/16/2021 20:57:43] {freqDomainTrain.py:258} INFO - Epochs: 17 / 510, Time: 72.8, FR training L2 loss 31.68, FR validation L2 loss 32.35, FNR 41.09 %
+[03/16/2021 20:58:55] {freqDomainTrain.py:258} INFO - Epochs: 18 / 510, Time: 72.1, FR training L2 loss 31.39, FR validation L2 loss 31.93, FNR 40.77 %
+[03/16/2021 21:00:09] {freqDomainTrain.py:258} INFO - Epochs: 19 / 510, Time: 73.3, FR training L2 loss 31.22, FR validation L2 loss 31.73, FNR 40.55 %
+[03/16/2021 21:01:22] {freqDomainTrain.py:258} INFO - Epochs: 20 / 510, Time: 73.2, FR training L2 loss 31.10, FR validation L2 loss 31.76, FNR 40.76 %
+[03/16/2021 21:02:35] {freqDomainTrain.py:258} INFO - Epochs: 21 / 510, Time: 72.8, FR training L2 loss 30.77, FR validation L2 loss 31.33, FNR 39.24 %
+[03/16/2021 21:03:47] {freqDomainTrain.py:258} INFO - Epochs: 22 / 510, Time: 71.8, FR training L2 loss 30.66, FR validation L2 loss 31.56, FNR 39.30 %
+[03/16/2021 21:04:58] {freqDomainTrain.py:258} INFO - Epochs: 23 / 510, Time: 71.9, FR training L2 loss 30.59, FR validation L2 loss 31.83, FNR 40.41 %
+[03/16/2021 21:06:11] {freqDomainTrain.py:258} INFO - Epochs: 24 / 510, Time: 72.2, FR training L2 loss 30.39, FR validation L2 loss 31.76, FNR 40.56 %
+[03/16/2021 21:07:23] {freqDomainTrain.py:258} INFO - Epochs: 25 / 510, Time: 72.0, FR training L2 loss 30.16, FR validation L2 loss 31.42, FNR 38.64 %
+[03/16/2021 21:08:34] {freqDomainTrain.py:258} INFO - Epochs: 26 / 510, Time: 71.3, FR training L2 loss 30.12, FR validation L2 loss 31.19, FNR 37.73 %
+[03/16/2021 21:09:46] {freqDomainTrain.py:258} INFO - Epochs: 27 / 510, Time: 71.7, FR training L2 loss 30.06, FR validation L2 loss 31.28, FNR 38.85 %
+[03/16/2021 21:10:57] {freqDomainTrain.py:258} INFO - Epochs: 28 / 510, Time: 71.6, FR training L2 loss 29.93, FR validation L2 loss 31.52, FNR 38.55 %
+[03/16/2021 21:12:10] {freqDomainTrain.py:258} INFO - Epochs: 29 / 510, Time: 72.4, FR training L2 loss 29.84, FR validation L2 loss 31.11, FNR 37.45 %
+[03/16/2021 21:13:22] {freqDomainTrain.py:258} INFO - Epochs: 30 / 510, Time: 71.9, FR training L2 loss 29.65, FR validation L2 loss 31.43, FNR 38.55 %
+[03/16/2021 21:14:34] {freqDomainTrain.py:258} INFO - Epochs: 31 / 510, Time: 72.0, FR training L2 loss 29.62, FR validation L2 loss 30.98, FNR 37.82 %
+[03/16/2021 21:15:46] {freqDomainTrain.py:258} INFO - Epochs: 32 / 510, Time: 72.2, FR training L2 loss 29.53, FR validation L2 loss 30.92, FNR 37.63 %
+[03/16/2021 21:16:58] {freqDomainTrain.py:258} INFO - Epochs: 33 / 510, Time: 72.0, FR training L2 loss 29.39, FR validation L2 loss 31.07, FNR 38.12 %
+[03/16/2021 21:18:09] {freqDomainTrain.py:258} INFO - Epochs: 34 / 510, Time: 71.4, FR training L2 loss 29.36, FR validation L2 loss 31.10, FNR 37.20 %
+[03/16/2021 21:19:20] {freqDomainTrain.py:258} INFO - Epochs: 35 / 510, Time: 71.1, FR training L2 loss 29.24, FR validation L2 loss 30.94, FNR 36.63 %
+[03/16/2021 21:20:32] {freqDomainTrain.py:258} INFO - Epochs: 36 / 510, Time: 71.7, FR training L2 loss 29.14, FR validation L2 loss 30.73, FNR 36.41 %
+[03/16/2021 21:21:43] {freqDomainTrain.py:258} INFO - Epochs: 37 / 510, Time: 71.5, FR training L2 loss 29.12, FR validation L2 loss 30.70, FNR 36.47 %
+[03/16/2021 21:22:55] {freqDomainTrain.py:258} INFO - Epochs: 38 / 510, Time: 71.9, FR training L2 loss 28.90, FR validation L2 loss 31.02, FNR 36.07 %
+[03/16/2021 21:24:07] {freqDomainTrain.py:258} INFO - Epochs: 39 / 510, Time: 71.7, FR training L2 loss 28.92, FR validation L2 loss 30.96, FNR 35.41 %
+[03/16/2021 21:25:18] {freqDomainTrain.py:258} INFO - Epochs: 40 / 510, Time: 70.6, FR training L2 loss 28.74, FR validation L2 loss 31.00, FNR 35.66 %
+[03/16/2021 21:26:30] {freqDomainTrain.py:258} INFO - Epochs: 41 / 510, Time: 72.3, FR training L2 loss 28.82, FR validation L2 loss 30.93, FNR 36.02 %
+[03/16/2021 21:27:41] {freqDomainTrain.py:258} INFO - Epochs: 42 / 510, Time: 71.0, FR training L2 loss 28.63, FR validation L2 loss 30.91, FNR 35.51 %
+[03/16/2021 21:28:53] {freqDomainTrain.py:258} INFO - Epochs: 43 / 510, Time: 71.6, FR training L2 loss 28.55, FR validation L2 loss 30.87, FNR 35.05 %
+[03/16/2021 21:30:05] {freqDomainTrain.py:258} INFO - Epochs: 44 / 510, Time: 72.4, FR training L2 loss 28.54, FR validation L2 loss 30.90, FNR 35.56 %
+[03/16/2021 21:31:17] {freqDomainTrain.py:258} INFO - Epochs: 45 / 510, Time: 71.6, FR training L2 loss 28.44, FR validation L2 loss 30.65, FNR 34.70 %
+[03/16/2021 21:32:28] {freqDomainTrain.py:258} INFO - Epochs: 46 / 510, Time: 71.5, FR training L2 loss 28.40, FR validation L2 loss 30.74, FNR 33.78 %
+[03/16/2021 21:33:41] {freqDomainTrain.py:258} INFO - Epochs: 47 / 510, Time: 72.8, FR training L2 loss 28.33, FR validation L2 loss 30.76, FNR 35.48 %
+[03/16/2021 21:34:53] {freqDomainTrain.py:258} INFO - Epochs: 48 / 510, Time: 72.4, FR training L2 loss 28.32, FR validation L2 loss 30.69, FNR 34.59 %
+[03/16/2021 21:36:07] {freqDomainTrain.py:258} INFO - Epochs: 49 / 510, Time: 73.4, FR training L2 loss 28.16, FR validation L2 loss 30.82, FNR 34.44 %
+[03/16/2021 21:37:20] {freqDomainTrain.py:258} INFO - Epochs: 50 / 510, Time: 73.1, FR training L2 loss 28.19, FR validation L2 loss 30.92, FNR 34.94 %
+[03/16/2021 21:38:34] {freqDomainTrain.py:258} INFO - Epochs: 51 / 510, Time: 73.6, FR training L2 loss 28.07, FR validation L2 loss 30.95, FNR 34.63 %
+[03/16/2021 21:39:47] {freqDomainTrain.py:258} INFO - Epochs: 52 / 510, Time: 73.3, FR training L2 loss 27.93, FR validation L2 loss 30.82, FNR 34.08 %
+[03/16/2021 21:41:00] {freqDomainTrain.py:258} INFO - Epochs: 53 / 510, Time: 73.6, FR training L2 loss 27.87, FR validation L2 loss 30.58, FNR 34.35 %
+[03/16/2021 21:42:15] {freqDomainTrain.py:258} INFO - Epochs: 54 / 510, Time: 74.2, FR training L2 loss 27.82, FR validation L2 loss 30.79, FNR 35.02 %
+[03/16/2021 21:43:28] {freqDomainTrain.py:258} INFO - Epochs: 55 / 510, Time: 73.3, FR training L2 loss 27.72, FR validation L2 loss 30.72, FNR 33.12 %
+[03/16/2021 21:44:42] {freqDomainTrain.py:258} INFO - Epochs: 56 / 510, Time: 73.8, FR training L2 loss 27.78, FR validation L2 loss 30.62, FNR 33.06 %
+[03/16/2021 21:45:55] {freqDomainTrain.py:258} INFO - Epochs: 57 / 510, Time: 73.1, FR training L2 loss 27.55, FR validation L2 loss 30.93, FNR 33.99 %
+[03/16/2021 21:47:05] {freqDomainTrain.py:258} INFO - Epochs: 58 / 510, Time: 70.1, FR training L2 loss 27.63, FR validation L2 loss 30.70, FNR 33.36 %
+[03/16/2021 21:48:16] {freqDomainTrain.py:258} INFO - Epochs: 59 / 510, Time: 70.5, FR training L2 loss 27.63, FR validation L2 loss 30.87, FNR 33.68 %
+[03/16/2021 21:49:26] {freqDomainTrain.py:258} INFO - Epochs: 60 / 510, Time: 70.8, FR training L2 loss 27.46, FR validation L2 loss 30.97, FNR 33.68 %
+[03/16/2021 21:50:37] {freqDomainTrain.py:258} INFO - Epochs: 61 / 510, Time: 70.9, FR training L2 loss 27.48, FR validation L2 loss 30.57, FNR 33.35 %
+[03/16/2021 21:51:48] {freqDomainTrain.py:258} INFO - Epochs: 62 / 510, Time: 70.9, FR training L2 loss 27.30, FR validation L2 loss 30.70, FNR 33.69 %
+[03/16/2021 21:53:01] {freqDomainTrain.py:258} INFO - Epochs: 63 / 510, Time: 72.8, FR training L2 loss 27.38, FR validation L2 loss 30.80, FNR 33.51 %
+[03/16/2021 21:54:13] {freqDomainTrain.py:258} INFO - Epochs: 64 / 510, Time: 71.7, FR training L2 loss 27.29, FR validation L2 loss 30.57, FNR 33.48 %
+[03/16/2021 21:55:21] {freqDomainTrain.py:258} INFO - Epochs: 65 / 510, Time: 68.5, FR training L2 loss 27.22, FR validation L2 loss 30.70, FNR 32.94 %
+[03/16/2021 21:56:28] {freqDomainTrain.py:258} INFO - Epochs: 66 / 510, Time: 67.0, FR training L2 loss 27.21, FR validation L2 loss 30.73, FNR 32.68 %
+[03/16/2021 21:57:37] {freqDomainTrain.py:258} INFO - Epochs: 67 / 510, Time: 68.6, FR training L2 loss 27.05, FR validation L2 loss 30.87, FNR 33.87 %
+[03/16/2021 21:58:45] {freqDomainTrain.py:258} INFO - Epochs: 68 / 510, Time: 68.1, FR training L2 loss 27.13, FR validation L2 loss 31.13, FNR 33.05 %
+[03/16/2021 21:59:52] {freqDomainTrain.py:258} INFO - Epochs: 69 / 510, Time: 67.1, FR training L2 loss 27.05, FR validation L2 loss 30.97, FNR 32.98 %
+[03/16/2021 22:01:00] {freqDomainTrain.py:258} INFO - Epochs: 70 / 510, Time: 67.9, FR training L2 loss 25.95, FR validation L2 loss 30.56, FNR 31.16 %
+[03/16/2021 22:02:08] {freqDomainTrain.py:258} INFO - Epochs: 71 / 510, Time: 67.6, FR training L2 loss 25.76, FR validation L2 loss 30.62, FNR 31.31 %
+[03/16/2021 22:03:15] {freqDomainTrain.py:258} INFO - Epochs: 72 / 510, Time: 67.3, FR training L2 loss 25.57, FR validation L2 loss 30.43, FNR 31.24 %
+[03/16/2021 22:04:22] {freqDomainTrain.py:258} INFO - Epochs: 73 / 510, Time: 67.5, FR training L2 loss 25.54, FR validation L2 loss 30.66, FNR 31.22 %
+[03/16/2021 22:05:30] {freqDomainTrain.py:258} INFO - Epochs: 74 / 510, Time: 67.5, FR training L2 loss 25.48, FR validation L2 loss 30.59, FNR 31.01 %
+[03/16/2021 22:06:37] {freqDomainTrain.py:258} INFO - Epochs: 75 / 510, Time: 67.6, FR training L2 loss 25.26, FR validation L2 loss 30.70, FNR 30.87 %
+[03/16/2021 22:07:45] {freqDomainTrain.py:258} INFO - Epochs: 76 / 510, Time: 67.4, FR training L2 loss 25.35, FR validation L2 loss 30.72, FNR 31.58 %
+[03/16/2021 22:08:52] {freqDomainTrain.py:258} INFO - Epochs: 77 / 510, Time: 67.5, FR training L2 loss 25.32, FR validation L2 loss 30.75, FNR 31.33 %
+[03/16/2021 22:10:00] {freqDomainTrain.py:258} INFO - Epochs: 78 / 510, Time: 67.3, FR training L2 loss 25.35, FR validation L2 loss 30.87, FNR 30.74 %
+[03/16/2021 22:11:07] {freqDomainTrain.py:258} INFO - Epochs: 79 / 510, Time: 67.0, FR training L2 loss 25.33, FR validation L2 loss 30.86, FNR 31.20 %
+[03/16/2021 22:12:13] {freqDomainTrain.py:258} INFO - Epochs: 80 / 510, Time: 66.5, FR training L2 loss 25.24, FR validation L2 loss 30.73, FNR 30.79 %
+[03/16/2021 22:13:20] {freqDomainTrain.py:258} INFO - Epochs: 81 / 510, Time: 66.4, FR training L2 loss 24.82, FR validation L2 loss 30.79, FNR 30.75 %
+[03/16/2021 22:14:27] {freqDomainTrain.py:258} INFO - Epochs: 82 / 510, Time: 66.8, FR training L2 loss 24.66, FR validation L2 loss 30.69, FNR 30.35 %
+[03/16/2021 22:15:33] {freqDomainTrain.py:258} INFO - Epochs: 83 / 510, Time: 66.9, FR training L2 loss 24.53, FR validation L2 loss 30.87, FNR 30.71 %
+[03/16/2021 22:16:40] {freqDomainTrain.py:258} INFO - Epochs: 84 / 510, Time: 66.9, FR training L2 loss 24.65, FR validation L2 loss 30.90, FNR 30.83 %
+[03/16/2021 22:17:48] {freqDomainTrain.py:258} INFO - Epochs: 85 / 510, Time: 67.4, FR training L2 loss 24.57, FR validation L2 loss 31.03, FNR 30.37 %
+[03/16/2021 22:18:56] {freqDomainTrain.py:258} INFO - Epochs: 86 / 510, Time: 68.1, FR training L2 loss 24.55, FR validation L2 loss 30.94, FNR 30.88 %
+[03/16/2021 22:20:04] {freqDomainTrain.py:258} INFO - Epochs: 87 / 510, Time: 68.0, FR training L2 loss 24.52, FR validation L2 loss 30.90, FNR 30.75 %
+[03/16/2021 22:21:11] {freqDomainTrain.py:258} INFO - Epochs: 88 / 510, Time: 67.2, FR training L2 loss 24.38, FR validation L2 loss 30.93, FNR 30.17 %
+[03/16/2021 22:22:18] {freqDomainTrain.py:258} INFO - Epochs: 89 / 510, Time: 66.9, FR training L2 loss 24.36, FR validation L2 loss 30.93, FNR 30.16 %
+[03/16/2021 22:23:26] {freqDomainTrain.py:258} INFO - Epochs: 90 / 510, Time: 67.7, FR training L2 loss 24.15, FR validation L2 loss 30.98, FNR 30.10 %
+[03/16/2021 22:24:33] {freqDomainTrain.py:258} INFO - Epochs: 91 / 510, Time: 67.3, FR training L2 loss 24.15, FR validation L2 loss 30.82, FNR 30.04 %
+[03/16/2021 22:25:41] {freqDomainTrain.py:258} INFO - Epochs: 92 / 510, Time: 68.1, FR training L2 loss 24.00, FR validation L2 loss 30.92, FNR 30.12 %
+[03/16/2021 22:26:48] {freqDomainTrain.py:258} INFO - Epochs: 93 / 510, Time: 66.9, FR training L2 loss 24.08, FR validation L2 loss 30.95, FNR 30.03 %
+[03/16/2021 22:27:55] {freqDomainTrain.py:258} INFO - Epochs: 94 / 510, Time: 67.2, FR training L2 loss 24.12, FR validation L2 loss 31.02, FNR 30.40 %
+[03/16/2021 22:29:03] {freqDomainTrain.py:258} INFO - Epochs: 95 / 510, Time: 67.3, FR training L2 loss 24.03, FR validation L2 loss 31.04, FNR 30.04 %
+[03/16/2021 22:30:10] {freqDomainTrain.py:258} INFO - Epochs: 96 / 510, Time: 67.9, FR training L2 loss 24.13, FR validation L2 loss 31.16, FNR 30.24 %
+[03/16/2021 22:31:18] {freqDomainTrain.py:258} INFO - Epochs: 97 / 510, Time: 67.3, FR training L2 loss 24.09, FR validation L2 loss 31.10, FNR 30.30 %
+[03/16/2021 22:32:27] {freqDomainTrain.py:258} INFO - Epochs: 98 / 510, Time: 69.3, FR training L2 loss 23.99, FR validation L2 loss 31.12, FNR 29.95 %
+[03/16/2021 22:33:37] {freqDomainTrain.py:258} INFO - Epochs: 99 / 510, Time: 70.3, FR training L2 loss 23.87, FR validation L2 loss 31.07, FNR 29.74 %
+[03/16/2021 22:34:47] {freqDomainTrain.py:258} INFO - Epochs: 100 / 510, Time: 70.0, FR training L2 loss 23.85, FR validation L2 loss 31.04, FNR 30.11 %
+[03/16/2021 22:35:56] {freqDomainTrain.py:258} INFO - Epochs: 101 / 510, Time: 69.1, FR training L2 loss 23.80, FR validation L2 loss 31.10, FNR 29.96 %
+[03/16/2021 22:37:07] {freqDomainTrain.py:258} INFO - Epochs: 102 / 510, Time: 70.2, FR training L2 loss 24.05, FR validation L2 loss 31.05, FNR 30.00 %
+[03/16/2021 22:38:17] {freqDomainTrain.py:258} INFO - Epochs: 103 / 510, Time: 70.4, FR training L2 loss 23.87, FR validation L2 loss 31.15, FNR 29.73 %
+[03/16/2021 22:39:27] {freqDomainTrain.py:258} INFO - Epochs: 104 / 510, Time: 70.3, FR training L2 loss 23.84, FR validation L2 loss 31.07, FNR 29.91 %
+[03/16/2021 22:40:37] {freqDomainTrain.py:258} INFO - Epochs: 105 / 510, Time: 69.9, FR training L2 loss 23.82, FR validation L2 loss 31.09, FNR 29.84 %
+[03/16/2021 22:41:47] {freqDomainTrain.py:258} INFO - Epochs: 106 / 510, Time: 70.1, FR training L2 loss 23.68, FR validation L2 loss 31.08, FNR 30.09 %
+[03/16/2021 22:42:58] {freqDomainTrain.py:258} INFO - Epochs: 107 / 510, Time: 70.6, FR training L2 loss 23.82, FR validation L2 loss 31.20, FNR 30.27 %
+[03/16/2021 22:44:09] {freqDomainTrain.py:258} INFO - Epochs: 108 / 510, Time: 70.6, FR training L2 loss 23.77, FR validation L2 loss 31.18, FNR 29.93 %
+[03/16/2021 22:45:19] {freqDomainTrain.py:258} INFO - Epochs: 109 / 510, Time: 69.9, FR training L2 loss 23.72, FR validation L2 loss 31.20, FNR 30.00 %
+[03/16/2021 22:46:29] {freqDomainTrain.py:258} INFO - Epochs: 110 / 510, Time: 70.5, FR training L2 loss 23.90, FR validation L2 loss 31.14, FNR 30.20 %
+[03/16/2021 22:47:39] {freqDomainTrain.py:258} INFO - Epochs: 111 / 510, Time: 69.9, FR training L2 loss 23.78, FR validation L2 loss 31.09, FNR 30.20 %
+[03/16/2021 22:48:49] {freqDomainTrain.py:258} INFO - Epochs: 112 / 510, Time: 70.1, FR training L2 loss 23.75, FR validation L2 loss 31.25, FNR 30.03 %
+[03/16/2021 22:49:59] {freqDomainTrain.py:258} INFO - Epochs: 113 / 510, Time: 70.0, FR training L2 loss 23.67, FR validation L2 loss 31.19, FNR 29.96 %
+[03/16/2021 22:51:10] {freqDomainTrain.py:258} INFO - Epochs: 114 / 510, Time: 70.4, FR training L2 loss 23.69, FR validation L2 loss 31.18, FNR 30.00 %
+[03/16/2021 22:52:19] {freqDomainTrain.py:258} INFO - Epochs: 115 / 510, Time: 69.5, FR training L2 loss 23.70, FR validation L2 loss 31.16, FNR 30.09 %
+[03/16/2021 22:53:30] {freqDomainTrain.py:258} INFO - Epochs: 116 / 510, Time: 70.5, FR training L2 loss 23.69, FR validation L2 loss 31.20, FNR 30.05 %
+[03/16/2021 22:54:40] {freqDomainTrain.py:258} INFO - Epochs: 117 / 510, Time: 70.5, FR training L2 loss 23.85, FR validation L2 loss 31.15, FNR 29.95 %
+[03/16/2021 22:55:51] {freqDomainTrain.py:258} INFO - Epochs: 118 / 510, Time: 70.7, FR training L2 loss 23.74, FR validation L2 loss 31.14, FNR 30.21 %
+[03/16/2021 22:57:02] {freqDomainTrain.py:258} INFO - Epochs: 119 / 510, Time: 70.8, FR training L2 loss 23.71, FR validation L2 loss 31.15, FNR 29.94 %
+[03/16/2021 22:58:13] {freqDomainTrain.py:258} INFO - Epochs: 120 / 510, Time: 71.2, FR training L2 loss 23.67, FR validation L2 loss 31.18, FNR 30.07 %
+[03/16/2021 22:59:23] {freqDomainTrain.py:258} INFO - Epochs: 121 / 510, Time: 69.7, FR training L2 loss 23.69, FR validation L2 loss 31.19, FNR 30.08 %
+[03/16/2021 23:00:31] {freqDomainTrain.py:258} INFO - Epochs: 122 / 510, Time: 68.5, FR training L2 loss 23.76, FR validation L2 loss 31.19, FNR 30.05 %
+[03/16/2021 23:01:40] {freqDomainTrain.py:258} INFO - Epochs: 123 / 510, Time: 69.3, FR training L2 loss 23.68, FR validation L2 loss 31.22, FNR 30.00 %
+[03/16/2021 23:02:50] {freqDomainTrain.py:258} INFO - Epochs: 124 / 510, Time: 69.3, FR training L2 loss 23.62, FR validation L2 loss 31.22, FNR 30.12 %
+[03/16/2021 23:03:58] {freqDomainTrain.py:258} INFO - Epochs: 125 / 510, Time: 68.3, FR training L2 loss 23.65, FR validation L2 loss 31.16, FNR 30.08 %
+[03/16/2021 23:05:07] {freqDomainTrain.py:258} INFO - Epochs: 126 / 510, Time: 68.7, FR training L2 loss 23.74, FR validation L2 loss 31.14, FNR 30.14 %
+[03/16/2021 23:06:15] {freqDomainTrain.py:258} INFO - Epochs: 127 / 510, Time: 68.1, FR training L2 loss 23.68, FR validation L2 loss 31.20, FNR 30.13 %
+[03/16/2021 23:07:24] {freqDomainTrain.py:258} INFO - Epochs: 128 / 510, Time: 69.1, FR training L2 loss 23.64, FR validation L2 loss 31.22, FNR 30.04 %
+[03/16/2021 23:08:33] {freqDomainTrain.py:258} INFO - Epochs: 129 / 510, Time: 69.0, FR training L2 loss 23.65, FR validation L2 loss 31.22, FNR 29.95 %
+[03/16/2021 23:09:42] {freqDomainTrain.py:258} INFO - Epochs: 130 / 510, Time: 68.7, FR training L2 loss 23.67, FR validation L2 loss 31.18, FNR 29.98 %
+[03/16/2021 23:10:52] {freqDomainTrain.py:258} INFO - Epochs: 131 / 510, Time: 70.1, FR training L2 loss 23.81, FR validation L2 loss 31.23, FNR 30.02 %
+[03/16/2021 23:12:03] {freqDomainTrain.py:258} INFO - Epochs: 132 / 510, Time: 70.8, FR training L2 loss 23.67, FR validation L2 loss 31.23, FNR 29.96 %
+[03/16/2021 23:13:13] {freqDomainTrain.py:258} INFO - Epochs: 133 / 510, Time: 70.5, FR training L2 loss 23.66, FR validation L2 loss 31.19, FNR 30.05 %
+[03/16/2021 23:14:23] {freqDomainTrain.py:258} INFO - Epochs: 134 / 510, Time: 69.5, FR training L2 loss 23.72, FR validation L2 loss 31.18, FNR 30.04 %
+[03/16/2021 23:15:33] {freqDomainTrain.py:258} INFO - Epochs: 135 / 510, Time: 70.0, FR training L2 loss 23.61, FR validation L2 loss 31.29, FNR 30.20 %
+[03/16/2021 23:16:43] {freqDomainTrain.py:258} INFO - Epochs: 136 / 510, Time: 70.1, FR training L2 loss 23.62, FR validation L2 loss 31.17, FNR 30.14 %
+[03/16/2021 23:17:53] {freqDomainTrain.py:258} INFO - Epochs: 137 / 510, Time: 70.0, FR training L2 loss 23.50, FR validation L2 loss 31.20, FNR 30.00 %
+[03/16/2021 23:19:03] {freqDomainTrain.py:258} INFO - Epochs: 138 / 510, Time: 70.4, FR training L2 loss 23.57, FR validation L2 loss 31.25, FNR 29.89 %
+[03/16/2021 23:20:13] {freqDomainTrain.py:258} INFO - Epochs: 139 / 510, Time: 70.1, FR training L2 loss 23.71, FR validation L2 loss 31.27, FNR 30.27 %
+[03/16/2021 23:21:23] {freqDomainTrain.py:258} INFO - Epochs: 140 / 510, Time: 69.9, FR training L2 loss 23.65, FR validation L2 loss 31.21, FNR 30.21 %
+[03/16/2021 23:22:34] {freqDomainTrain.py:258} INFO - Epochs: 141 / 510, Time: 70.5, FR training L2 loss 23.63, FR validation L2 loss 31.25, FNR 30.01 %
+[03/16/2021 23:23:43] {freqDomainTrain.py:258} INFO - Epochs: 142 / 510, Time: 69.3, FR training L2 loss 23.64, FR validation L2 loss 31.27, FNR 30.02 %
+[03/16/2021 23:24:52] {freqDomainTrain.py:258} INFO - Epochs: 143 / 510, Time: 68.5, FR training L2 loss 23.66, FR validation L2 loss 31.24, FNR 30.01 %
+[03/16/2021 23:26:00] {freqDomainTrain.py:258} INFO - Epochs: 144 / 510, Time: 68.1, FR training L2 loss 23.62, FR validation L2 loss 31.23, FNR 29.99 %
+[03/16/2021 23:27:09] {freqDomainTrain.py:258} INFO - Epochs: 145 / 510, Time: 69.4, FR training L2 loss 23.73, FR validation L2 loss 31.24, FNR 29.95 %
+[03/16/2021 23:28:18] {freqDomainTrain.py:258} INFO - Epochs: 146 / 510, Time: 69.3, FR training L2 loss 23.74, FR validation L2 loss 31.22, FNR 29.96 %
+[03/16/2021 23:29:27] {freqDomainTrain.py:258} INFO - Epochs: 147 / 510, Time: 68.6, FR training L2 loss 23.72, FR validation L2 loss 31.26, FNR 30.09 %
+[03/16/2021 23:30:34] {freqDomainTrain.py:258} INFO - Epochs: 148 / 510, Time: 66.7, FR training L2 loss 23.69, FR validation L2 loss 31.24, FNR 30.15 %
+[03/16/2021 23:31:41] {freqDomainTrain.py:258} INFO - Epochs: 149 / 510, Time: 67.3, FR training L2 loss 23.61, FR validation L2 loss 31.24, FNR 30.10 %
+[03/16/2021 23:32:50] {freqDomainTrain.py:258} INFO - Epochs: 150 / 510, Time: 69.0, FR training L2 loss 23.73, FR validation L2 loss 31.20, FNR 30.00 %
+[03/16/2021 23:34:00] {freqDomainTrain.py:258} INFO - Epochs: 151 / 510, Time: 69.6, FR training L2 loss 23.67, FR validation L2 loss 31.25, FNR 30.00 %
+[03/16/2021 23:35:09] {freqDomainTrain.py:258} INFO - Epochs: 152 / 510, Time: 69.4, FR training L2 loss 23.68, FR validation L2 loss 31.16, FNR 30.02 %
+[03/16/2021 23:36:19] {freqDomainTrain.py:258} INFO - Epochs: 153 / 510, Time: 69.3, FR training L2 loss 23.62, FR validation L2 loss 31.24, FNR 30.02 %
+[03/16/2021 23:37:30] {freqDomainTrain.py:258} INFO - Epochs: 154 / 510, Time: 71.9, FR training L2 loss 23.68, FR validation L2 loss 31.29, FNR 30.09 %
+[03/16/2021 23:38:41] {freqDomainTrain.py:258} INFO - Epochs: 155 / 510, Time: 70.4, FR training L2 loss 23.63, FR validation L2 loss 31.23, FNR 29.95 %
+[03/16/2021 23:39:51] {freqDomainTrain.py:258} INFO - Epochs: 156 / 510, Time: 69.7, FR training L2 loss 23.75, FR validation L2 loss 31.24, FNR 30.21 %
+[03/16/2021 23:41:02] {freqDomainTrain.py:258} INFO - Epochs: 157 / 510, Time: 70.9, FR training L2 loss 23.67, FR validation L2 loss 31.22, FNR 29.83 %
+[03/16/2021 23:42:14] {freqDomainTrain.py:258} INFO - Epochs: 158 / 510, Time: 72.2, FR training L2 loss 23.72, FR validation L2 loss 31.27, FNR 30.07 %
+[03/16/2021 23:43:24] {freqDomainTrain.py:258} INFO - Epochs: 159 / 510, Time: 70.1, FR training L2 loss 23.70, FR validation L2 loss 31.17, FNR 30.00 %
+[03/16/2021 23:44:35] {freqDomainTrain.py:258} INFO - Epochs: 160 / 510, Time: 71.1, FR training L2 loss 23.67, FR validation L2 loss 31.26, FNR 29.75 %
+[03/16/2021 23:45:45] {freqDomainTrain.py:258} INFO - Epochs: 161 / 510, Time: 70.2, FR training L2 loss 23.56, FR validation L2 loss 31.24, FNR 29.90 %
+[03/16/2021 23:46:55] {freqDomainTrain.py:258} INFO - Epochs: 162 / 510, Time: 69.8, FR training L2 loss 23.61, FR validation L2 loss 31.24, FNR 29.96 %
+[03/16/2021 23:48:04] {freqDomainTrain.py:258} INFO - Epochs: 163 / 510, Time: 69.1, FR training L2 loss 23.69, FR validation L2 loss 31.22, FNR 30.06 %
+[03/16/2021 23:49:13] {freqDomainTrain.py:258} INFO - Epochs: 164 / 510, Time: 69.0, FR training L2 loss 23.64, FR validation L2 loss 31.21, FNR 30.03 %
+[03/16/2021 23:50:23] {freqDomainTrain.py:258} INFO - Epochs: 165 / 510, Time: 69.4, FR training L2 loss 23.63, FR validation L2 loss 31.30, FNR 30.19 %
+[03/16/2021 23:51:34] {freqDomainTrain.py:258} INFO - Epochs: 166 / 510, Time: 71.0, FR training L2 loss 23.62, FR validation L2 loss 31.26, FNR 29.87 %
+[03/16/2021 23:52:43] {freqDomainTrain.py:258} INFO - Epochs: 167 / 510, Time: 69.2, FR training L2 loss 23.65, FR validation L2 loss 31.25, FNR 30.09 %
+[03/16/2021 23:53:52] {freqDomainTrain.py:258} INFO - Epochs: 168 / 510, Time: 69.2, FR training L2 loss 23.56, FR validation L2 loss 31.26, FNR 30.09 %
+[03/16/2021 23:55:01] {freqDomainTrain.py:258} INFO - Epochs: 169 / 510, Time: 68.9, FR training L2 loss 23.79, FR validation L2 loss 31.29, FNR 29.93 %
+[03/16/2021 23:56:10] {freqDomainTrain.py:258} INFO - Epochs: 170 / 510, Time: 69.0, FR training L2 loss 23.59, FR validation L2 loss 31.23, FNR 30.07 %
+[03/16/2021 23:57:19] {freqDomainTrain.py:258} INFO - Epochs: 171 / 510, Time: 69.0, FR training L2 loss 23.63, FR validation L2 loss 31.27, FNR 29.96 %
+[03/16/2021 23:58:29] {freqDomainTrain.py:258} INFO - Epochs: 172 / 510, Time: 69.9, FR training L2 loss 23.76, FR validation L2 loss 31.21, FNR 30.03 %
