@@ -24,8 +24,21 @@ df=1/TW;
 %-------------------------------------------------------------------------%
 %% 散射点模型建立
 center=[8000,0,0];                                             %模型中心
-x=[0,-1,-1,-6.5,-6.5,-1,-1,-2.5,-2.5,2.5,2.5,1,1,6.5,6.5,1,1]+center(1);      %散射点相对坐标
-y=[9,7,4,0.5,-1,0,-2.5,-3.5,-4,-4,-3.5,-2.5,0,-1,0.5,4,7];
+% x=[0,-1,-1,-6.5,-6.5,-1,-1,-2.5,-2.5,2.5,2.5,1,1,6.5,6.5,1,1]+center(1);      %散射点相对坐标
+% y=[9,7,4,0.5,-1,0,-2.5,-3.5,-4,-4,-3.5,-2.5,0,-1,0.5,4,7];
+x=[5,4,2.7,1,3]+center(1);      %散射点相对坐标
+y=[-1,1,2,0,-2];
+fsz=13;
+scatter(x-center(1),y,'k','filled');
+set(gca,'FontSize',fsz); 
+set(get(gca,'XLabel'),'FontSize',fsz);
+set(get(gca,'YLabel'),'FontSize',fsz);
+title('Target Layout');
+xlabel({'Radial Range / m';'(a)'});
+ylabel('Cross Range / m');
+ylim([-3 3])
+xlim([-1 7])
+grid on
 
 
 
@@ -83,7 +96,7 @@ for j = 1:n_pulse
     for k = 1:n_tgt
         %旋转
         theta=atan2(y(k)-center(2),x(k)-center(1));
-        RR(j,k)=sqrt((x(k)-center(1))^2+(y(k)-center(2))^2)*cos(theta+rotate_w*(j-1)/180*pi)+center(1);
+        RR(j,k)=sqrt((x(k)-center(1))^2+(y(k)-center(2))^2)*cos(theta+rotate_w*(j)/180*pi)+center(1);
 
         %平动
         tgt_vel(j,k)=tgt_vel_init(k)+(j-1)*tgt_acc_init(k)*PRI;
@@ -117,10 +130,15 @@ for j = 1:n_pulse
     
     RPP(j,:)=sig_dechirped_down(j,:)/max((abs(sig_dechirped_down(j,:))));
 end
-df=df*size(sig_dechirped_ds_1,2)/64;
+% df=df*size(sig_dechirped_ds_1,2)/64;
+fs=104000*dt*sweep_slope;
+df=fs/(104000/1625);
 nfft=4096;
 deltaR=3e8/2/df/nfft;
-r=(-(nfft-1)/2:(nfft-1)/2).*deltaR;
+
+
+% deltaR=3e8/2/df/nfft;
+r=(0:(nfft-1)).*deltaR;
 
 if ~exist('matlab_real2.h5','file')==0
     delete('matlab_real2.h5')
@@ -148,47 +166,48 @@ load data1_resfreq.mat
 %     data_resfreq_norm(i,:)=data1_resfreq(i,:)/max(abs(data1_resfreq(i,:)));
 % end
 win=ones(size(sig_dechirped_down,1),1)*hamming(64).';
-spc=fftshift(abs(fft(sig_dechirped_down.*win,4096,2)),2);
+spc=fliplr(fftshift(abs(fft(sig_dechirped_down.*win,4096,2)),2));
 fsz=13;
 h=figure();
 set(h,'position',[100 100 800 400]);
-ha=tight_subplot(1,2,[0.05 0.05],[.2 .08],[.08 .01]);
+ha=tight_subplot(1,2,[0.08 0.08],[.2 .08],[.08 .05]);
 axes(ha(1))
 plot(r,spc(1,:)./max(spc(1,:)),'k-.','linewidth',2);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
 title('periodogram');
-xlabel({'Range / m';'(a)'});
+xlabel({'Relative Range / m';'(a)'});
 ylabel('Normalized Amp.');
-xlim([-8 13])
+xlim([10 30])
 
 
 axes(ha(2))
+data1_resfreq=fliplr(data1_resfreq);
 plot(r,abs(data1_resfreq(1,:))/max(abs(data1_resfreq(1,:))),'k-.','linewidth',2);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
 title('cResFreq');
-xlabel({'Range / m';'(b)'});
+xlabel({'Relative Range / m';'(b)'});
 ylabel('Normalized Amp.');
-xlim([-8 13])
+xlim([10 30])
 
 h=figure();
 set(h,'position',[100 100 800 400]);
-ha=tight_subplot(1,2,[0.05 0.05],[.2 .08],[.08 .01])
+ha=tight_subplot(1,2,[0.08 0.08],[.2 .08],[.08 .05]);
 
 axes(ha(1))
 win=ones(size(sig_dechirped_down,1),1)*hamming(64).';
-spc=fftshift(abs(fft(sig_dechirped_down.*win,4096,2)),2);
+spc=fliplr(fftshift(abs(fft(sig_dechirped_down.*win,4096,2)),2));
 imagesc(r,1:512,spc);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
-title('cResFreq');
-xlabel({'Range / m';'(a)'});
+title('periodogram');
+xlabel({'Relative Range / m';'(a)'});
 ylabel('Pulse Index');
-% xlim([-10 10])
+xlim([10 30])
 
 axes(ha(2))
 imagesc(r,1:512,abs(data1_resfreq))
@@ -196,8 +215,9 @@ set(gca,'FontSize',fsz);
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
 title('cResFreq');
-xlabel({'Range / m';'(b)'});
-% xlim([-10 10])
+xlabel({'Relative Range / m';'(b)'});
+ylabel('Pulse Index');
+xlim([10 30])
 x=1
 
 %%

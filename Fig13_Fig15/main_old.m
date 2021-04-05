@@ -153,7 +153,7 @@ imagesc(r,1:512,spc);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
-title('cResFreq');
+title('periodogram');
 xlabel({'Range / m';'(a)'});
 ylabel('Pulse Index');
 xlim([-10 10])
