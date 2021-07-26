@@ -9,7 +9,9 @@ from numpy.fft import fft,fftshift
 import pickle
 from data import fr
 import matplotlib.pyplot as plt
-
+import matlab.engine
+import h5py
+eng = matlab.engine.start_matlab()
 
 def crlb(N,SNR):
     k=np.array(list(range(-1*int(N/2),int((N-1)/2))))
@@ -91,6 +93,7 @@ if __name__ == '__main__':
     fft_est = np.zeros([len(eval_snrs),iter_num])
     spcFreq_est = np.zeros([len(eval_snrs),iter_num])
     music_est = np.zeros([len(eval_snrs),iter_num])
+    omp_est = np.zeros([len(eval_snrs), iter_num])
     fc=np.zeros(len(eval_snrs))
     for k, snr in enumerate(eval_snrs):
         fc[k]=crlb(args.signal_dimension,snr)
@@ -103,6 +106,12 @@ if __name__ == '__main__':
                 mv = np.max(np.sqrt(pow(noisy_signals[0][0], 2) + pow(noisy_signals[0][1], 2)))
                 noisy_signals[0][0] = noisy_signals[0][0] / mv
                 noisy_signals[0][1] = noisy_signals[0][1] / mv
+                file = h5py.File('signal.h5', 'w')  # 创建一个h5文件，文件指针是f
+                file['signal'] = noisy_signals[0]  # 将数据写入文件的主键data下面
+                file.close()
+                file = h5py.File('tgt_num.h5', 'w')  # 创建一个h5文件，文件指针是f
+                file['tgt_num'] = nfreq[0]  # 将数据写入文件的主键data下面
+                file.close()
                 fft_sig = fft(signal_c, 256, 1)
                 fft_sig = np.abs(fft_sig / np.max(np.abs(fft_sig), 1)[:, None])
 
@@ -112,7 +121,8 @@ if __name__ == '__main__':
 
             music_fr = fr.music(signal_c[0][None], xgrid, nfreq[0][None])[0]
             periodogram_fr = fr.periodogram(signal_c[0][None], xgrid)[0]
-
+            omp_fr = eng.omp_func(nargout=1)
+            omp_fr = omp_fr[0]
 
             deepfreq_fr = deepfreq_fr.cpu().data.numpy()
             f_hat = fr.find_freq_m(deepfreq_fr, nfreq[0], xgrid)
@@ -133,6 +143,9 @@ if __name__ == '__main__':
 
             f_hat = fr.find_freq_m(periodogram_fr, nfreq[0], xgrid)
             fft_est[k, iter] = f_hat[0,0]
+
+            f_hat = fr.find_freq_m(omp_fr, nfreq[0], xgrid)
+            omp_est[k, iter] = f_hat[0, 0]
             x=1
 
 
@@ -153,7 +166,7 @@ if __name__ == '__main__':
     acc_deepfreq=np.zeros([len(db),1])
     acc_spcFreq=np.zeros([len(db),1])
     acc_cResFreq=np.zeros([len(db),1])
-
+    acc_omp = np.zeros([len(db), 1])
     for i in range(len(db)):
         tmp=fft_est[i,:]-ff
         acc_fft[i]=np.sqrt(np.mean(pow(tmp,2)))
@@ -165,6 +178,8 @@ if __name__ == '__main__':
         acc_spcFreq[i]=np.sqrt(np.mean(pow(tmp,2)))
         tmp=cResFreq_est[i,:]-ff
         acc_cResFreq[i]=np.sqrt(np.mean(pow(tmp,2)))
+        tmp=omp_est[i,:]-ff
+        acc_omp[i]=np.sqrt(np.mean(pow(tmp,2)))
 
     fig = plt.figure(figsize=(11, 7))
     ax = fig.add_subplot(111)
@@ -175,10 +190,12 @@ if __name__ == '__main__':
 
     ax.set_xlabel('SNR / dB', size=20)
     ax.set_ylabel(r'RMSE / Hz', size=20)
-    ax.semilogy(db,acc_music[:,0],'--',c='g',marker='o',label='MUSIC',linewidth=4,markersize=10)
+
     ax.semilogy(db,acc_fft[:,0],'--',c='m',marker='o',label='Periodogram',linewidth=4,markersize=10)
-    ax.semilogy(db,acc_deepfreq[:,0],'--',c='b',marker='o',label='DeepFreq',linewidth=4,markersize=10)
+    ax.semilogy(db, acc_music[:, 0], '--', c='g', marker='o', label='MUSIC', linewidth=4, markersize=10)
+    ax.semilogy(db, acc_omp[:, 0], '--', marker='o', label='OMP', linewidth=4, markersize=10)
     ax.semilogy(db,acc_spcFreq[:,0],'--',c='k',marker='o',label='spcFreq',linewidth=4,markersize=10)
+    ax.semilogy(db, acc_deepfreq[:, 0], '--', c='b', marker='o', label='DeepFreq', linewidth=4, markersize=10)
     ax.semilogy(db, acc_cResFreq[:,0], '--', c='r', marker='o', label='cResFreq', linewidth=4,markersize=10)
     ax.semilogy(db, fc, '--', c='#EDB120', marker='o', label='CRLB', linewidth=5, markersize=10)
     # ax.set_ylim(2.8e-3,1e-1)

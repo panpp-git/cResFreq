@@ -82,19 +82,12 @@ def gen_signal(num_samples, signal_dim, num_freq, min_sep, distance='normal', am
     for n in range(num_samples):
         if n%100==0:
             print(n)
-        # r[0,0]=0.12
-        # r[0,1]=3
-        # nfreq[0]=2
-        # r[0,0:2]=np.array([0.15,15])
-
-        # if nfreq[n]>=2 and np.random.rand()>=0:
-        #     nfreq[n]=2
-        #     idx=np.argmax(r[n,0:nfreq[n]])
-        #     r[n,idx]=10 ** (41 / 20) * np.min(r[n, :nfreq[n]])
-
 
         frequency_generator(f[n], nfreq[n], d_sep, distance)
-        # f[0,0:2]=np.array([0,0.2])
+        if n == 0:
+            nfreq[n] = 1
+            f[n, 0] = 0
+            r[n,0]=1
         for i in range(nfreq[n]):
             sin = r[n, i] * np.exp(1j*theta[n,i]+ 2j * np.pi * f[n, i] * xgrid.T)
             s[n, 0] = s[n, 0] + sin.real

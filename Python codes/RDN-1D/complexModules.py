@@ -288,6 +288,7 @@ class FrequencyRepresentationModule_skiplayer32(nn.Module):
 
         x=self.in_layer(inp).view(bsz, 1,int(self.n_filters/8), -1)
 
+
         # plt.figure(figsize=(6,7))
         #
         # # plt.xticks([])
@@ -304,34 +305,57 @@ class FrequencyRepresentationModule_skiplayer32(nn.Module):
         # plt.grid(linestyle='-.')
         # plt.tick_params(labelsize=16)
         # plt.tight_layout()
+
         x=self.in_layer2(x).view(bsz,self.n_filters,-1)
+
         # plt.figure(figsize=(6,7))
         # # plt.xticks([])
         # # plt.yticks([])
         # # plt.axis('off')
         # for i in range(0,32):
-        #
         #     plt.ion()
         #     plt.plot(grid,x[0,i].abs()/torch.max(x[0].abs()))
         #     plt.show()
         #     plt.pause(1)
         # plt.gca().set_xlabel('Normalized freq. / Hz',size=20)
-        # # plt.gca().set_title('Feature Maps with Conv. Layer', fontsize=20)
-        # plt.gca().set_ylabel('Normalized Amp.',fontsize=20)
+        # plt.gca().set_ylabel('Normalized Amp.', fontsize=20)
+        # # plt.gca().set_title('Feature Maps output by FC Layer',fontsize= 20)
         # plt.grid(linestyle='-.')
         # plt.tick_params(labelsize=16)
         # plt.tight_layout()
+
+
+        # plt.xticks([])
+        # plt.yticks([])
+        # plt.axis('off')
+        # fontsz=20
+        # for i in range(0,32):
+        #     plt.figure(figsize=(6, 6))
+        #     # plt.ion()
+        #     plt.plot(grid,x[0,i].abs()/torch.max(x[0].abs()))
+        #     plt.ylim(0,1)
+        #     plt.tick_params(labelsize=fontsz)
+        #     plt.grid(linestyle='-.')
+            # plt.show()
+            # plt.pause(1)
+        # plt.gca().set_xlabel('Normalized freq. / Hz',size=20)
+        # plt.gca().set_title('Feature Maps with Conv. Layer', fontsize=20)
+        # plt.gca().set_ylabel('Normalized Amp.',fontsize=20)
+
+        # plt.tick_params(labelsize=16)
+        # plt.tight_layout()
+
         x=x.abs()
-        # plt.figure()
-        # # plt.xticks([])
-        # # plt.yticks([])
-        # # plt.axis('off')
-        # for i in range(0,16):
-        #
-        #     plt.ion()
-        #     plt.plot(grid,x[0,i].abs())
-        #     plt.show()
-        #     plt.pause(1)
+        plt.figure()
+        # plt.xticks([])
+        # plt.yticks([])
+        # plt.axis('off')
+        for i in range(0,32):
+
+            plt.ion()
+            plt.plot(grid,x[0,i].abs())
+            plt.show()
+            plt.pause(1)
 
 
 
@@ -364,13 +388,13 @@ class FrequencyRepresentationModule_skiplayer32(nn.Module):
 
         x = self.out_layer(x).view(bsz, -1)
 
-        # plt.figure()
-        # plt.xticks([])
-        # plt.yticks([])
-        # plt.axis('off')
-        # grid = np.linspace(-0.5, 0.5, 4096, endpoint=False)
-        # plt.plot(grid,x[0],'b')
-        # plt.show()
+        plt.figure()
+        plt.xticks([])
+        plt.yticks([])
+        plt.axis('off')
+        grid = np.linspace(-0.5, 0.5, 4096, endpoint=False)
+        plt.plot(grid,x[0],'b')
+        plt.show()
         return x
 
 
