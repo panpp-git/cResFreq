@@ -1,15 +1,18 @@
 clc
 clear all
-
+close all
+format long
+rng('default');
 
 L=64;
 nfft=L*64;
 x_label=-0.5:1/nfft:0.5-1/nfft;
-w=2*pi*[0,1/L,5/L,5.7/L];
+w=2*pi*[-5/L,0/L,5/L,5.7/L,8/L,13/L];
 y=w/2/pi;
 tgt_num=length(w);
 amp=ones(1,tgt_num);
-
+amp(tgt_num-2)=10^(-10/20);
+amp(tgt_num)=10^(-20/20);
 sig=zeros(1,L);
 nfft=4096;
 search_f=-0.5:1/nfft:0.5-1/nfft;
@@ -19,13 +22,15 @@ for i=1:tgt_num
 end
 sig=sig/sqrt(mean(abs(sig.^2)));
 %% 
-% SNR=20;
-% noisedSig_20dB=sig*10^(SNR/20)+wgn(size(sig,1),size(sig,2),0,'complex');
-% SNR=5;
-% noisedSig_0dB=sig*10^(SNR/20)+wgn(size(sig,1),size(sig,2),0,'complex');
+SNR=20;
+noise=wgn(size(sig,1),size(sig,2),0,'complex');
+noisedSig_20dB=sig*10^(SNR/20)+noise;
+SNR=0;
+noise=wgn(size(sig,1),size(sig,2),0,'complex');
+noisedSig_0dB=sig*10^(SNR/20)+noise;
 
-load noisedSig_20dB
-load noisedSig_0dB
+% load noisedSig_20dB
+% load noisedSig_0dB
 %% cResFreq
 delete('data1_resfreq.mat')
 if ~exist('matlab_real2.h5','file')==0
@@ -61,7 +66,7 @@ if flag==0
  
     normDeepFreq=10*log10(data1_resfreq.^2/max(data1_resfreq.^2)+1e-13);
     plot(x_label,real(normDeepFreq),'b:.','linewidth',3);
-    axis([-0.08 0.22 -40 3])
+    axis([-0.1 0.25 -60 3])
     ylabel('Normalized PSD / dB');
     xlabel('Normalized freq. / Hz');
 
@@ -90,7 +95,7 @@ if flag==0
     normDeepFreq0=10*log10(data1_resfreq.^2/max(data1_resfreq.^2)+1e-13);
     plot(x_label,real(normDeepFreq0),'k:.','linewidth',3);
 
-    legend('cResFreq, SNR = 30dB','cResFreq, SNR = 10dB');
+    legend('SNR = 20dB','SNR = 0dB');
     ylabel('Normalized Power / dB');
     xlabel('Normalized freq. / Hz');
     grid on;
