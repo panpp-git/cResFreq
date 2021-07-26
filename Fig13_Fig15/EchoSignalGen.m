@@ -13,8 +13,8 @@ function EchoSig=EchoSignalGen(TW,BW,RNG_MIN,n_rwnd,tgt_dist,amp,FC,TS)
 %TS为采样间隔
 %==================================================================
 %% Parameter
-% C=299792458;                                            %光速
-C=3e8;
+C=299792458;                                            %光速
+% C=3e8;
 sweep_slope=BW/TW;                                        %调频率
 
 RNG_MAX=RNG_MIN+(n_rwnd-1)*TS*C/2;
@@ -27,5 +27,6 @@ M=length(tgt_dist);                                       %目标数目
 td=ones(M,1)*t-2*tgt_dist'/C*ones(1,n_rwnd);
 Srt=amp*((ones(n_rwnd,1)*exp(-j*2*pi*FC*2*tgt_dist/C)).'.*exp(j*pi*sweep_slope*td.^2).*(abs(td)<TW/2));%radar echo from point targets 
 EchoSig=Srt;
+
 %==================================================================
 

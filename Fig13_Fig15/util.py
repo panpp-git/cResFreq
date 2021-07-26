@@ -1,7 +1,7 @@
 import os
 import torch
 import errno
-import complexModules
+import complexModules,modules
 
 def model_parameters(model):
     num_params = 0
