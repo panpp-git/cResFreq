@@ -22,7 +22,6 @@ ylabel('Doppler Cell')
 
 sig=X(1:2:end,1:2:end);
 
-
 for i=1:size(sig,1)
     RPP(i,:)=sig(i,:)/max(abs(sig(i,:)));
 end
@@ -50,7 +49,7 @@ h5write('bz.h5','/bz',bz)
 
 system('D:\ProgramData\Anaconda3\envs\complexPytorch-gpu\python.exe resfreq_model.py')
 load data1_resfreq.mat
-idx=1;
+
 win=ones(size(sig,1),1)*hamming(size(sig,2)).';
 spc=fftshift(abs(fft(sig.*win,4096,2)),2);
 fsz=13;
@@ -123,11 +122,12 @@ load data1_deepfreq.mat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 1-D diagram
 r=r_label/2;
+idx=1;
 h=figure();
 set(h,'position',[100 100 1400 400]);
 ha=tight_subplot(1,3,[0.01 0.01],[.2 .08],[.05 .03]);
 axes(ha(1))
-plot(r,spc(1,:)./max(spc(1,:)),'k-.','linewidth',2);
+plot(r,spc(idx,:)./max(spc(idx,:)),'k-.','linewidth',2);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
@@ -148,7 +148,7 @@ ylabel('Normalized Amp.');
 
 axes(ha(2))
 data1_deepfreq1=((data1_deepfreq));
-plot(r,abs(data1_deepfreq1(1,:))/max(abs(data1_deepfreq1(1,:))),'k-.','linewidth',2);
+plot(r,abs(data1_deepfreq1(idx,:))/max(abs(data1_deepfreq1(idx,:))),'k-.','linewidth',2);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
@@ -159,7 +159,7 @@ set(gca,'YTick',[]);
 % 
 axes(ha(3))
 data1_resfreq1=(((data1_resfreq)));
-plot(r,abs(data1_resfreq1(1,:))/max(abs(data1_resfreq1(1,:))),'k-.','linewidth',2);
+plot(r,abs(data1_resfreq1(idx,:))/max(abs(data1_resfreq1(idx,:))),'k-.','linewidth',2);
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
@@ -193,21 +193,25 @@ set(gca,'YTick',[]);
 
 
 %% 2-D diagram
+sig=fftshift(fft(sig,[],1),1);
+RPP=sig/max(max(abs(sig)));
+
 h=figure();
-set(h,'position',[100 100 1200 400]);
-ha=tight_subplot(1,3,[0.16 0.05],[.16 .05],[.08 .06]);
+set(h,'position',[100 100 1400 400]);
+ha=tight_subplot(1,3,[0.01 0.01],[.2 .08],[.05 .03]);
 
 axes(ha(1))
 win=ones(size(sig,1),1)*hamming(64).';
 spc=fftshift(abs(fft(sig.*win,4096,2)),2);
-mesh(r_label/2,1:size(spc,1),spc/max(max(spc)));
+imagesc(r_label/2,1:size(spc,1),spc/max(max(spc)));
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
 set(get(gca,'YLabel'),'FontSize',fsz);
+
 % title('periodogram');
 xlabel({'Relative Range / m';'(a)'});
 ylabel('Pulse Index');
-view(30,65)
+% view(30,65)
 
 % axes(ha(2))
 % mesh(r_label,1:size(spc,1),abs(P_ah)/max(max(abs(P_ah))));
@@ -219,25 +223,74 @@ view(30,65)
 % ylabel('Pulse Index');
 % view(35,65)
 
+%deepfreq
+
+if ~exist('matlab_real1.h5','file')==0
+    delete('matlab_real1.h5')
+end
+if ~exist('matlab_imag1.h5','file')==0
+    delete('matlab_imag1.h5')   
+end
+if ~exist('bz.h5','file')==0
+    delete('bz.h5')   
+end
+
+h5create('bz.h5','/bz',size(bz));
+h5write('bz.h5','/bz',bz)
+noisedSig=RPP;
+
+h5create('matlab_real1.h5','/matlab_real1',size(noisedSig));
+h5write('matlab_real1.h5','/matlab_real1',real(noisedSig));
+h5create('matlab_imag1.h5','/matlab_imag1',size(noisedSig));
+h5write('matlab_imag1.h5','/matlab_imag1',imag(noisedSig));
+flag=system('D:\ProgramData\Anaconda3\envs\complexPytorch-gpu\python.exe deepfreq_model.py');
+load data1_deepfreq.mat
+data1_deepfreq2=data1_deepfreq;
 axes(ha(2))
-mesh(r_label/2,1:size(spc,1),abs(data1_deepfreq1)/max(max(abs(data1_deepfreq1))));
+imagesc(r_label/2,1:size(spc,1),abs(data1_deepfreq2)/max(max(abs(data1_deepfreq2))));
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
-set(get(gca,'YLabel'),'FontSize',fsz);
+% set(get(gca,'YLabel'),'FontSize',fsz);
+set(gca,'YTick',[]);
 % title('periodogram');
 xlabel({'Relative Range / m';'(b)'});
-ylabel('Pulse Index');
-view(30,65)
+% ylabel('Pulse Index');
+% view(30,65)
 
+%cResfreq
+if ~exist('matlab_real2.h5','file')==0
+    delete('matlab_real2.h5')
+end
+
+if ~exist('matlab_imag2.h5','file')==0
+    delete('matlab_imag2.h5')   
+end
+
+
+if ~exist('bz.h5','file')==0
+    delete('bz.h5')   
+end
+
+h5create('matlab_real2.h5','/matlab_real2',size(RPP));
+h5write('matlab_real2.h5','/matlab_real2',real(RPP));
+h5create('matlab_imag2.h5','/matlab_imag2',size(RPP));
+h5write('matlab_imag2.h5','/matlab_imag2',imag(RPP));
+h5create('bz.h5','/bz',size(bz));
+h5write('bz.h5','/bz',bz)
+
+system('D:\ProgramData\Anaconda3\envs\complexPytorch-gpu\python.exe resfreq_model.py')
+load data1_resfreq.mat
+data1_resfreq2=data1_resfreq;
 axes(ha(3))
-mesh(r_label/2,1:size(spc,1),abs(data1_resfreq1)/max(max(abs(data1_resfreq1))))
+imagesc(r_label/2,1:size(spc,1),abs(data1_resfreq2)/max(max(abs(data1_resfreq2))))
 set(gca,'FontSize',fsz); 
 set(get(gca,'XLabel'),'FontSize',fsz);
-set(get(gca,'YLabel'),'FontSize',fsz);
+% set(get(gca,'YLabel'),'FontSize',fsz);
+set(gca,'YTick',[]);
 % title('cResFreq');
 xlabel({'Relative Range / m';'(c)'});
-ylabel('Pulse Index');
-view(30,65)
+% ylabel('Pulse Index');
+% view(30,65)
 
 % h=figure();
 % set(h,'position',[100 100 1000 600]);
