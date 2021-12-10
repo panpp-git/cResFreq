@@ -1,1 +1,2 @@
-real_data.m is the main function. The radar data will not be uploaded unless allowed. We are sorry about that.
+real_data.m is the main function for boeing 727. The radar data will not be uploaded unless allowed. We are sorry about that.
+main.m is the main function for a simulation data. For your first run, uncomment the data generation (line 86-135) sentences and CVNN codes (line 226-266), which are slow. 
